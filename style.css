@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+.container{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 header{
     height: 160px;
     width: 100%;
@@ -13,6 +18,8 @@ header{
 header a{
     text-decoration: none;
     color: white;
+    font-size: 28px;
+    margin-left: 30px;
 }
 
 .foto-1{
