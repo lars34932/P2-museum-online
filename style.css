@@ -1,27 +1,50 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .container{
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 60vw;
+    margin: 0 auto;
 }
 
 header{
     height: 160px;
     width: 100%;
     background-color: #171717;
-    display: flex;
+    display: inline-block;
 }
 
-header a{
+nav{
+    text-align: right;
+}
+
+nav a{
     text-decoration: none;
     color: white;
     font-size: 28px;
     margin-left: 30px;
+    display: inline-block;
+    margin-top: 60px;
 }
 
-.foto-1{
+.logo{
+    width: 151px;
+    height: 96px;
+    margin: 32px 0;
+    float: left;
+}
+
+.game-museum-text{
+    border-radius: 10px;
+    width: 725px;
+    height: 130px;
+    background-color: #171717;
+}
+
+#home{
+    background-image: url(fotos/foto1.png);
     width: 100%;
+    z-index: -1;
 }
