@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dc84d7a956.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ynx2yjc.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fotos/money.ico" />
     <title>Museum website</title>
 </head>
 
@@ -21,7 +23,7 @@
             <nav class="navbar">
                 <a href="">Home</a>
                 <a href="">Tickets</a>
-                <a href="#geschiedenis">Geschiedenis</a>
+                <a href="#over">Geschiedenis</a>
                 <a href="">Foto's</a>
                 <a href="">Openingstijden</a>
                 <a href="">Contact</a>
@@ -32,39 +34,59 @@
     <!-- HOME PAGE -->
 
     <main id="home">
-        <section class="container split">
+        <article class="container split">
             <section class="col-1">
                 <section class="game-museum-text">
                     <p>Game Museum</p>
                 </section>
-                <canvas>
+                <canvas id="game">
                     <h1>The Game</h1>
                 </canvas>
             </section>
 
             <section class="col-2">
                 <section class="tickets-btn">
-                    <p class="tickets-wit">Koop hier je Tickets!</p>
-                    <p class="tickets-zwart">Nationaal videogame museum</p>
-                    <section class="row">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p class="locatie">Zoetermeer, Theaterplein 11</p>
+                    <section class="tickets-btn-left">
+                        <p class="tickets-wit">Koop hier je Tickets!</p>
+                        <p class="tickets-zwart">Nationaal videogame museum</p>
+                        <section class="row">
+                            <p class="locatie"><i class="fas fa-map-marker-alt"></i>Zoetermeer, Theaterplein 11</p>
+                        </section>
                     </section>
-                    <img class="barcode" src="fotos/barcode.png" alt="voorbeeld van een barcode van een ticket">
+                    <img class="barcode" src="fotos/qr-code.gif" alt="voorbeeld van een barcode van een ticket">
                 </section>
             </section>
-        </section>
+        </article>
     </main>
 
     <section class="halve-circel">
-        <i class="fas fa-map-marker-alt arrow"></i>
+        <a href="#over"><img class="arrow-down" src="fotos/arrowDown.png" alt="pijltje naar benden"></a>
     </section>
-    </main>
 
-    <section id="geschiedenis">
+    <!-- ABOUT PAGE -->
 
 
+    <section class="container">
+        <article class="img-text-over">
+
+            <section class="img-text-left">
+                <h2>Over het Nationaal videogame museum</h2>
+            </section>
+
+
+            <section class="img-text-right">
+                <section id="over">
+                    <section class="img-text-content">
+
+
+                    </section>
+                </section>
+            </section>
+
+        </article>
     </section>
+
+
 
 </body>
 
