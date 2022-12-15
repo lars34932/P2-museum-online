@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .container{
     margin: 0 250px;
 }
@@ -123,8 +127,20 @@ nav a{
 
 .halve-circel{
     background-color: #28282B;
-    height: 150px;
+    height: 120px;
     width: 100%;
     border-radius:  50% 50% 0 0/100% 100% 0 0;
     bottom: 0;
+    position: absolute;
+}
+
+.arrow{
+    color: white;
+    height: 16px;
+    width: 16px;
+}
+
+#geschiedenis{
+    background-color: #28282B;
+    height: 300px;
 }
