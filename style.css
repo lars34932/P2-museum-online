@@ -1,30 +1,51 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .container{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 0 250px;
 }
 
 header{
-    height: 160px;
+    height: 140px;
     width: 100%;
     background-color: #171717;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    display: inline-block;
 }
 
-header a{
+nav{
+    text-align: right;
+}
+
+nav a{
     text-decoration: none;
     color: white;
     font-size: 28px;
     margin-left: 30px;
+    display: inline-block;
+    margin-top: 50px;
 }
 
-.foto-1{
+.logo{
+    width: 151px;
+    height: 96px;
+    margin: 32px 0;
+    float: left;
+}
+
+#home{
+    background-image: url(fotos/foto1.png);
+    background-repeat: no-repeat;
     width: 100%;
 }
 
@@ -34,4 +55,103 @@ p{
 
 .navbar{
     margin-top: 60px;
+    height: 100vh;
+    z-index: -1;
+}
+
+.col-1{
+    flex-basis: 50%;
+}
+
+.col-2{
+    flex-basis: 45%;
+
+}
+
+.split{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.game-museum-text{
+    width: 725px;
+    height: 130px;
+    margin-top: 20px;
+    border-radius: 24px;
+    background-color: #171717;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.game-museum-text p{
+    padding-top: 29px;
+}
+
+.tickets-btn{
+    height: 220px;
+    width: 655px;
+    background-color: #0D54B9;
+    border: 8px solid black;
+    border-radius: 4px;
+    transform: rotate(-5deg);
+    margin: 350px 0 0 0;
+}
+
+.tickets-btn > img{
+    transform: rotate(270deg);
+    width: 220px;
+}
+
+.tickets-wit{
+    color: white;
+    font-size: 44px;
+    padding: 10px;
+}
+
+.tickets-zwart{
+    color: black;
+    font-size: 30px;
+    padding: 0 10px 10px 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.tickets-btn i{
+    margin: 36px 0 auto 0;
+    padding: 10px;
+    font-size: 24px;
+    text-align: left;
+
+}
+
+.locatie{
+    color: black;
+    font-size: 24px;
+    padding: 45px 10px 10px 5px;
+    text-align: right;
+}
+
+.halve-circel{
+    background-color: #28282B;
+    height: 120px;
+    width: 100%;
+    border-radius:  50% 50% 0 0/100% 100% 0 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.arrow{
+    color: white;
+    height: 16px;
+    width: 16px;
+}
+
+#geschiedenis{
+    background-color: #28282B;
+    height: 300px;
 }
