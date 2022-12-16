@@ -1,44 +1,39 @@
+import { GameLogic } from "./gamelogic.js";
+import { GameRenderer } from "./gamerenderer.js";
+
 class Game
 {
     constructor()
     {
-
+        this.logic = new GameLogic(this);
+        this.renderer = new GameRenderer(this);
+        this.x = 0;
+        this.y = 0;
     }
 
-    setupBoard(x,y)
+    mouseclicktest()
     {
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        ctx.beginPath();
-        ctx.arc(x+100, y+200, 50, 0, 2 * Math.PI);
-        ctx.fill();
-        ctx.font = "30px Arial";
-        ctx.fillText("whack-a-mole", 200, 50);
-        ctx.fillText("score: ", 250, 100);
-        ctx.fillText("❤️",550, 50)
-        ctx.fillText("❤️",500, 50)
-        ctx.fillText("❤️",450, 50)
+        let scope = this;
+        this.renderer.c.addEventListener("mousemove", function(event) {scope.logic.mouseMoved(event); })
+        setInterval(function () {scope.doGameFrame() }, 33)
     }
 
-    gameStart()
+    doGameFrame()
     {
-        let mol1 = document.getElementById("mol1");
-        mol1.addEventListener
+        this.logic.logic();
+        this.renderer.render(0,0);
+        this.renderer.render(200,0);
+        this.renderer.render(400,0);
+        this.renderer.render(0,200);
+        this.renderer.render(200,200);
+        this.renderer.render(400,200);
+        this.renderer.render(0,400);
+        this.renderer.render(200,400);
+        this.renderer.render(400,400);
     }
 }
 
 let game = new Game;
 
-/*setupBoard*/
-game.setupBoard(0,0);
-game.setupBoard(200,0);
-game.setupBoard(400,0);
-game.setupBoard(0,200);
-game.setupBoard(200,200);
-game.setupBoard(400,200);
-game.setupBoard(0,400);
-game.setupBoard(200,400);
-game.setupBoard(400,400);
-
 /*start de game*/
-game.gameStart();
+game.doGameFrame();
