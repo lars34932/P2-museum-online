@@ -1,3 +1,10 @@
 #myCanvas{
     background-color: green;    
 }
+
+body > button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    
+}

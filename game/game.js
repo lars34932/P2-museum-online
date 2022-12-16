@@ -14,15 +14,16 @@ class Game
         ctx.fill();
         ctx.font = "30px Arial";
         ctx.fillText("whack-a-mole", 200, 50);
-        ctx.fillText("score:", 250, 100);
+        ctx.fillText("score: ", 250, 100);
         ctx.fillText("❤️",550, 50)
         ctx.fillText("❤️",500, 50)
         ctx.fillText("❤️",450, 50)
     }
 
-    score()
+    gameStart()
     {
-        
+        let mol1 = document.getElementById("mol1");
+        mol1.addEventListener
     }
 }
 
@@ -38,3 +39,6 @@ game.setupBoard(400,200);
 game.setupBoard(0,400);
 game.setupBoard(200,400);
 game.setupBoard(400,400);
+
+/*start de game*/
+game.gameStart();
