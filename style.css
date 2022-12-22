@@ -2,7 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #28282B;
 }
 
 html {
@@ -47,6 +51,7 @@ nav a{
     background-image: url(fotos/foto1.png);
     background-repeat: no-repeat;
     width: 100%;
+    min-height: 84vh;
 }
 
 p{
@@ -59,26 +64,26 @@ p{
     z-index: -1;
 }
 
+.split{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
 .col-1{
     flex-basis: 50%;
 }
 
 .col-2{
-    flex-basis: 45%;
+    flex-basis: 50%;
 
-}
-
-.split{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .game-museum-text{
-    width: 725px;
-    height: 130px;
+    width: 100%;
     margin-top: 20px;
-    border-radius: 24px;
+    border-radius: 4px;
     background-color: #171717;
     font-size: 60px;
     font-weight: 400;
@@ -86,23 +91,36 @@ p{
     text-align: center;
 }
 
+#game{
+    margin-top: 30px;
+    width: 100%;
+    height: 475px;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+
 .game-museum-text p{
-    padding-top: 29px;
+    padding: 20px 0;
 }
 
 .tickets-btn{
-    height: 220px;
-    width: 655px;
+    width: 100%;
     background-color: #0D54B9;
-    border: 8px solid black;
+    border: 4px solid black;
     border-radius: 4px;
     transform: rotate(-5deg);
-    margin: 350px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    box-shadow: -17px 17px 0px -1px rgba(0,0,0,1);
 }
 
 .tickets-btn > img{
-    transform: rotate(270deg);
-    width: 220px;
+    height: 150px;
+    margin-right: 28px;
 }
 
 .tickets-wit{
@@ -126,13 +144,12 @@ p{
     padding: 10px;
     font-size: 24px;
     text-align: left;
-
 }
 
 .locatie{
     color: black;
     font-size: 24px;
-    padding: 45px 10px 10px 5px;
+    padding: 5px 10px 10px 5px;
     text-align: right;
 }
 
@@ -145,13 +162,93 @@ p{
     position: absolute;
 }
 
-.arrow{
-    color: white;
-    height: 16px;
-    width: 16px;
+.arrow-down{
+    height: 100px;
+    width: 100px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-#geschiedenis{
-    background-color: #28282B;
-    height: 300px;
+.img-text-over{
+    margin-top: 50px;
+}
+
+#over{
+    background-image: url(fotos/voorbeeld.webp);
+    height: 450px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(35% 0, 100% 0%, 100% 100%, 35% 100%, 0 50%);
+}
+
+.img-text{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-text-left, .img-text-right{
+    width: 50% ;
+}
+
+footer{
+    padding: 30px 0;
+    height: 280px;
+    width: 100%;
+    background-color: #171717;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-left{
+    width: 35%;
+    
+}
+
+.footer-mid{
+    width: 30%;
+
+}
+
+.footer-right{
+    width: 35%
+
+}
+
+.footer-left > h3{
+    margin: 10px;
+}
+
+.openingstijden{
+    display: flex;
+}
+
+.openingstijden p{
+    margin: 5px 0;
+}
+
+.dagen{
+    margin-right: 20px;
+}
+
+.tijdsblok-btn{
+    margin: 10px 0 0 10px;
+    font-size: 14px;
+    color: gray;
+}
+.footer-mid{
+    display: flex;
+}
+
+.socials > p{
+    text-align: center;
+}
+
+.contact-gegevens{
+    color: white;
 }
