@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Skill/html css"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "P2-museum-online"
+	}
+}
