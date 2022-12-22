@@ -3,6 +3,7 @@ export class GameLogic
     constructor(game)
     {
         this.game = game;
+        this.levens = 3;
     }
 
     mouseMoved(event)

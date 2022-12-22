@@ -21,15 +21,8 @@ class Game
     doGameFrame()
     {
         this.logic.logic();
-        this.renderer.render(0,0);
-        this.renderer.render(200,0);
-        this.renderer.render(400,0);
-        this.renderer.render(0,200);
-        this.renderer.render(200,200);
-        this.renderer.render(400,200);
-        this.renderer.render(0,400);
-        this.renderer.render(200,400);
-        this.renderer.render(400,400);
+        this.renderer.render();
+        this.renderer.levens();
     }
 }
 
@@ -37,3 +30,4 @@ let game = new Game;
 
 /*start de game*/
 game.doGameFrame();
+game.mouseclicktest();
