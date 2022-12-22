@@ -158,6 +158,10 @@ nav a{
     margin-right:auto;
 }
 
+.img-text-over{
+    margin-top: 50px;
+}
+
 #over{
     background-image: url(fotos/voorbeeld.webp);
     height: 450px;
@@ -178,4 +182,61 @@ nav a{
 
 .img-text-left, .img-text-right{
     width: 50% ;
+}
+
+footer{
+    padding: 30px 0;
+    height: 280px;
+    width: 100%;
+    background-color: #171717;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-left{
+    width: 35%;
+    
+}
+
+.footer-mid{
+    width: 30%;
+
+}
+
+.footer-right{
+    width: 35%
+
+}
+
+.footer-left > h3{
+    margin: 10px;
+}
+
+.openingstijden{
+    display: flex;
+}
+
+.openingstijden p{
+    margin: 5px 0;
+}
+
+.dagen{
+    margin-right: 20px;
+}
+
+.tijdsblok-btn{
+    margin: 10px 0 0 10px;
+    font-size: 14px;
+    color: gray;
+}
+.footer-mid{
+    display: flex;
+}
+
+.socials > p{
+    text-align: center;
+}
+
+.contact-gegevens{
+    color: white;
 }
