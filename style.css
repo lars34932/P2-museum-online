@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -207,8 +207,9 @@ footer{
     justify-content: space-between;
 }
 
-.footer-left > h3{
-    margin: 10px;
+
+.footer-1{
+    width: 23%;
 }
 
 .openingstijden{
@@ -230,10 +231,59 @@ footer{
     color: gray;
 }
 
-.socials > a{
-    display: flex;
+
+.footer-2{
+    width: 23%;
 }
 
-.contact-gegevens{
+.logo-footer{
+    width: 120px;
+    margin: 0 0 20px 0;
+}
+
+.footer-2 form{
+    margin: 10px 0;
+}
+
+input[type=text] {
+    padding: 8px 4px;
+    margin: 8px 0 4px 0;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.formText1{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.formText2{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.Inschrijf-btn{
+    font-size: 14px;
+    padding: 8px    ;
+    background-color: #0D54B9;
+    border-radius: 5px;
+}
+
+.footer-3{
+    width: 23%;
+}
+
+.socials > a{
+    color: white;
+    font-size: 24px;
+    align-items: flex-end;
+}
+
+
+.footer-4{
+    width: 23%;
+}
+
+.contactGegevens{
     color: white;
 }
