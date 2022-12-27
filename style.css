@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
@@ -18,7 +17,6 @@ html {
 }
 
 header{
-    height: 140px;
     width: 100%;
     background-color: #171717;
     display: flex;
@@ -27,24 +25,27 @@ header{
     display: inline-block;
 }
 
-nav{
-    text-align: right;
+.nav-balk{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
 }
 
 nav a{
     text-decoration: none;
     color: white;
     font-size: 28px;
-    margin-left: 30px;
-    display: inline-block;
-    margin-top: 50px;
+    margin: 0 15px;
 }
 
 .logo{
     width: 151px;
     height: 96px;
-    margin: 32px 0;
-    float: left;
+    padding: 15px 0;
 }
 
 #home{
@@ -56,12 +57,6 @@ nav a{
 
 p{
     align-items: center;
-}
-
-.navbar{
-    margin-top: 60px;
-    height: 100vh;
-    z-index: -1;
 }
 
 .split{
@@ -196,28 +191,20 @@ p{
     width: 50% ;
 }
 
+    /* FOOTER */
+
 footer{
     padding: 30px 0;
-    height: 280px;
     width: 100%;
     background-color: #171717;
     color: white;
     font-size: 16px;
-}
-
-.footer-left{
-    width: 35%;
-    
-}
-
-.footer-mid{
-    width: 30%;
 
 }
 
-.footer-right{
-    width: 35%
-
+.footer{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-left > h3{
@@ -226,6 +213,7 @@ footer{
 
 .openingstijden{
     display: flex;
+    flex-direction: row;
 }
 
 .openingstijden p{
@@ -241,12 +229,9 @@ footer{
     font-size: 14px;
     color: gray;
 }
-.footer-mid{
-    display: flex;
-}
 
-.socials > p{
-    text-align: center;
+.socials > a{
+    display: flex;
 }
 
 .contact-gegevens{
