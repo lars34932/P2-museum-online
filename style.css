@@ -12,9 +12,13 @@ html {
     scroll-behavior: smooth;
   }
 
+/* CONTAINER VOOR HELE WEBSITE */
+
 .container{
     margin: 0 250px;
 }
+
+    /* HEADER */
 
 header{
     width: 100%;
@@ -47,6 +51,8 @@ nav a{
     height: 96px;
     padding: 15px 0;
 }
+
+    /* HOMEPAGE */
 
 #home{
     background-image: url(fotos/foto1.png);
@@ -85,6 +91,8 @@ p{
     color: white;
     text-align: center;
 }
+
+    /* VAKJE VOOR DE GAME */
 
 #game{
     margin-top: 30px;
@@ -169,6 +177,8 @@ p{
     margin-top: 50px;
 }
 
+    /* ABOUT PAGE */
+
 #over{
     background-image: url(fotos/voorbeeld.webp);
     height: 450px;
@@ -210,9 +220,65 @@ footer{
 
 
 .footer-1, .footer-2, .footer-3, .footer-4{
-    width: 23%;
+    width: 24%;
     margin-bottom: 30px;
 }
+
+    /* FOOTER COL 1 */
+
+.logo-footer{
+    width: 120px;
+    margin: 0 0 20px 0;
+}
+
+.formText1{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    padding: 8px 4px;
+    margin: 8px 0 4px -4px;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.formText2{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.Inschrijf-btn{
+    font-size: 14px;
+    padding: 8px    ;
+    background-color: #0D54B9;
+    border-radius: 5px;
+}
+
+    /* FOOTER COL 2 */
+
+
+    /* FOOTER COL 3 */
+
+.contactGegevens{
+    color: white;
+}
+
+.contact-links a{
+    color: #0D54B9;
+}
+
+.socials{
+    display: flex;
+}
+
+.socials > a{
+    color: white;
+    font-size: 24px;
+    margin: 12px 16px 0 0;
+}
+
+/* FOOTER COL 4 */ 
 
 .openingstijden{
     display: flex;
@@ -233,47 +299,7 @@ footer{
     color: gray;
 }
 
-.logo-footer{
-    width: 120px;
-    margin: 0 0 20px 0;
-}
-
-.footer-3 form{
-    margin: 10px 0;
-}
-
-input[type=text] {
-    padding: 8px 4px;
-    margin: 8px 0 4px -4px;
-    border-radius: 5px;
-    border: 3px solid black;
-}
-
-.formText1{
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.formText2{
-    margin-top: 5px;
-    font-size: 12px;
-}
-
-.Inschrijf-btn{
-    font-size: 14px;
-    padding: 8px    ;
-    background-color: #0D54B9;
-    border-radius: 5px;
-}
-
-.socials > a{
-    color: white;
-    font-size: 24px;
-}
-
-.contactGegevens{
-    color: white;
-}
+    /* FOOTER POLICYS */
 
 .footerPolicys{
     background-color: #171717;
@@ -287,7 +313,7 @@ input[type=text] {
     font-size: 14px;
 }
 
-.footerPolicys-content-links a{
+.policy-links a{
     color: white;
     margin: 0 0 0 12px;
 }
