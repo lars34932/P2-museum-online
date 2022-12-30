@@ -205,11 +205,13 @@ footer{
 .footer{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid white;
 }
 
 
-.footer-1{
+.footer-1, .footer-2, .footer-3, .footer-4{
     width: 23%;
+    margin-bottom: 30px;
 }
 
 .openingstijden{
@@ -231,23 +233,18 @@ footer{
     color: gray;
 }
 
-
-.footer-2{
-    width: 23%;
-}
-
 .logo-footer{
     width: 120px;
     margin: 0 0 20px 0;
 }
 
-.footer-2 form{
+.footer-3 form{
     margin: 10px 0;
 }
 
 input[type=text] {
     padding: 8px 4px;
-    margin: 8px 0 4px 0;
+    margin: 8px 0 4px -4px;
     border-radius: 5px;
     border: 3px solid black;
 }
@@ -269,21 +266,28 @@ input[type=text] {
     border-radius: 5px;
 }
 
-.footer-3{
-    width: 23%;
-}
-
 .socials > a{
     color: white;
     font-size: 24px;
-    align-items: flex-end;
-}
-
-
-.footer-4{
-    width: 23%;
 }
 
 .contactGegevens{
     color: white;
+}
+
+.footerPolicys{
+    background-color: #171717;
+    font-size: 14px;
+}
+
+.footerPolicys-content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footerPolicys-content-links a{
+    color: white;
+    margin: 0 0 0 12px;
 }
