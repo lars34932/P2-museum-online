@@ -45,7 +45,6 @@ require_once "languages/language-" . $lang . '.php';
                         <option value="en">English</option>
                     </select>
                 </form>
-
             </nav>
         </section>
     </header>
@@ -78,15 +77,16 @@ require_once "languages/language-" . $lang . '.php';
                 </section>
             </section>
         </article>
+
+        <section class="arrow">
+            <a href="#over"><img class="arrow-down" src="fotos/arrowDown.png" alt="pijltje naar benden"></a>
+        </section>
+        
     </main>
 
     <!-- ABOUT PAGE -->
 
-    <section class="halve-circel">
-        <a href="#over"><img class="arrow-down" src="fotos/arrowDown.png" alt="pijltje naar benden"></a>
-    </section>
-
-    <section class="container">
+    <section id="" class="container">
         <article class="img-text-over">
 
             <section class="img-text-left">
@@ -136,9 +136,8 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="contactGevens">
                     <h3>Contact</h3>
                     <p class="contact-links"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                    <p class="contact-links"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
-                        info@nationaalvideogamemuseum.nl</p>
-                    <p>Adress: Theaterplein 11 <br> 2711 EK Zoetermeer​</p>
+                    <p class="contact-links"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>: info@nationaalvideogamemuseum.nl</p>
+                    <p> Adress: Theaterplein 11 <br> 2711 EK Zoetermeer​</p>
 
 
                     <section class="socials">
@@ -190,6 +189,8 @@ require_once "languages/language-" . $lang . '.php';
         <article class="footerPolicys">
 
         </article>
+
+        <!-- FOOTER POLICYS -->
 
         <section class="footerPolicys-content container">
 

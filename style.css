@@ -56,7 +56,7 @@ nav a{
     /* HOMEPAGE */
 
 #home{
-    background-image: url(fotos/foto1.png);
+    background-image: url(fotos/foto1-test.png);
     background-repeat: no-repeat;
     width: 100%;
     min-height: 84vh;
@@ -166,12 +166,16 @@ p{
     position: absolute;
 }
 
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 70px;
+}
+
 .arrow-down{
-    height: 100px;
     width: 100px;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+    display: block;
 }
 
 /* ABOUT PAGE */
@@ -264,6 +268,10 @@ input[type=text] {
 
 .contactGegevens{
     color: white;
+}
+
+.contactGegevens > p{
+    margin: 50px 0;
 }
 
 .contact-links a{

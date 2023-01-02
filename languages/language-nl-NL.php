@@ -13,6 +13,6 @@ $translate = [
     "title" => "Game Museum",
 
     "blue_btn_1" => "Koop hier uw tickets!",
-    "blue_btn_2" => "National videogame museum",
+    "blue_btn_2" => "Nationaal videogame museum",
     "blue_btn_3" => "Zoetermeer, Theaterplein 11",
 ];
