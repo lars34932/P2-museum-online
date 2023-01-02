@@ -6,13 +6,14 @@
 
 body{
     background-color: #28282B;
+    color: #fff;
 }
 
 html {
     scroll-behavior: smooth;
   }
 
-/* CONTAINER VOOR HELE WEBSITE */
+    /* CONTAINER VOOR HELE WEBSITE */
 
 .container{
     margin: 0 250px;
@@ -173,11 +174,12 @@ p{
     margin-right:auto;
 }
 
-.img-text-over{
-    margin-top: 50px;
-}
+/* ABOUT PAGE */
 
-    /* ABOUT PAGE */
+.img-text-over{
+    margin: 50px 0;
+    display: flex;
+}
 
 #over{
     background-image: url(fotos/voorbeeld.webp);
@@ -270,6 +272,7 @@ input[type=text] {
 
 .socials{
     display: flex;
+    align-items: flex-end;
 }
 
 .socials > a{

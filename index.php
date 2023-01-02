@@ -1,3 +1,13 @@
+<?php
+// haalt de taal uit de url
+$lang = $_GET['lang'] ?? 'nl-NL';
+
+// laad het goede bestand met hulp van variable
+require_once "languages/language-" . $lang . '.php';
+// 
+// echo $translate['menu_3'];
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -21,12 +31,21 @@
         <section class="container nav-balk">
             <img class="logo" src="fotos/logo.png" alt="logo van het nationaal video game museum">
             <nav class="nav-menu">
-                <a href="#home">Home</a>
-                <a href="#tickets">Tickets</a>
-                <a href="#over">Geschiedenis</a>
-                <a href="#fotos">Foto's</a>
-                <a href="#">Openingstijden</a>
-                <a href="#">Contact</a>
+                <a href="#home"> <?= $translate['menu_1']; ?> </a>
+                <a href="#tickets"> <?= $translate['menu_2']; ?> </a>
+                <a href="#over"> <?= $translate['menu_3']; ?> </a>
+                <a href="#fotos"> <?= $translate['menu_4']; ?> </a>
+                <a href="#"> <?= $translate['menu_5']; ?> </a>
+                <a href="#"> <?= $translate['menu_6']; ?> </a>
+
+                <form action="" method="GET">
+                    <select name="lang" onchange="this.form.submit()">
+                        <option value="" hidden>Select Language</option>
+                        <option value="nl-NL">Nederlands</option>
+                        <option value="en">English</option>
+                    </select>
+                </form>
+
             </nav>
         </section>
     </header>
@@ -37,7 +56,7 @@
         <article class="container split">
             <section class="col-1">
                 <section class="game-museum-text">
-                    <p>Game Museum</p>
+                    <p> <?= $translate['title']; ?> </p>
                 </section>
                 <canvas id="game">
 
@@ -49,10 +68,10 @@
             <section class="col-2">
                 <section class="tickets-btn">
                     <section class="tickets-btn-left">
-                        <p class="tickets-wit">Koop hier je Tickets!</p>
-                        <p class="tickets-zwart">Nationaal videogame museum</p>
+                        <p class="tickets-wit"> <?= $translate['blue_btn_1']; ?> </p>
+                        <p class="tickets-zwart"> <?= $translate['blue_btn_2']; ?> </p>
                         <section class="row">
-                            <p class="locatie"><i class="fas fa-map-marker-alt"></i>Zoetermeer, Theaterplein 11</p>
+                            <p class="locatie"><i class="fas fa-map-marker-alt"></i> <?= $translate['blue_btn_3']; ?> </p>
                         </section>
                     </section>
                     <img class="barcode" src="fotos/qr-code-rr.png" alt="voorbeeld van een barcode van een ticket">
@@ -77,10 +96,7 @@
 
             <section class="img-text-right">
                 <section id="over">
-                    <section class="img-text-content">
 
-
-                    </section>
                 </section>
             </section>
 
@@ -120,15 +136,20 @@
                 <section class="contactGevens">
                     <h3>Contact</h3>
                     <p class="contact-links"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                    <p class="contact-links"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>: info@nationaalvideogamemuseum.nl</p>
+                    <p class="contact-links"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
+                        info@nationaalvideogamemuseum.nl</p>
                     <p>Adress: Theaterplein 11 <br> 2711 EK Zoetermeer​</p>
-                    
+
 
                     <section class="socials">
-                        <a href="https://www.instagram.com/NVGMuseum/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://twitter.com/NaVGMuseum" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                        <a href="https://www.instagram.com/NVGMuseum/" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://twitter.com/NaVGMuseum" target="_blank"><i
+                                class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
+                            target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
                     </section>
 
 
