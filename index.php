@@ -31,11 +31,17 @@ require_once "languages/language-" . $lang . '.php';
         <section class="container nav-balk">
             <img class="logo" src="fotos/logo.png" alt="logo van het nationaal video game museum">
             <nav class="nav-menu">
-                <a href="#home"> <?= $translate['menu_1']; ?> </a>
+                <a href="#home">
+                    <?= $translate['menu_1']; ?>
+                </a>
                 <a href="#tickets"> <?= $translate['menu_2']; ?> </a>
-                <a href="#over"> <?= $translate['menu_3']; ?> </a>
+                <a href="#over">
+                    <?= $translate['menu_3']; ?>
+                </a>
                 <a href="#fotos"> <?= $translate['menu_4']; ?> </a>
-                <a href="#"> <?= $translate['menu_5']; ?> </a>
+                <a href="#">
+                    <?= $translate['menu_5']; ?>
+                </a>
                 <a href="#"> <?= $translate['menu_6']; ?> </a>
 
                 <form action="" method="GET">
@@ -55,7 +61,9 @@ require_once "languages/language-" . $lang . '.php';
         <article class="container split">
             <section class="col-1">
                 <section class="game-museum-text">
-                    <p> <?= $translate['title']; ?> </p>
+                    <p>
+                        <?= $translate['title']; ?>
+                    </p>
                 </section>
                 <canvas id="game">
 
@@ -68,9 +76,13 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="tickets-btn">
                     <section class="tickets-btn-left">
                         <p class="tickets-wit"> <?= $translate['blue_btn_1']; ?> </p>
-                        <p class="tickets-zwart"> <?= $translate['blue_btn_2']; ?> </p>
+                        <p class="tickets-zwart">
+                            <?= $translate['blue_btn_2']; ?>
+                        </p>
                         <section class="row">
-                            <p class="locatie"><i class="fas fa-map-marker-alt"></i> <?= $translate['blue_btn_3']; ?> </p>
+                            <p class="locatie"><i class="fas fa-map-marker-alt"></i>
+                                <?= $translate['blue_btn_3']; ?>
+                            </p>
                         </section>
                     </section>
                     <img class="barcode" src="fotos/qr-code-rr.png" alt="voorbeeld van een barcode van een ticket">
@@ -81,7 +93,7 @@ require_once "languages/language-" . $lang . '.php';
         <section class="arrow">
             <a href="#over"><img class="arrow-down" src="fotos/arrowDown.png" alt="pijltje naar benden"></a>
         </section>
-        
+
     </main>
 
     <!-- ABOUT PAGE -->
@@ -125,10 +137,26 @@ require_once "languages/language-" . $lang . '.php';
 
             <section class="footer-2">
 
-                website links enzo
+                <h3>Links</h3>
 
+                <section class="footer-2_Links">
+                    <ul class="websiteLinks">
+                        <a href="">Home</a>
+                        <a href="">Tickets</a>
+                        <a href="">Geschiedenis</a>
+                        <a href="">Foto's</a>
+                        <a href="">Openingstijden</a>
+                        <a href="">Contact</a>
+                    </ul>
 
-            </section>
+                    <ul class="websiteLinks">
+                        <a href="">item 7</a>
+                        <a href="">item 8</a>
+                        <a href="">item 9</a>
+                    </ul>
+                </section>
+
+            </section
 
 
             <section class="footer-3">

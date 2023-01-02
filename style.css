@@ -238,7 +238,7 @@ footer{
 }
 
 .formText1{
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
@@ -263,6 +263,16 @@ input[type=text] {
 
     /* FOOTER COL 2 */
 
+
+.websiteLinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.websiteLinks > a{
+    color: white;
+    margin: 4px 0;
+}
 
     /* FOOTER COL 3 */
 
