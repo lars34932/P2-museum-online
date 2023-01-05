@@ -16,9 +16,8 @@ require_once "languages/language-" . $lang . '.php';
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-   
     <link rel="stylesheet" href="https://use.typekit.net/ynx2yjc.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="fotos/money.ico" />
     <title>Museum website</title>
@@ -124,6 +123,42 @@ require_once "languages/language-" . $lang . '.php';
         </article>
     </section>
 
+    <section class="container">
+
+            <article class="swiper foto-slider">
+
+                <section class="swiper-wrapper">
+
+
+                    <section class="swiper-slide">
+                        <section class="foto-slider-content">
+                            slider stuff hier
+                        </section>
+                    </section>
+                    
+                    <section class="swiper-slide">
+                        <section class="foto-slider-content">
+                            slider stuff hier
+                        </section>
+                    </section>
+
+                    <section class="swiper-slide">
+                        <section class="foto-slider-content">
+                            slider stuff hier
+                        </section>
+                    </section>
+
+                </section>
+
+                <section class="swiper-pagination"></section>
+
+                <section class="swiper-button-prev"></section>
+                <section class="swiper-button-next"></section>
+
+            </article>
+
+    </section>
+
     <!-- Geschiedenis -->
 
     <section class="container">
@@ -185,14 +220,21 @@ require_once "languages/language-" . $lang . '.php';
 
 
                 <section class="socials">
-                    <a href="https://www.instagram.com/NVGMuseum/" target="_blank"><i
-                            class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank"><i
-                            class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://twitter.com/NaVGMuseum" target="_blank"><i
-                            class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+
+                    <a href="https://twitter.com/NaVGMuseum" target="_blank">
+                        <i class="fa-brands fa-square-twitter"></i>
+                    </a>
+
                     <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
-                        target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                        target="_blank"><i class="fa-brands fa-square-youtube"></i>
+                    </a>
                 </section>
 
 
@@ -252,6 +294,7 @@ require_once "languages/language-" . $lang . '.php';
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/dc84d7a956.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
