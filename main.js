@@ -25,6 +25,7 @@ window.addEventListener("load", () => {
             console.log(lastKnownScrollPosition);
       });
 
+
   });
 
 
@@ -43,4 +44,9 @@ window.addEventListener("load", () => {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+
       });
+
+      });
+  });
+
