@@ -162,25 +162,25 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="swiper-slide">
                     <section class="foto-slider-content">
-                        <!-- <img class="slider1-foto" src="fotos/museumfoto1.jpg" alt="..........................."> -->
+                        <img class="slider1-foto" src="fotos/museumfoto1.jpg" alt="...........................">
                     </section>
                 </section>
 
                 <section class="swiper-slide">
                     <section class="foto-slider-content">
-                    <!-- <img class="slider1-foto" src="fotos/museumfoto2.jpg" alt="..........................."> -->
+                    <img class="slider1-foto" src="fotos/museumfoto2.jpg" alt="...........................">
                     </section>
                 </section>
 
                 <section class="swiper-slide">
                     <section class="foto-slider-content">
-                    <!-- <img class="slider1-foto" src="fotos/museumfoto3.jpg" alt="..........................."> -->
+                    <img class="slider1-foto" src="fotos/museumfoto3.jpg" alt="...........................">
                     </section>
                 </section>
 
                 <section class="swiper-slide">
                     <section class="foto-slider-content">
-                    <!-- <img class="slider1-foto" src="fotos/museumfoto4.jpg" alt="..........................."> -->
+                    <img class="slider1-foto" src="fotos/museumfoto4.jpg" alt="...........................">
                     </section>
                 </section>
 
