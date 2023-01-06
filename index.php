@@ -1,11 +1,11 @@
 <?php
-// haalt de taal uit de url
+// haalt de taal uit de url en maakt er variable van
 $lang = $_GET['lang'] ?? 'nl-NL';
 
-// laad het goede bestand met hulp van variable
+// laad het goede bestand met text met hulp van variable
 require_once "languages/language-" . $lang . '.php';
 // 
-// echo $translate['menu_3'];
+
 ?>
 
 <!DOCTYPE html>
@@ -23,42 +23,64 @@ require_once "languages/language-" . $lang . '.php';
     <title>Museum website</title>
 </head>
 
+
 <!-- NAV BAR -->
+
 
 <body>
     <section class="header-wrapper">
         <header id="header">
             <section class="container">
                 <section class="nav-bar">
-                    <img class="logo" src="fotos/logo.png" alt="logo van het nationaal video game museum">
+                    <img class="logo" src="fotos/LOGOTEST.svg" alt="logo van het nationaal video game museum">
                     <nav class="nav-menu">
                         <a href="#home">
                             <?= $translate['menu_1']; ?>
                         </a>
-                        <a href="#tickets"> <?= $translate['menu_2']; ?> </a>
+
+                        <a href="#tickets">
+                            <?= $translate['menu_2']; ?>
+                        </a>
+
                         <a href="#over">
                             <?= $translate['menu_3']; ?>
                         </a>
-                        <a href="#fotos"> <?= $translate['menu_4']; ?> </a>
+
+                        <a href="#fotos">
+                            <?= $translate['menu_4']; ?>
+                        </a>
+
                         <a href="#openingstijden">
                             <?= $translate['menu_5']; ?>
                         </a>
-                        <a href="#contact"> <?= $translate['menu_6']; ?> </a>
+
+                        <a href="#contact">
+                            <?= $translate['menu_6']; ?>
+                        </a>
+
 
                         <form action="" method="GET">
+                            <label class="lang-selector" for="lang">Choose Language<br>
+
                             <select name="lang" onchange="this.form.submit()">
-                                <option value="" hidden>Select Language</option>
-                                <option value="nl-NL">Nederlands</option>
-                                <option value="en">English</option>
+
+                                <option value="nl-NL" <?=($lang === "nl-NL") ? "selected" : ""; ?>>
+                                <img src="fotos/nl-NL-flag.png" alt=""> Nederlands </option>
+                                <option value="en" <?=($lang === "en") ? "selected" : ""; ?>> English</option>
+
                             </select>
+                            </label>
                         </form>
+
                     </nav>
                 </section>
             </section>
         </header>
     </section>
 
+
     <!-- HOME PAGE -->
+
 
     <main id="home">
         <article class="container homeContent">
@@ -97,7 +119,9 @@ require_once "languages/language-" . $lang . '.php';
 
     </main>
 
+
     <!-- ABOUT PAGE -->
+
 
     <section class="container">
         <article class="about">
@@ -115,13 +139,57 @@ require_once "languages/language-" . $lang . '.php';
 
 
             <section class="about-right">
-                <section id="over">
+                <section id="over-img">
 
                 </section>
             </section>
 
         </article>
     </section>
+
+
+    <!-- FOTO SLIDER -->
+
+
+    <section class="container">
+
+        <article class="swiper foto-slider">
+
+            <section class="swiper-wrapper">
+
+
+                <section class="swiper-slide">
+                    <section class="foto-slider-content">
+                        <img class="slider1-foto" src="fotos/museumfoto1.jpg" alt="...........................">
+                    </section>
+                </section>
+
+                <section class="swiper-slide">
+                    <section class="foto-slider-content">
+                    <img class="slider1-foto" src="fotos/museumfoto2.jpg" alt="...........................">
+                    </section>
+                </section>
+
+                <section class="swiper-slide">
+                    <section class="foto-slider-content">
+                    <img class="slider1-foto" src="fotos/museumfoto3.jpg" alt="...........................">
+                    </section>
+                </section>
+
+                <section class="swiper-slide">
+                    <section class="foto-slider-content">
+                    <img class="slider1-foto" src="fotos/museumfoto4.jpg" alt="...........................">
+                    </section>
+                </section>
+
+            </section>
+
+            <section class="swiper-pagination"></section>
+
+            <section class="swiper-button-prev"></section>
+            <section class="swiper-button-next"></section>
+
+        </article>
 
     <section class="container">
 

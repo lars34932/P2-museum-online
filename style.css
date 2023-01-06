@@ -38,7 +38,7 @@ header{
 }
 
 .header--fixed .logo{
-    width: 100px;
+    width: 120px;
 }
 
 .header--fixed nav a{
@@ -64,11 +64,33 @@ nav a{
 }
 
 .logo{
-    width: 150px;
+    width: 170px;
     height: 100%;
     padding: 15px 0;
     transition: .3s ease;
 }
+
+
+.lang-selector{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 0 15px 0 15px;
+}
+
+.lang-selector select{
+    font-size: 14px;
+    color: #D3D3D3;
+    background: #28282b;
+    border-radius: 4px;
+    border: 1px solid #D3D3D3;
+    outline: none;
+    cursor: pointer;
+    padding: 1px 5px;
+    margin-top: 5px;
+}
+
+
 
     /* HOMEPAGE */
 
@@ -189,7 +211,7 @@ p{
     display: flex;
 }
 
-#over{
+#over-img{
     background-image: url(fotos/voorbeeld.webp);
     height: 450px;
     width: 100%;
@@ -203,6 +225,13 @@ p{
 .about-left, .about-right{
     width: 50% ;
 }
+
+
+    /* FOTO SLIDER */
+
+    .slider1-foto{
+        height: 600px;
+    }
 
     /* FOOTER */
 

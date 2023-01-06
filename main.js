@@ -8,9 +8,6 @@ window.addEventListener("load", () => {
 
     const headerHeight=header.clientHeight ;
 
-    
-    console.log(header, headerHeight);
-
     // kijken of er gescrolled word
     document.addEventListener("scroll", () => {
 
@@ -29,6 +26,11 @@ window.addEventListener("load", () => {
       });
 
 
+  });
+
+
+
+
     //   JAVASCRIPT VOOR FOTO SWIPER
       const swiper = new Swiper('.foto-slider', {
       
@@ -42,7 +44,9 @@ window.addEventListener("load", () => {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+
+      });
+
       });
   });
 
-  
