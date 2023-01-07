@@ -62,13 +62,14 @@ require_once "languages/language-" . $lang . '.php';
                         <form action="" method="GET">
                             <label class="lang-selector" for="lang">Choose Language<br>
 
-                            <select name="lang" onchange="this.form.submit()">
+                                <select name="lang" onchange="this.form.submit()">
 
-                                <option value="nl-NL" <?=($lang === "nl-NL") ? "selected" : ""; ?>>
-                                <img src="fotos/nl-NL-flag.png" alt=""> Nederlands </option>
-                                <option value="en" <?=($lang === "en") ? "selected" : ""; ?>> English</option>
+                                    <option value="nl-NL" <?=($lang === "nl-NL") ? "selected" : ""; ?>>
+                                        <img src="fotos/nl-NL-flag.png" alt=""> Nederlands
+                                    </option>
+                                    <option value="en" <?=($lang === "en") ? "selected" : ""; ?>> English</option>
 
-                            </select>
+                                </select>
                             </label>
                         </form>
 
@@ -166,19 +167,19 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="swiper-slide">
                     <section class="foto-slider-content">
-                    <img class="slider1-foto" src="fotos/museumfoto2.jpg" alt="...........................">
+                        <img class="slider1-foto" src="fotos/museumfoto2.jpg" alt="...........................">
                     </section>
                 </section>
 
                 <section class="swiper-slide">
                     <section class="foto-slider-content">
-                    <img class="slider1-foto" src="fotos/museumfoto3.jpg" alt="...........................">
+                        <img class="slider1-foto" src="fotos/museumfoto3.jpg" alt="...........................">
                     </section>
                 </section>
 
                 <section class="swiper-slide">
                     <section class="foto-slider-content">
-                    <img class="slider1-foto" src="fotos/museumfoto4.jpg" alt="...........................">
+                        <img class="slider1-foto" src="fotos/museumfoto4.jpg" alt="...........................">
                     </section>
                 </section>
 
@@ -191,7 +192,7 @@ require_once "languages/language-" . $lang . '.php';
 
         </article>
 
-    <section class="container">
+        <section class="container">
 
             <article class="swiper foto-slider">
 
@@ -203,7 +204,7 @@ require_once "languages/language-" . $lang . '.php';
                             slider stuff hier
                         </section>
                     </section>
-                    
+
                     <section class="swiper-slide">
                         <section class="foto-slider-content">
                             slider stuff hier
@@ -225,6 +226,7 @@ require_once "languages/language-" . $lang . '.php';
 
             </article>
 
+        </section>
     </section>
 
     <!-- Geschiedenis -->
@@ -237,129 +239,131 @@ require_once "languages/language-" . $lang . '.php';
     <!-- FOOTER -->
 
     <footer id="footer">
-        <article class="container footer">
+        <section class="container">
+            <article class="footer">
 
-            <section class="footer-1">
-                <img class="logo-footer" src="fotos/logo.png"
-                    alt="foto van het logo van het nationaal videogame museum in Zoetermeer">
-                <form id="emailForm">
-                    <p class="formText1">Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in en
-                        rond
-                        het mueseum!</p>
-                    <input type="text" id="email" name="Email" placeholder="Email">
-                    <button class="Inschrijf-btn">Schrijf mij in</button>
-                    <p class="formText2">Door u aan te melden gaat u akkoord met de algemene voorwaarden van het
-                        NVGM.
-                    </p>
+                <section class="footer-1">
+                    <img class="logo-footer" src="fotos/logo.png"
+                        alt="foto van het logo van het nationaal videogame museum in Zoetermeer">
+                    <form id="emailForm">
+                        <p class="formText1">Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in
+                            en
+                            rond
+                            het mueseum!</p>
+                        <input type="text" id="email" name="Email" placeholder="Email">
+                        <button class="Inschrijf-btn">Schrijf mij in</button>
+                        <p class="formText2">Door u aan te melden gaat u akkoord met de algemene voorwaarden van het
+                            NVGM.
+                        </p>
 
-                </form>
+                    </form>
 
-            </section>
-
-            <section class="footer-2">
-
-                <h3>Links</h3>
-
-                <section class="footer-2_Links">
-                    <ul class="websiteLinks">
-                        <a href="">Home</a>
-                        <a href="">Tickets</a>
-                        <a href="">Geschiedenis</a>
-                        <a href="">Foto's</a>
-                        <a href="">Openingstijden</a>
-                        <a href="">Contact</a>
-                    </ul>
-
-                    <ul class="websiteLinks">
-                        <a href="">item 7</a>
-                        <a href="">item 8</a>
-                        <a href="">item 9</a>
-                    </ul>
                 </section>
 
-            </section <section class="footer-3">
+                <section class="footer-2">
 
-            <section class="contactGevens">
-                <h3>Contact</h3>
-                <p class="contact-links"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                <p class="contact-links"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
-                    info@nationaalvideogamemuseum.nl</p>
-                <p> Adress: Theaterplein 11 <br> 2711 EK Zoetermeer​</p>
+                    <h3>Links</h3>
 
+                    <section class="footer-2_Links">
+                        <ul class="websiteLinks">
+                            <a href="">Home</a>
+                            <a href="">Tickets</a>
+                            <a href="">Geschiedenis</a>
+                            <a href="">Foto's</a>
+                            <a href="">Openingstijden</a>
+                            <a href="">Contact</a>
+                        </ul>
 
-                <section class="socials">
-                    <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-
-                    <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </a>
-
-                    <a href="https://twitter.com/NaVGMuseum" target="_blank">
-                        <i class="fa-brands fa-square-twitter"></i>
-                    </a>
-
-                    <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
-                        target="_blank"><i class="fa-brands fa-square-youtube"></i>
-                    </a>
-                </section>
-
-
-            </section>
-            </section>
-
-            <section class="footer-4">
-                <h3>Openingstijden</h3>
-
-                <section class="openingstijden">
-                    <section class="dagen">
-                        <p>maandag</p>
-                        <p>dinsdag</p>
-                        <p>woensdag</p>
-                        <p>donderdag</p>
-                        <p>vrijdag</p>
-                        <p>zaterdag</p>
-                        <p>zondag</p>
+                        <ul class="websiteLinks">
+                            <a href="">item 7</a>
+                            <a href="">item 8</a>
+                            <a href="">item 9</a>
+                        </ul>
                     </section>
 
-                    <section class="tijden">
-                        <p>gesloten</p>
-                        <p>gesloten</p>
-                        <p>10:00 - 18:00</p>
-                        <p>10:00 - 18:00</p>
-                        <p>10:00 - 21:00</p>
-                        <p>10:00 - 18:00</p>
-                        <p>12:00 - 18:00</p>
+                </section class="footer-3">
+
+                <section class="contactGevens">
+                    <h3>Contact</h3>
+                    <p class="contact-links"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
+                    <p class="contact-links"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
+                        info@nationaalvideogamemuseum.nl</p>
+                    <p> Adress: Theaterplein 11 <br> 2711 EK Zoetermeer​</p>
+
+
+                    <section class="socials">
+                        <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+
+                        <a href="https://twitter.com/NaVGMuseum" target="_blank">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
+                            target="_blank"><i class="fa-brands fa-square-youtube"></i>
+                        </a>
                     </section>
+
+
+
                 </section>
 
-                <a href="" class="tijdsblok-btn">Bekijk Tijdsblokken </a>
+                <section class="footer-4">
+                    <h3>Openingstijden</h3>
+
+                    <section class="openingstijden">
+                        <section class="dagen">
+                            <p>maandag</p>
+                            <p>dinsdag</p>
+                            <p>woensdag</p>
+                            <p>donderdag</p>
+                            <p>vrijdag</p>
+                            <p>zaterdag</p>
+                            <p>zondag</p>
+                        </section>
+
+                        <section class="tijden">
+                            <p>gesloten</p>
+                            <p>gesloten</p>
+                            <p>10:00 - 18:00</p>
+                            <p>10:00 - 18:00</p>
+                            <p>10:00 - 21:00</p>
+                            <p>10:00 - 18:00</p>
+                            <p>12:00 - 18:00</p>
+                        </section>
+                    </section>
+
+                    <a href="" class="tijdsblok-btn">Bekijk Tijdsblokken </a>
+
+                </section>
+
+            </article>
+
+            <article class="footerPolicys">
+
+            </article>
+
+            <!-- FOOTER POLICYS -->
+
+            <section class="footerPolicys-content container">
+
+                <p>Copyright © Nationaal Videogame Museum </p>
+
+                <section class="policy-links">
+                    <a href="">Algemene voorwaarden</a>
+                    <a href="">Cookie instellingen</a>
+                    <a href="">Privacy verklaring</a>
+                </section>
 
             </section>
-            </section>
-        </article>
 
-        <article class="footerPolicys">
-
-        </article>
-
-        <!-- FOOTER POLICYS -->
-
-        <section class="footerPolicys-content container">
-
-            <p>Copyright © Nationaal Videogame Museum </p>
-
-            <section class="policy-links">
-                <a href="">Algemene voorwaarden</a>
-                <a href="">Cookie instellingen</a>
-                <a href="">Privacy verklaring</a>
-            </section>
-
+            </article>
         </section>
-
-        </article>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
