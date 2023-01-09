@@ -4,8 +4,6 @@ $lang = $_GET['lang'] ?? 'nl-NL';
 
 // laad het goede bestand met text met hulp van variable
 require_once "languages/language-" . $lang . '.php';
-// 
-
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +13,7 @@ require_once "languages/language-" . $lang . '.php';
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ynx2yjc.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -30,10 +29,13 @@ require_once "languages/language-" . $lang . '.php';
 <body>
     <section class="header-wrapper">
         <header id="header">
+
             <section class="container">
-                <section class="nav-bar">
+
+                <section id="navBar" class="nav-bar">
                     <img class="logo" src="fotos/LOGOTEST.svg" alt="logo van het nationaal video game museum">
                     <nav class="nav-menu">
+
                         <a href="#home">
                             <?= $translate['menu_1']; ?>
                         </a>
@@ -64,9 +66,7 @@ require_once "languages/language-" . $lang . '.php';
 
                                 <select name="lang" onchange="this.form.submit()">
 
-                                    <option value="nl-NL" <?=($lang === "nl-NL") ? "selected" : ""; ?>>
-                                        <img src="fotos/nl-NL-flag.png" alt=""> Nederlands
-                                    </option>
+                                    <option value="nl-NL" <?=($lang === "nl-NL") ? "selected" : ""; ?>> Nederlands</option>
                                     <option value="en" <?=($lang === "en") ? "selected" : ""; ?>> English</option>
 
                                 </select>
@@ -75,7 +75,9 @@ require_once "languages/language-" . $lang . '.php';
 
                     </nav>
                 </section>
+
             </section>
+
         </header>
     </section>
 
@@ -85,34 +87,45 @@ require_once "languages/language-" . $lang . '.php';
 
     <main id="home">
         <article class="container homeContent">
+
             <section class="game-col">
+
                 <section class="game-col-text">
-                    <p>
-                        <?= $translate['title']; ?>
-                    </p>
+                    <p><?= $translate['title']; ?></p>
                 </section>
 
                 <canvas id="game"> </canvas>
 
             </section>
 
+            <!-- TICKET KNOP BLAUW -->
+
             <section class="ticket-col">
+
                 <section class="tickets-btn">
+
                     <section class="tickets-btn-left">
-                        <a href="" class="tickets-link"><?= $translate['blue_btn_1']; ?> </a>
-                        <p class="tickets-caption">
-                            <?= $translate['blue_btn_2']; ?>
-                        </p>
+                        <a href="" class="tickets-link"> <?= $translate['blue_btn_1']; ?> </a>
+                        <p class="tickets-caption"> <?= $translate['blue_btn_2']; ?> </p>
+
                         <section class="location-row">
-                            <p class="location"><i class="fas fa-map-marker-alt"></i>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
                                 <?= $translate['blue_btn_3']; ?>
                             </p>
                         </section>
+
                     </section>
+
                     <img class="barcode" src="fotos/qr-code-rr.png" alt="voorbeeld van een barcode van een ticket">
                 </section>
+
             </section>
+
+            
         </article>
+        
+        <!-- PIJL NAAR REST VD PAGINA -->
 
         <section class="arrow">
             <a href="#over"><img class="arrow-down" src="fotos/arrowDown.png" alt="pijltje naar benden"></a>
@@ -125,7 +138,7 @@ require_once "languages/language-" . $lang . '.php';
 
 
     <section class="container">
-        <article class="about">
+        <article id="over" class="about">
 
             <section class="about-left">
                 <h2>Over het Nationaal videogame museum</h2>
@@ -140,9 +153,7 @@ require_once "languages/language-" . $lang . '.php';
 
 
             <section class="about-right">
-                <section id="over-img">
-
-                </section>
+                <section id="over-img"></section>
             </section>
 
         </article>
@@ -154,79 +165,17 @@ require_once "languages/language-" . $lang . '.php';
 
     <section class="container">
 
-        <article class="swiper foto-slider">
-
-            <section class="swiper-wrapper">
-
-
-                <section class="swiper-slide">
-                    <section class="foto-slider-content">
-                        <img class="slider1-foto" src="fotos/museumfoto1.jpg" alt="...........................">
-                    </section>
-                </section>
-
-                <section class="swiper-slide">
-                    <section class="foto-slider-content">
-                        <img class="slider1-foto" src="fotos/museumfoto2.jpg" alt="...........................">
-                    </section>
-                </section>
-
-                <section class="swiper-slide">
-                    <section class="foto-slider-content">
-                        <img class="slider1-foto" src="fotos/museumfoto3.jpg" alt="...........................">
-                    </section>
-                </section>
-
-                <section class="swiper-slide">
-                    <section class="foto-slider-content">
-                        <img class="slider1-foto" src="fotos/museumfoto4.jpg" alt="...........................">
-                    </section>
-                </section>
-
-            </section>
-
-            <section class="swiper-pagination"></section>
-
-            <section class="swiper-button-prev"></section>
-            <section class="swiper-button-next"></section>
-
-        </article>
-
-        <section class="container">
-
-            <article class="swiper foto-slider">
-
-                <section class="swiper-wrapper">
-
-
-                    <section class="swiper-slide">
-                        <section class="foto-slider-content">
-                            slider stuff hier
-                        </section>
-                    </section>
-
-                    <section class="swiper-slide">
-                        <section class="foto-slider-content">
-                            slider stuff hier
-                        </section>
-                    </section>
-
-                    <section class="swiper-slide">
-                        <section class="foto-slider-content">
-                            slider stuff hier
-                        </section>
-                    </section>
-
-                </section>
-
-                <section class="swiper-pagination"></section>
-
-                <section class="swiper-button-prev"></section>
-                <section class="swiper-button-next"></section>
-
-            </article>
-
+        <section id="slider">
+            <a a href="javascript:void(0)" onclick="moveRight()" class="control_next">></a>
+            <a a href="javascript:void(0)" onclick="moveLeft()" class="control_prev"><</a>
+                    <ul>
+                        <li>SLIDE 1</li>
+                        <li>SLIDE 2</li>
+                        <li>SLIDE 3</li>
+                        <li>SLIDE 4</li>
+                    </ul>
         </section>
+
     </section>
 
     <!-- Geschiedenis -->
