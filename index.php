@@ -18,7 +18,7 @@ require_once "languages/language-" . $lang . '.php';
     <link rel="stylesheet" href="https://use.typekit.net/ynx2yjc.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="fotos/money.ico" />
+    <link rel="icon" href="fotos/web-icon.svg" />
     <title>Museum website</title>
 </head>
 
@@ -66,7 +66,8 @@ require_once "languages/language-" . $lang . '.php';
 
                                 <select name="lang" onchange="this.form.submit()">
 
-                                    <option value="nl-NL" <?=($lang === "nl-NL") ? "selected" : ""; ?>> Nederlands</option>
+                                    <option value="nl-NL" <?=($lang === "nl-NL") ? "selected" : ""; ?>> Nederlands
+                                    </option>
                                     <option value="en" <?=($lang === "en") ? "selected" : ""; ?>> English</option>
 
                                 </select>
@@ -91,7 +92,9 @@ require_once "languages/language-" . $lang . '.php';
             <section class="game-col">
 
                 <section class="game-col-text">
-                    <p><?= $translate['title']; ?></p>
+                    <p>
+                        <?= $translate['title']; ?>
+                    </p>
                 </section>
 
                 <canvas id="game"> </canvas>
@@ -106,7 +109,9 @@ require_once "languages/language-" . $lang . '.php';
 
                     <section class="tickets-btn-left">
                         <a href="" class="tickets-link"> <?= $translate['blue_btn_1']; ?> </a>
-                        <p class="tickets-caption"> <?= $translate['blue_btn_2']; ?> </p>
+                        <p class="tickets-caption">
+                            <?= $translate['blue_btn_2']; ?>
+                        </p>
 
                         <section class="location-row">
                             <p class="location">
@@ -122,9 +127,9 @@ require_once "languages/language-" . $lang . '.php';
 
             </section>
 
-            
+
         </article>
-        
+
         <!-- PIJL NAAR REST VD PAGINA -->
 
         <section class="arrow">
@@ -165,16 +170,37 @@ require_once "languages/language-" . $lang . '.php';
 
     <section class="container">
 
-        <section id="slider">
-            <a a href="javascript:void(0)" onclick="moveRight()" class="control_next">></a>
-            <a a href="javascript:void(0)" onclick="moveLeft()" class="control_prev"><</a>
-                    <ul>
-                        <li>SLIDE 1</li>
-                        <li>SLIDE 2</li>
-                        <li>SLIDE 3</li>
-                        <li>SLIDE 4</li>
-                    </ul>
-        </section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="fotos/nvgm-ingang.JPG" style="width:100%">
+                <div class="text">.....</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="fotos/nvgm-info.JPG" style="width:100%">
+                <div class="text">.....</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="fotos/nvgm-races.JPG" style="width:100%">
+                <div class="text">.....</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
 
     </section>
 
@@ -211,7 +237,7 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="footer-2">
 
-                    <h3>Links</h3>
+                    <h3>Navigatie</h3>
 
                     <section class="footer-2_Links">
                         <ul class="websiteLinks">
@@ -234,28 +260,37 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="contactGevens">
                     <h3>Contact</h3>
-                    <p class="contact-links"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                    <p class="contact-links"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
+                    <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
+                    <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
                         info@nationaalvideogamemuseum.nl</p>
-                    <p> Adress: Theaterplein 11 <br> 2711 EK Zoetermeer​</p>
+                    <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adress</a>: Theaterplein
+                        11 <br> 2711 EK Zoetermeer​</p>
 
 
                     <section class="socials">
-                        <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </a>
+                        <h4>Volg het NVMGM</h4>
 
-                        <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
-                            <i class="fa-brands fa-square-facebook"></i>
-                        </a>
+                        <section class="social-media">
 
-                        <a href="https://twitter.com/NaVGMuseum" target="_blank">
-                            <i class="fa-brands fa-square-twitter"></i>
-                        </a>
+                            <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
 
-                        <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
-                            target="_blank"><i class="fa-brands fa-square-youtube"></i>
-                        </a>
+                            <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+
+                            <a href="https://twitter.com/NaVGMuseum" target="_blank">
+                                <i class="fa-brands fa-square-twitter"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
+                                target="_blank"><i class="fa-brands fa-square-youtube"></i>
+                            </a>
+
+                        </section>
+
+
                     </section>
 
 
@@ -295,21 +330,21 @@ require_once "languages/language-" . $lang . '.php';
 
             <article class="footerPolicys">
 
+                <section class="footerPolicys-content">
+
+                    <p>Copyright © Nationaal Videogame Museum </p>
+
+                    <section class="policy-links">
+                        <a href="">Algemene voorwaarden</a>
+                        <a href="">Cookie instellingen</a>
+                        <a href="">Privacy verklaring</a>
+                    </section>
+
+                </section>
+
             </article>
 
             <!-- FOOTER POLICYS -->
-
-            <section class="footerPolicys-content container">
-
-                <p>Copyright © Nationaal Videogame Museum </p>
-
-                <section class="policy-links">
-                    <a href="">Algemene voorwaarden</a>
-                    <a href="">Cookie instellingen</a>
-                    <a href="">Privacy verklaring</a>
-                </section>
-
-            </section>
 
             </article>
         </section>
