@@ -4,8 +4,6 @@ window.addEventListener("load", () => {
   // var gemaakt hoever gescrolled is
   let lastKnownScrollPosition = 0;
 
-  const header = document.querySelector("#header");
-
   const headerHeight = header.clientHeight;
 
   // kijken of er gescrolled word
@@ -14,23 +12,22 @@ window.addEventListener("load", () => {
     // var aanpassen naar scroll punt
     lastKnownScrollPosition = window.scrollY;
 
+    // checken of er voorbij de header gescrolled is, zo ja header fixed class word toegevoegd
     if (headerHeight <= lastKnownScrollPosition) {
       header.classList.add("header--fixed");
     }
 
+    // checken of er voorbij de header gescrolled is, zo nee header fixed class word weggehaald
     else {
       header.classList.remove("header--fixed");
     }
 
-    console.log(lastKnownScrollPosition);
   });
-
 
 });
 
 
 // FOTO SLIDER STUFF
-
 
 let slideIndex = 1;
 showSlides(slideIndex);

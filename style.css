@@ -6,7 +6,7 @@
 
 body{
     background-image: linear-gradient(to bottom, #86bbd8, #67a6d0, #4c91c8, #367bbf, #2964b3, #2a57ac, #2f4aa4, #363c9b, #3e3497, #462c93, #4d218e, #541388);
-    color: #86BBD8;
+    color: black
 }
 
 html{
@@ -225,7 +225,7 @@ p{
 }
 
 .about p, .history p, .watTeDoen p{
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 12px;
 }
 
