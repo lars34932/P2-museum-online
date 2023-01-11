@@ -186,12 +186,9 @@ require_once "languages/language-" . $lang . '.php';
 
     </section>
 
-
-
+    <!-- FOTO SLIDER -->
 
     <section class="container">
-
-        <!-- FOTO SLIDER -->
 
         <article class="watTeDoen">
 
@@ -249,15 +246,53 @@ require_once "languages/language-" . $lang . '.php';
 
             </section>
 
-
-        </article>
-
-        <article class="reviews">
-
-
         </article>
 
     </section>
+
+    <!-- REVIEWS  -->
+
+    <section class="container">
+        <article class="reviews">
+
+            <h2>Reviews over het NVGM</h2>
+
+            <section class="reviews-content">
+
+                <section class="review">
+                    <section class="user">
+                        <img src="fotos/user-pic.png" alt="">
+                        <h3>Naam</h3>
+                    </section>
+                    <p>text over wat leuk en dat soort shit</p>
+                    <p>✩✩✩✩✩</p>
+                </section>
+    
+
+                <section class="review">
+                    <section class="user">
+                        <img src="fotos/user-pic.png" alt="">
+                        <h3>Naam</h3>
+                    </section>
+                    <p>text over wat leuk en dat soort shit</p>
+                    <p>✩✩✩✩✩</p>
+                </section>
+
+                
+                <section class="review">
+                    <section class="user">
+                        <img src="fotos/user-pic.png" alt="">
+                        <h3>Naam</h3>
+                    </section>
+                    <p>text over wat leuk en dat soort shit</p>
+                    <p>✩✩✩✩✩</p>
+                </section>
+
+            </section>
+
+        </article>
+    </section>
+
     <!-- FOOTER -->
 
     <footer id="footer">

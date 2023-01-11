@@ -16,7 +16,8 @@ html{
     /* CONTAINER VOOR HELE WEBSITE */
 
 .container{
-    margin: 0 250px;
+    margin: 0 auto;
+    max-width: 1350px;
 }
 
     /* HEADER */
@@ -219,7 +220,7 @@ p{
 }
 
 /* CONTENT IN HET ALGEMEEN */
-.about h2, .history h2, .watTeDoen h2{
+.about h2, .history h2, .watTeDoen h2, .reviews h2{
     font-size: 36px;
     margin-bottom: 12px;
 }
@@ -361,6 +362,49 @@ width: 50%;
       .prev, .next,.text {font-size: 11px}
     }
 
+
+    /* REVIEWS */
+
+.reviews{
+    margin: 100px 0;
+}
+
+.reviews-content {
+    display: flex;
+  }
+
+.reviews h2{
+    text-align: center;
+}
+
+.review{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    width: 33%;
+    background-image: url(fotos/review-bg.jpg);
+    filter: brightness(85%);
+    background-color: black;
+    color: white;
+}
+
+.review h3{
+    font-size: 22px;
+}
+
+.review *{
+    margin-bottom: 5px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    width: 40px;
+    margin-right: 10px;
+}
 
     /* FOOTER */
 
