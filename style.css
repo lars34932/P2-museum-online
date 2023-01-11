@@ -6,7 +6,7 @@
 
 body{
     background: #28282b;
-    color: #fff;
+    color: #EEF4ED;
 }
 
 html{
@@ -23,7 +23,7 @@ html{
 
 header{
     width: 100%;
-    background-color: #171717;
+    background-color: #0C120C;
 }
 
 .header-wrapper{
@@ -80,7 +80,7 @@ nav a{
 .lang-selector select{
     font-size: 14px;
     color: #D3D3D3;
-    background: #171717;
+    background: #0C120C;
     border-radius: 4px;
     border: 1px solid #D3D3D3;
     outline: none;
@@ -91,7 +91,7 @@ nav a{
 
 
 .lang-selector select > *{
-    background-color: #171717;
+    background-color: #0C120C;
 }
 
     /* HOMEPAGE */
@@ -129,7 +129,7 @@ p{
     margin-top: 20px;
     padding: 10px;
     border-radius: 4px;
-    background-color: #171717;
+    background-color: #0C120C;
     font-size: 60px;
     font-weight: 400;
     color: white;
@@ -218,7 +218,12 @@ p{
 
 /* CONTENT IN HET ALGEMEEN */
 .about h2, .history h2{
+    font-size: 36px;
+    margin-bottom: 12px;
+}
 
+.about p, .history p{
+    font-size: 18px;
 }
 
 /* ABOUT PAGE */
@@ -266,8 +271,9 @@ width: 50%;
     width: 50%;
 }
 
-.mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides{
+    display: none}
+
 
 .slideshow {
     max-width: 1000px;
@@ -353,7 +359,7 @@ img {vertical-align: middle;}
 footer{
     padding: 30px 0;
     width: 100%;
-    background-color: #171717;
+    background-color: #0C120C;
     color: #bababa;
     font-size: 16px;
 }
@@ -483,7 +489,7 @@ input[type=text] {
     /* FOOTER POLICYS */
 
 .footerPolicys{
-    background-color: #171717;
+    background-color: #0C120C;
     font-size: 14px;
 }
 
