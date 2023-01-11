@@ -4,8 +4,6 @@ $lang = $_GET['lang'] ?? 'nl-NL';
 
 // laad het goede bestand met text met hulp van variable
 require_once "languages/language-" . $lang . '.php';
-// 
-
 ?>
 
 <!DOCTYPE html>
@@ -15,11 +13,12 @@ require_once "languages/language-" . $lang . '.php';
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ynx2yjc.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="fotos/money.ico" />
+    <link rel="icon" href="fotos/web-icon.svg" />
     <title>Museum website</title>
 </head>
 
@@ -30,10 +29,13 @@ require_once "languages/language-" . $lang . '.php';
 <body>
     <section class="header-wrapper">
         <header id="header">
+
             <section class="container">
-                <section class="nav-bar">
-                    <img class="logo" src="fotos/LOGOTEST.svg" alt="logo van het nationaal video game museum">
+
+                <section id="navBar" class="nav-bar">
+                    <img class="logo" src="fotos/logo.svg" alt="logo van het nationaal video game museum">
                     <nav class="nav-menu">
+
                         <a href="#home">
                             <?= $translate['menu_1']; ?>
                         </a>
@@ -64,8 +66,7 @@ require_once "languages/language-" . $lang . '.php';
 
                                 <select name="lang" onchange="this.form.submit()">
 
-                                    <option value="nl-NL" <?=($lang === "nl-NL") ? "selected" : ""; ?>>
-                                        <img src="fotos/nl-NL-flag.png" alt=""> Nederlands
+                                    <option value="nl-NL" <?=($lang === "nl-NL") ? "selected" : ""; ?>> Nederlands
                                     </option>
                                     <option value="en" <?=($lang === "en") ? "selected" : ""; ?>> English</option>
 
@@ -75,7 +76,9 @@ require_once "languages/language-" . $lang . '.php';
 
                     </nav>
                 </section>
+
             </section>
+
         </header>
     </section>
 
@@ -85,7 +88,9 @@ require_once "languages/language-" . $lang . '.php';
 
     <main id="home">
         <article class="container homeContent">
+
             <section class="game-col">
+
                 <section class="game-col-text">
                     <p>
                         <?= $translate['title']; ?>
@@ -96,23 +101,36 @@ require_once "languages/language-" . $lang . '.php';
 
             </section>
 
+            <!-- TICKET KNOP BLAUW -->
+
             <section class="ticket-col">
+
                 <section class="tickets-btn">
+
                     <section class="tickets-btn-left">
-                        <a href="" class="tickets-link"><?= $translate['blue_btn_1']; ?> </a>
+                        <a href="" class="tickets-link"> <?= $translate['blue_btn_1']; ?> </a>
                         <p class="tickets-caption">
                             <?= $translate['blue_btn_2']; ?>
                         </p>
+
                         <section class="location-row">
-                            <p class="location"><i class="fas fa-map-marker-alt"></i>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
                                 <?= $translate['blue_btn_3']; ?>
                             </p>
                         </section>
+
                     </section>
+
                     <img class="barcode" src="fotos/qr-code-rr.png" alt="voorbeeld van een barcode van een ticket">
                 </section>
+
             </section>
+
+
         </article>
+
+        <!-- PIJL NAAR REST VD PAGINA -->
 
         <section class="arrow">
             <a href="#over"><img class="arrow-down" src="fotos/arrowDown.png" alt="pijltje naar benden"></a>
@@ -122,11 +140,11 @@ require_once "languages/language-" . $lang . '.php';
 
 
     <!-- ABOUT PAGE -->
-
-
-    <section class="container">
+    
+    
+    <section id="over" class="container">
         <article class="about">
-
+            
             <section class="about-left">
                 <h2>Over het Nationaal videogame museum</h2>
                 <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven
@@ -137,104 +155,90 @@ require_once "languages/language-" . $lang . '.php';
                     delen.
                 </p>
             </section>
-
-
+            
+            
             <section class="about-right">
-                <section id="over-img">
-
-                </section>
+                <img class="about-img" src="fotos/nvgm-ingang.JPG" alt="">
             </section>
-
+            
         </article>
     </section>
-
-
-    <!-- FOTO SLIDER -->
-
-
-    <section class="container">
-
-        <article class="swiper foto-slider">
-
-            <section class="swiper-wrapper">
-
-
-                <section class="swiper-slide">
-                    <section class="foto-slider-content">
-                        <img class="slider1-foto" src="fotos/museumfoto1.jpg" alt="...........................">
-                    </section>
-                </section>
-
-                <section class="swiper-slide">
-                    <section class="foto-slider-content">
-                        <img class="slider1-foto" src="fotos/museumfoto2.jpg" alt="...........................">
-                    </section>
-                </section>
-
-                <section class="swiper-slide">
-                    <section class="foto-slider-content">
-                        <img class="slider1-foto" src="fotos/museumfoto3.jpg" alt="...........................">
-                    </section>
-                </section>
-
-                <section class="swiper-slide">
-                    <section class="foto-slider-content">
-                        <img class="slider1-foto" src="fotos/museumfoto4.jpg" alt="...........................">
-                    </section>
-                </section>
-
-            </section>
-
-            <section class="swiper-pagination"></section>
-
-            <section class="swiper-button-prev"></section>
-            <section class="swiper-button-next"></section>
-
-        </article>
-
-        <section class="container">
-
-            <article class="swiper foto-slider">
-
-                <section class="swiper-wrapper">
-
-
-                    <section class="swiper-slide">
-                        <section class="foto-slider-content">
-                            slider stuff hier
-                        </section>
-                    </section>
-
-                    <section class="swiper-slide">
-                        <section class="foto-slider-content">
-                            slider stuff hier
-                        </section>
-                    </section>
-
-                    <section class="swiper-slide">
-                        <section class="foto-slider-content">
-                            slider stuff hier
-                        </section>
-                    </section>
-
-                </section>
-
-                <section class="swiper-pagination"></section>
-
-                <section class="swiper-button-prev"></section>
-                <section class="swiper-button-next"></section>
-
-            </article>
-
-        </section>
-    </section>
-
+    
+    
     <!-- Geschiedenis -->
 
+    <section id="history" class="container">
+
+        <article class="history">
+    
+                <section class="hirstory-left">
+                    <img class="history-img" src="fotos/nvgm-kamer.jpg" alt="">
+                </section>
+    
+    
+                <section class="history-right">
+    
+                    <h2>De geschiedenis van het museum</h2>
+                    <p>het is toen en toen opgericht, veel verhuisd, vrijwiligers. <br> dat soort dingen maar dan in n mooi verhaaltje
+                    </p>
+                </section>
+    
+            </article>
+    
+        </section>
+    <!-- FOTO SLIDER -->
+
+    
     <section class="container">
 
+    <article class="watTeDoen">
 
-    </section>
+        <section class="watTeDoen-slider">
+        <section class="watTeDoen-text">
+            <h2>Wat is er te doen</h2>
+            
+            <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten voor jou klaar staan! <br>
+                Er zijn wel 327 unieke speelplekken, dit maakt ons het museum met de grootste arcade van heel Europa!</p>
+        </section>
+    
+            <section class="slideshow">
+    
+                <section class="mySlides fade">
+                    <section class="numbertext">1 / 3</section>
+                    <img src="fotos/nvgm-ingang.JPG" style="width:100%">
+                    <section class="text"> Bij de ingang van het museum, vind je meteen arcades  die je allemaal kan testen!</section>
+                </section>
+    
+                <section class="mySlides fade">
+                    <section class="numbertext">2 / 3</section>
+                    <img src="fotos/nvgm-info.JPG" style="width:100%">
+                    <section class="text">In het hele museum hangen ook informatie borden, zo valt spelen en leren te combineren!</section>
+                </section>
+    
+                <section class="mySlides fade">
+                    <section class="numbertext">3 / 3</section>
+                    <img src="fotos/nvgm-races.JPG" style="width:100%">
+                    <section class="text">Er valt veel te beleven, van playstation games tot just dance maar ook bijvoorbeeld races !</section>
+                </section>
+    
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+    
+            </section>
+            <br>
+    
+            <section style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </section>
+
+        </section>
+        
+
+
+    </article>
+
 
     <!-- FOOTER -->
 
@@ -243,7 +247,7 @@ require_once "languages/language-" . $lang . '.php';
             <article class="footer">
 
                 <section class="footer-1">
-                    <img class="logo-footer" src="fotos/logo.png"
+                    <img class="logo-footer" src="fotos/logo.svg"
                         alt="foto van het logo van het nationaal videogame museum in Zoetermeer">
                     <form id="emailForm">
                         <p class="formText1">Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in
@@ -262,7 +266,7 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="footer-2">
 
-                    <h3>Links</h3>
+                    <h3>Navigatie</h3>
 
                     <section class="footer-2_Links">
                         <ul class="websiteLinks">
@@ -285,28 +289,37 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="contactGevens">
                     <h3>Contact</h3>
-                    <p class="contact-links"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                    <p class="contact-links"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
+                    <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
+                    <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
                         info@nationaalvideogamemuseum.nl</p>
-                    <p> Adress: Theaterplein 11 <br> 2711 EK Zoetermeer​</p>
+                    <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>: Theaterplein
+                        11 <br> 2711 EK Zoetermeer​</p>
 
 
                     <section class="socials">
-                        <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </a>
+                        <h4>Volg het NVMGM</h4>
 
-                        <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
-                            <i class="fa-brands fa-square-facebook"></i>
-                        </a>
+                        <section class="social-media">
 
-                        <a href="https://twitter.com/NaVGMuseum" target="_blank">
-                            <i class="fa-brands fa-square-twitter"></i>
-                        </a>
+                            <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
 
-                        <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
-                            target="_blank"><i class="fa-brands fa-square-youtube"></i>
-                        </a>
+                            <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+
+                            <a href="https://twitter.com/NaVGMuseum" target="_blank">
+                                <i class="fa-brands fa-square-twitter"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
+                                target="_blank"><i class="fa-brands fa-square-youtube"></i>
+                            </a>
+
+                        </section>
+
+
                     </section>
 
 
@@ -346,21 +359,21 @@ require_once "languages/language-" . $lang . '.php';
 
             <article class="footerPolicys">
 
+                <section class="footerPolicys-content">
+
+                    <p>Copyright © Nationaal Videogame Museum </p>
+
+                    <section class="policy-links">
+                        <a href="">Algemene voorwaarden</a>
+                        <a href="">Cookie instellingen</a>
+                        <a href="">Privacy verklaring</a>
+                    </section>
+
+                </section>
+
             </article>
 
             <!-- FOOTER POLICYS -->
-
-            <section class="footerPolicys-content container">
-
-                <p>Copyright © Nationaal Videogame Museum </p>
-
-                <section class="policy-links">
-                    <a href="">Algemene voorwaarden</a>
-                    <a href="">Cookie instellingen</a>
-                    <a href="">Privacy verklaring</a>
-                </section>
-
-            </section>
 
             </article>
         </section>

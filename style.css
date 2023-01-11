@@ -5,8 +5,8 @@
 }
 
 body{
-    background-color: #28282B;
-    color: #fff;
+    background-image: linear-gradient(to bottom, #86bbd8, #67a6d0, #4c91c8, #367bbf, #2964b3, #2a57ac, #2f4aa4, #363c9b, #3e3497, #462c93, #4d218e, #541388);
+    color: #86BBD8;
 }
 
 html{
@@ -23,12 +23,11 @@ html{
 
 header{
     width: 100%;
-    background-color: #171717;
+    background-color: #0C120C;
 }
 
 .header-wrapper{
     min-height: 126px;
-
 }
 
 .header--fixed{
@@ -76,12 +75,14 @@ nav a{
     flex-direction: column;
     font-size: 16px;
     margin: 0 15px 0 15px;
+
+    color: white;
 }
 
 .lang-selector select{
     font-size: 14px;
     color: #D3D3D3;
-    background: #171717;
+    background: #0C120C;
     border-radius: 4px;
     border: 1px solid #D3D3D3;
     outline: none;
@@ -92,14 +93,15 @@ nav a{
 
 
 .lang-selector select > *{
-    background-color: #171717;
+    background-color: #0C120C;
 }
 
     /* HOMEPAGE */
 
 #home{
-    background-image: url(fotos/foto1-test.png);
+    background-image: url(fotos/achtergrond-home.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     min-height: 84vh;
 }
@@ -129,7 +131,7 @@ p{
     margin-top: 20px;
     padding: 10px;
     border-radius: 4px;
-    background-color: #171717;
+    background-color: #0C120C;
     font-size: 60px;
     font-weight: 400;
     color: white;
@@ -146,6 +148,8 @@ p{
     border: 3px solid black;
     border-radius: 4px;
 }
+
+/* TICKETS BUTTON BLAUW */
 
 .tickets-btn{
     width: 100%;
@@ -205,23 +209,36 @@ p{
 .arrow-down{
     width: 100px;
     display: block;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+/* CONTENT IN HET ALGEMEEN */
+.about h2, .history h2, .watTeDoen h2{
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.about p, .history p, .watTeDoen p{
+    font-size: 18px;
+    margin-bottom: 12px;
 }
 
 /* ABOUT PAGE */
 
 .about{
-    margin: 50px 0;
+    margin: 150px 0;
     display: flex;
 }
 
-#over-img{
-    background-image: url(fotos/voorbeeld.webp);
+.about-img{
     height: 450px;
     width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
@@ -229,22 +246,133 @@ p{
     width: 50% ;
 }
 
+/* GESCHIEDENIS */
 
-    /* FOTO SLIDER */
+.history{
+display: flex;
+margin: 150px 0;
+}
 
-    .slider1-foto{
-        height: 600px;
+.history-img{
+height: 450px;
+width: 100%;
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.history-left, .history-right{
+width: 50%;
+}
+
+
+/* FOTO SLIDER */
+
+.watTeDoen{
+    display: flex;
+    flex-direction: column;
+}
+
+.watTeDoen-slider{
+    width: 60%;
+
+}
+
+.watTeDoen-text{
+    text-align: center;
+}
+
+.mySlides{
+    display: none}
+
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
     }
+
+    .dot {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #717171;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #bbb;
+    }
+    
+    .fade {
+      animation-name: fade;
+      animation-duration: 1s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
 
     /* FOOTER */
 
-footer{
+#footer{
     padding: 30px 0;
     width: 100%;
-    background-color: #171717;
-    color: white;
+    background-color: #0C120C;
+    color: #bababa;
     font-size: 16px;
+}
 
+h2, h3, h4{
+    color: #FEFEFA;
+    font-weight: 500;
 }
 
 .footer{
@@ -303,12 +431,12 @@ input[type=text] {
 }
 
 .websiteLinks > a{
-    color: white;
+    color: #bababa;
     margin: 4px 0;
 }
 
 .websiteLinks a:hover {
-    color: #bababa;
+    color: white;
 }
 
     /* FOOTER COL 3 */
@@ -321,19 +449,25 @@ input[type=text] {
     margin: 50px 0;
 }
 
-.contact-links a{
+.contact-items{
+    margin: 5px 0 ;
+}
+
+.contact-items a{
     color: #0D54B9;
 }
 
 .socials{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 12px;
 }
 
-.socials > a{
+.social-media > a{
     color: white;
-    font-size: 24px;
-    margin: 12px 16px 0 0;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 5px;
 }
 
 /* FOOTER COL 4 */ 
@@ -354,14 +488,14 @@ input[type=text] {
 .tijdsblok-btn{
     margin: 10px 0 0 10px;
     font-size: 14px;
-    color: gray;
-    text-decoration-color: gray;
+    color: #565656;
+    text-decoration-color: #565656
 }
 
     /* FOOTER POLICYS */
 
 .footerPolicys{
-    background-color: #171717;
+    background-color: #0C120C;
     font-size: 14px;
 }
 
@@ -370,11 +504,12 @@ input[type=text] {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    color: white;
 }
 
 .policy-links a{
-    color: white;
     margin: 0 0 0 12px;
+    color: white;
 }
 
 
