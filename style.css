@@ -5,8 +5,8 @@
 }
 
 body{
-    background: #28282b;
-    color: #EEF4ED;
+    background-image: linear-gradient(to bottom, #86bbd8, #67a6d0, #4c91c8, #367bbf, #2964b3, #2a57ac, #2f4aa4, #363c9b, #3e3497, #462c93, #4d218e, #541388);
+    color: #86BBD8;
 }
 
 html{
@@ -75,6 +75,8 @@ nav a{
     flex-direction: column;
     font-size: 16px;
     margin: 0 15px 0 15px;
+
+    color: white;
 }
 
 .lang-selector select{
@@ -217,13 +219,14 @@ p{
 }
 
 /* CONTENT IN HET ALGEMEEN */
-.about h2, .history h2{
+.about h2, .history h2, .watTeDoen h2{
     font-size: 36px;
     margin-bottom: 12px;
 }
 
-.about p, .history p{
+.about p, .history p, .watTeDoen p{
     font-size: 18px;
+    margin-bottom: 12px;
 }
 
 /* ABOUT PAGE */
@@ -265,10 +268,16 @@ width: 50%;
 
 .watTeDoen{
     display: flex;
+    flex-direction: column;
 }
 
-.watTeDoen-slider, .watTeDoen-text{
-    width: 50%;
+.watTeDoen-slider{
+    width: 60%;
+
+}
+
+.watTeDoen-text{
+    text-align: center;
 }
 
 .mySlides{
@@ -294,26 +303,23 @@ width: 50%;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: rgba(0,0,0,0.8);
 }
 
 .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
 
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-
-    .text {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
-    }
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
 
     .numbertext {
       color: #f2f2f2;
@@ -356,7 +362,7 @@ width: 50%;
 
     /* FOOTER */
 
-footer{
+#footer{
     padding: 30px 0;
     width: 100%;
     background-color: #0C120C;

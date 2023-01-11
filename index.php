@@ -191,52 +191,53 @@ require_once "languages/language-" . $lang . '.php';
     
     <section class="container">
 
-    <section class="watTeDoen">
+    <article class="watTeDoen">
 
-        <article class="watTeDoen-slider">
+        <section class="watTeDoen-slider">
+        <section class="watTeDoen-text">
+            <h2>Wat is er te doen</h2>
+            
+            <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten voor jou klaar staan! <br>
+                Er zijn wel 327 unieke speelplekken, dit maakt ons het museum met de grootste arcade van heel Europa!</p>
+        </section>
     
-            <div class="slideshow">
+            <section class="slideshow">
     
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
+                <section class="mySlides fade">
+                    <section class="numbertext">1 / 3</section>
                     <img src="fotos/nvgm-ingang.JPG" style="width:100%">
-                    <div class="text"> Bij de ingang van het museum, vind je meteen arcades  die je allemaal kan testen!</div>
-                </div>
+                    <section class="text"> Bij de ingang van het museum, vind je meteen arcades  die je allemaal kan testen!</section>
+                </section>
     
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
+                <section class="mySlides fade">
+                    <section class="numbertext">2 / 3</section>
                     <img src="fotos/nvgm-info.JPG" style="width:100%">
-                    <div class="text">In het hele museum hangen ook informatie borden, zo valt spelen en leren te combineren!</div>
-                </div>
+                    <section class="text">In het hele museum hangen ook informatie borden, zo valt spelen en leren te combineren!</section>
+                </section>
     
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
+                <section class="mySlides fade">
+                    <section class="numbertext">3 / 3</section>
                     <img src="fotos/nvgm-races.JPG" style="width:100%">
-                    <div class="text">Er valt veel te beleven, van playstation games tot just dance maar ook bijvoorbeeld races !</div>
-                </div>
+                    <section class="text">Er valt veel te beleven, van playstation games tot just dance maar ook bijvoorbeeld races !</section>
+                </section>
     
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
     
-            </div>
+            </section>
             <br>
     
-            <div style="text-align:center">
+            <section style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-    
-        </article>
-        <article class="watTeDoen-text">
-            
-        </article>
+            </section>
 
-    </section>
+        </section>
         
 
 
-    </section>
+    </article>
 
 
     <!-- FOOTER -->
