@@ -33,7 +33,7 @@ require_once "languages/language-" . $lang . '.php';
             <section class="container">
 
                 <section id="navBar" class="nav-bar">
-                    <img class="logo" src="fotos/LOGOTEST.svg" alt="logo van het nationaal video game museum">
+                    <img class="logo" src="fotos/logo.svg" alt="logo van het nationaal video game museum">
                     <nav class="nav-menu">
 
                         <a href="#home">
@@ -140,11 +140,11 @@ require_once "languages/language-" . $lang . '.php';
 
 
     <!-- ABOUT PAGE -->
-
-
-    <section class="container">
-        <article id="over" class="about">
-
+    
+    
+    <section id="over" class="container">
+        <article class="about">
+            
             <section class="about-left">
                 <h2>Over het Nationaal videogame museum</h2>
                 <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven
@@ -155,61 +155,89 @@ require_once "languages/language-" . $lang . '.php';
                     delen.
                 </p>
             </section>
-
-
+            
+            
             <section class="about-right">
-                <section id="over-img"></section>
+                <img class="about-img" src="fotos/nvgm-ingang.JPG" alt="">
             </section>
-
+            
         </article>
     </section>
-
-
-    <!-- FOTO SLIDER -->
-
-
-    <section class="container">
-
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="fotos/nvgm-ingang.JPG" style="width:100%">
-                <div class="text">.....</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="fotos/nvgm-info.JPG" style="width:100%">
-                <div class="text">.....</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="fotos/nvgm-races.JPG" style="width:100%">
-                <div class="text">.....</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-    </section>
-
+    
+    
     <!-- Geschiedenis -->
 
+    <section id="history" class="container">
+
+        <article class="history">
+    
+                <section class="hirstory-left">
+                    <img class="history-img" src="fotos/nvgm-kamer.jpg" alt="">
+                </section>
+    
+    
+                <section class="history-right">
+    
+                    <h2>De geschiedenis van het museum</h2>
+                    <p>het is toen en toen opgericht, veel verhuisd, vrijwiligers. <br> dat soort dingen maar dan in n mooi verhaaltje
+                    </p>
+                </section>
+    
+            </article>
+    
+        </section>
+    <!-- FOTO SLIDER -->
+
+    
     <section class="container">
+
+    <section class="watTeDoen">
+
+        <article class="watTeDoen-slider">
+    
+            <div class="slideshow">
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="fotos/nvgm-ingang.JPG" style="width:100%">
+                    <div class="text"> Bij de ingang van het museum, vind je meteen arcades  die je allemaal kan testen!</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="fotos/nvgm-info.JPG" style="width:100%">
+                    <div class="text">In het hele museum hangen ook informatie borden, zo valt spelen en leren te combineren!</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="fotos/nvgm-races.JPG" style="width:100%">
+                    <div class="text">Er valt veel te beleven, van playstation games tot just dance maar ook bijvoorbeeld races !</div>
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+    
+            </div>
+            <br>
+    
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+    
+        </article>
+        <article class="watTeDoen-text">
+            
+        </article>
+
+    </section>
+        
 
 
     </section>
+
 
     <!-- FOOTER -->
 
@@ -218,7 +246,7 @@ require_once "languages/language-" . $lang . '.php';
             <article class="footer">
 
                 <section class="footer-1">
-                    <img class="logo-footer" src="fotos/logo.png"
+                    <img class="logo-footer" src="fotos/logo.svg"
                         alt="foto van het logo van het nationaal videogame museum in Zoetermeer">
                     <form id="emailForm">
                         <p class="formText1">Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in
@@ -263,7 +291,7 @@ require_once "languages/language-" . $lang . '.php';
                     <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
                     <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
                         info@nationaalvideogamemuseum.nl</p>
-                    <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adress</a>: Theaterplein
+                    <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>: Theaterplein
                         11 <br> 2711 EK Zoetermeer​</p>
 
 
