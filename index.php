@@ -147,9 +147,7 @@ require_once "languages/language-" . $lang . '.php';
             
             <section class="about-left">
                 <h2>Over het Nationaal videogame museum</h2>
-                <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven
-                    over
-                    videogames.
+                <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven over videogames.
                     Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
                     Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
                     delen.
@@ -197,8 +195,8 @@ require_once "languages/language-" . $lang . '.php';
         <section class="watTeDoen-text">
             <h2>Wat is er te doen</h2>
             
-            <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten voor jou klaar staan! <br>
-                Er zijn wel 327 unieke speelplekken, dit maakt ons het museum met de grootste arcade van heel Europa!</p>
+            <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten klaar staan! <br>
+                Er zijn wel 327 unieke speelplekken, dit maakt ons het grootste arcade museum van heel Europa!</p>
         </section>
     
             <section class="slideshow">
