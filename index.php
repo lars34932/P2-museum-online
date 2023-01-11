@@ -11,15 +11,14 @@ require_once "languages/language-" . $lang . '.php';
 
 <head>
     <meta charset="UTF-8">
+    <title>Museum website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ynx2yjc.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="fotos/web-icon.svg" />
-    <title>Museum website</title>
 </head>
 
 
@@ -140,104 +139,125 @@ require_once "languages/language-" . $lang . '.php';
 
 
     <!-- ABOUT PAGE -->
-    
-    
+
+
     <section id="over" class="container">
         <article class="about">
-            
+
             <section class="about-left">
                 <h2>Over het Nationaal videogame museum</h2>
-                <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven over videogames.
+                <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven over
+                    videogames.
                     Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
                     Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
                     delen.
                 </p>
             </section>
-            
-            
+
+
             <section class="about-right">
                 <img class="about-img" src="fotos/nvgm-ingang.JPG" alt="">
             </section>
-            
+
         </article>
     </section>
-    
-    
+
+
     <!-- Geschiedenis -->
 
     <section id="history" class="container">
 
         <article class="history">
-    
-                <section class="hirstory-left">
-                    <img class="history-img" src="fotos/nvgm-kamer.jpg" alt="">
-                </section>
-    
-    
-                <section class="history-right">
-    
-                    <h2>De geschiedenis van het museum</h2>
-                    <p>het is toen en toen opgericht, veel verhuisd, vrijwiligers. <br> dat soort dingen maar dan in n mooi verhaaltje
-                    </p>
-                </section>
-    
-            </article>
-    
-        </section>
-    <!-- FOTO SLIDER -->
 
-    
+            <section class="hirstory-left">
+                <img class="history-img" src="fotos/nvgm-kamer.jpg" alt="">
+            </section>
+
+
+            <section class="history-right">
+
+                <h2>De geschiedenis van het museum</h2>
+                <p>het is toen en toen opgericht, veel verhuisd, vrijwiligers. <br> dat soort dingen maar dan in n mooi
+                    verhaaltje
+                </p>
+            </section>
+
+        </article>
+
+    </section>
+
+
+
+
     <section class="container">
 
-    <article class="watTeDoen">
+        <!-- FOTO SLIDER -->
 
-        <section class="watTeDoen-slider">
-        <section class="watTeDoen-text">
+        <article class="watTeDoen">
+
             <h2>Wat is er te doen</h2>
-            
-            <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten klaar staan! <br>
-                Er zijn wel 327 unieke speelplekken, dit maakt ons het grootste arcade museum van heel Europa!</p>
-        </section>
-    
-            <section class="slideshow">
-    
-                <section class="mySlides fade">
-                    <section class="numbertext">1 / 3</section>
-                    <img src="fotos/nvgm-ingang.JPG" style="width:100%">
-                    <section class="text"> Bij de ingang van het museum, vind je meteen arcades  die je allemaal kan testen!</section>
+
+            <section class="watTeDoen-content">
+
+                <section class="watTeDoen-slider">
+
+                    <section class="slideshow">
+
+                        <section class="mySlides fade">
+                            <section class="numbertext">1 / 3</section>
+                            <img src="fotos/nvgm-ingang.JPG" style="width:100%">
+                            <section class="text"> Bij de ingang van het museum, vind je meteen arcades die je allemaal
+                                kan
+                                testen!</section>
+                        </section>
+
+                        <section class="mySlides fade">
+                            <section class="numbertext">2 / 3</section>
+                            <img src="fotos/nvgm-info.JPG" style="width:100%">
+                            <section class="text">In het hele museum hangen ook informatie borden, zo valt spelen en
+                                leren
+                                te combineren!</section>
+                        </section>
+
+                        <section class="mySlides fade">
+                            <section class="numbertext">3 / 3</section>
+                            <img src="fotos/nvgm-races.JPG" style="width:100%">
+                            <section class="text">Er valt veel te beleven, van playstation games tot just dance maar ook
+                                bijvoorbeeld races !</section>
+                        </section>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    </section>
+                    <br>
+
+                    <section style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </section>
+
                 </section>
-    
-                <section class="mySlides fade">
-                    <section class="numbertext">2 / 3</section>
-                    <img src="fotos/nvgm-info.JPG" style="width:100%">
-                    <section class="text">In het hele museum hangen ook informatie borden, zo valt spelen en leren te combineren!</section>
+
+                <section class="watTeDoen-text">
+
+                    <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten klaar staan! <br>
+                        Er zijn wel 327 unieke speelplekken, dit maakt ons het grootste arcade museum van heel Europa!
+                    </p>
                 </section>
-    
-                <section class="mySlides fade">
-                    <section class="numbertext">3 / 3</section>
-                    <img src="fotos/nvgm-races.JPG" style="width:100%">
-                    <section class="text">Er valt veel te beleven, van playstation games tot just dance maar ook bijvoorbeeld races !</section>
-                </section>
-    
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-    
+
             </section>
-            <br>
-    
-            <section style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </section>
-
-        </section>
-        
 
 
-    </article>
+        </article>
+
+        <article class="reviews">
 
 
+        </article>
+
+    </section>
     <!-- FOOTER -->
 
     <footer id="footer">
@@ -290,7 +310,8 @@ require_once "languages/language-" . $lang . '.php';
                     <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
                     <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
                         info@nationaalvideogamemuseum.nl</p>
-                    <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>: Theaterplein
+                    <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>:
+                        Theaterplein
                         11 <br> 2711 EK Zoetermeer​</p>
 
 
@@ -377,7 +398,6 @@ require_once "languages/language-" . $lang . '.php';
         </section>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/dc84d7a956.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>

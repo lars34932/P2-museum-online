@@ -238,13 +238,10 @@ p{
 
 .about-img{
     height: 450px;
-    width: 100%;
+    width: 660px;
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
-.about-left, .about-right{
-    width: 50% ;
-}
 
 /* GESCHIEDENIS */
 
@@ -266,22 +263,27 @@ width: 50%;
 
 /* FOTO SLIDER */
 
-.watTeDoen{
+.watTeDoen h2{
+    text-align: center;
+    margin: 0 0 12px 0;
+}
+
+.watTeDoen-content{
     display: flex;
-    flex-direction: column;
+    gap: 32px;
 }
 
 .watTeDoen-slider{
     width: 60%;
-
 }
 
 .watTeDoen-text{
-    text-align: center;
+    width: 40%;
 }
 
 .mySlides{
-    display: none}
+    display: none
+}
 
 
 .slideshow {
