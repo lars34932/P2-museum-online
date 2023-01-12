@@ -14,7 +14,6 @@ export class GameRenderer
     {
         let ctx = this.ctx
         let hill = document.getElementById("molehill")
-        let head = document.getElementById("molehead")
         ctx.fillStyle = "green";
         ctx.fillRect(0,0,600,700);
         ctx.fillStyle = "black";
@@ -22,21 +21,6 @@ export class GameRenderer
         ctx.drawImage(hill, 25, 200);
         ctx.drawImage(hill, 225, 200);
         ctx.drawImage(hill, 425, 200);
-
-        //tijdelijk om te testen//
-        ctx.drawImage(head, 43, 133)
-        ctx.drawImage(head, 243, 133)
-        ctx.drawImage(head, 443, 133)
-        //.//
-        ctx.drawImage(head, 43, 333)
-        ctx.drawImage(head, 243, 333)
-        ctx.drawImage(head, 443, 333)
-        //.//
-        ctx.drawImage(head, 43, 533)
-        ctx.drawImage(head, 243, 533)
-        ctx.drawImage(head, 443, 533)
-        //.//
-
         ctx.fill();
         ctx.beginPath();
         ctx.drawImage(hill, 25, 400);
@@ -59,7 +43,41 @@ export class GameRenderer
     mollen()
     {
         let ctx = this.ctx
-        console.log(this.logic.mol)
+        let head = document.getElementById("molehead")
+        this.logic.nextmole -= 33;
+        if (this.logic.nextmole <= 0) {
+            this.logic.nextmole = this.logic.nextmoletime
+            console.log(this.logic.mol)
+            let number = this.logic.mol
+            if (number == 1){
+                ctx.drawImage(head, 43, 133)  
+            }
+            else if (number == 2){
+                ctx.drawImage(head, 243, 133)
+            }
+            else if (number == 3){
+                ctx.drawImage(head, 443, 133)
+            }
+            else if (number == 4){
+                ctx.drawImage(head, 43, 333)
+            }
+            else if (number == 5){
+                ctx.drawImage(head, 243, 333)
+            }
+            else if (number == 6){
+                ctx.drawImage(head, 443, 333)
+            }
+            else if (number == 7){
+                ctx.drawImage(head, 43, 533)
+            }
+            else if (number == 8){
+                ctx.drawImage(head, 243, 533)
+            }
+            else if (number == 9){
+                ctx.drawImage(head, 443, 533)
+            }
+            
+        }
     }
 
     levens()
