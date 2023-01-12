@@ -13,23 +13,40 @@ export class GameRenderer
     render()
     {
         let ctx = this.ctx
+        let hill = document.getElementById("molehill")
+        let head = document.getElementById("molehead")
         ctx.fillStyle = "green";
         ctx.fillRect(0,0,600,700);
         ctx.fillStyle = "black";
         ctx.beginPath();
-        ctx.arc(100, 200, 50, 0, 2 * Math.PI);
-        ctx.arc(300, 200, 50, 0, 2 * Math.PI);
-        ctx.arc(500, 200, 50, 0, 2 * Math.PI);
+        ctx.drawImage(hill, 25, 200);
+        ctx.drawImage(hill, 225, 200);
+        ctx.drawImage(hill, 425, 200);
+
+        //tijdelijk om te testen//
+        ctx.drawImage(head, 43, 133)
+        ctx.drawImage(head, 243, 133)
+        ctx.drawImage(head, 443, 133)
+        //.//
+        ctx.drawImage(head, 43, 333)
+        ctx.drawImage(head, 243, 333)
+        ctx.drawImage(head, 443, 333)
+        //.//
+        ctx.drawImage(head, 43, 533)
+        ctx.drawImage(head, 243, 533)
+        ctx.drawImage(head, 443, 533)
+        //.//
+
         ctx.fill();
         ctx.beginPath();
-        ctx.arc(100, 400, 50, 0, 2 * Math.PI);
-        ctx.arc(300, 400, 50, 0, 2 * Math.PI);
-        ctx.arc(500, 400, 50, 0, 2 * Math.PI);
+        ctx.drawImage(hill, 25, 400);
+        ctx.drawImage(hill, 225, 400);
+        ctx.drawImage(hill, 425, 400);
         ctx.fill();
         ctx.beginPath();
-        ctx.arc(100, 600, 50, 0, 2 * Math.PI);
-        ctx.arc(300, 600, 50, 0, 2 * Math.PI);
-        ctx.arc(500, 600, 50, 0, 2 * Math.PI);
+        ctx.drawImage(hill, 25, 600);
+        ctx.drawImage(hill, 225, 600);
+        ctx.drawImage(hill, 425, 600);
         ctx.fill();
         ctx.font = "30px Arial";
         ctx.fillText("whack-a-mole", 200, 50);
