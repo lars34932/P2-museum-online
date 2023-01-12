@@ -21,7 +21,9 @@ class Game
     doGameFrame()
     {
         this.logic.logic();
+        this.logic.mollen();
         this.renderer.render();
+        this.renderer.mollen();
         this.renderer.levens();
     }
 }

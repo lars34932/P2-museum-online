@@ -4,6 +4,10 @@ export class GameLogic
     {
         this.game = game;
         this.levens = 3;
+        this.nextmoletime = 1000
+        this.nextmole = this.nextmoletime;
+        this.mol = 0;
+        console.log(this.mol);
     }
 
     mouseMoved(event)
@@ -17,4 +21,16 @@ export class GameLogic
     {
 
     }
+
+    mollen() {
+        this.nextmole -= 33;
+        if (this.nextmole <= 0) {
+            this.nextmole = this.nextmoletime
+            let number = Math.floor(Math.random() * 9);
+            this.mol = number;
+            
+        }
+    }
+
+
 }

@@ -4,7 +4,7 @@ export class GameRenderer
 {
     constructor(game)
     {
-        this.logic = new GameLogic(this);
+        this.logic = game.logic;
         this.game = game;
         this.c = document.getElementById("myCanvas");
         this.ctx = this.c.getContext("2d");
@@ -54,6 +54,12 @@ export class GameRenderer
         ctx.fillStyle = "#leca07";
         ctx.fillRect(this.game.x, this.game.y, 10, 10);
         ctx.fill();
+    }
+
+    mollen()
+    {
+        let ctx = this.ctx
+        console.log(this.logic.mol)
     }
 
     levens()
