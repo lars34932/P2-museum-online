@@ -462,15 +462,18 @@ input[type=text] {
 .socials{
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
 }
 
 .social-media > a{
+    display: flex;
+    flex-direction: column;
     color: white;
     font-size: 22px;
     text-decoration: none;
     margin-right: 5px;
 }
+
+.social-media
 
 /* FOOTER COL 4 */ 
 

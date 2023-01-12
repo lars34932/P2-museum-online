@@ -141,25 +141,29 @@ require_once "languages/language-" . $lang . '.php';
     <!-- ABOUT PAGE -->
 
 
-    <section id="over" class="container">
-        <article class="about">
+    <section id="over">
+        <section class="container">
 
-            <section class="about-left">
-                <h2>Over het Nationaal videogame museum</h2>
-                <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven over
-                    videogames.
-                    Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
-                    Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
-                    delen.
-                </p>
-            </section>
+            <article class="about">
+    
+                <section class="about-left">
+                    <h2>Over het Nationaal videogame museum</h2>
+                    <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven over
+                        videogames.
+                        Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
+                        Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
+                        delen.
+                    </p>
+                </section>
+    
+    
+                <section class="about-right">
+                    <img class="about-img" src="fotos/nvgm-ingang.JPG" alt="">
+                </section>
+    
+            </article>
 
-
-            <section class="about-right">
-                <img class="about-img" src="fotos/nvgm-ingang.JPG" alt="">
-            </section>
-
-        </article>
+        </section>
     </section>
 
 
@@ -283,67 +287,45 @@ require_once "languages/language-" . $lang . '.php';
                 </section>
 
                 <section class="footer-2">
+                    <section class="contactGevens">
+                        <h3>Contact</h3>
+                        <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
+                        <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
+                            info@nationaalvideogamemuseum.nl</p>
+                        <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>:
+                            Theaterplein 11 <br> 2711 EK Zoetermeer​ </p>
 
-                    <h3>Navigatie</h3>
 
-                    <section class="footer-2_Links">
-                        <ul class="websiteLinks">
-                            <a href="">Home</a>
-                            <a href="">Tickets</a>
-                            <a href="">Geschiedenis</a>
-                            <a href="">Foto's</a>
-                            <a href="">Openingstijden</a>
-                            <a href="">Contact</a>
-                        </ul>
-
-                        <ul class="websiteLinks">
-                            <a href="">item 7</a>
-                            <a href="">item 8</a>
-                            <a href="">item 9</a>
-                        </ul>
                     </section>
+                </section>
 
-                </section class="footer-3">
-
-                <section class="contactGevens">
-                    <h3>Contact</h3>
-                    <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                    <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
-                        info@nationaalvideogamemuseum.nl</p>
-                    <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>:
-                        Theaterplein
-                        11 <br> 2711 EK Zoetermeer​</p>
-
-
+                <section class="footer-3">
                     <section class="socials">
                         <h4>Volg het NVMGM</h4>
-
+    
                         <section class="social-media">
-
+    
                             <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
-                                <i class="fa-brands fa-square-instagram"></i>
+                                <i class="fa-brands fa-square-instagram">Instagram</i>
                             </a>
-
+    
                             <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
-                                <i class="fa-brands fa-square-facebook"></i>
+                                <i class="fa-brands fa-square-facebook">Facebook</i>
                             </a>
-
+    
                             <a href="https://twitter.com/NaVGMuseum" target="_blank">
-                                <i class="fa-brands fa-square-twitter"></i>
+                                <i class="fa-brands fa-square-twitter">Twitter</i>
                             </a>
-
+    
                             <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
-                                target="_blank"><i class="fa-brands fa-square-youtube"></i>
+                                target="_blank"><i class="fa-brands fa-square-youtube">Youtube</i>
                             </a>
-
+    
                         </section>
-
-
+    
                     </section>
-
-
-
                 </section>
+
 
                 <section class="footer-4">
                     <h3>Openingstijden</h3>
