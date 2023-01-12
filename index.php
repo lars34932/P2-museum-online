@@ -141,123 +141,178 @@ require_once "languages/language-" . $lang . '.php';
     <!-- ABOUT PAGE -->
 
 
-    <section id="over" class="container">
-        <article class="about">
+    <section id="over">
+        <section class="container">
 
-            <section class="about-left">
-                <h2>Over het Nationaal videogame museum</h2>
-                <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven over
-                    videogames.
-                    Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
-                    Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
-                    delen.
-                </p>
-            </section>
+            <article class="about">
+
+                <section class="about-left">
+                    <h2>Over het Nationaal videogame museum</h2>
+                    <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven
+                        over
+                        videogames.
+                        Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
+                        Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
+                        delen.
+                    </p>
+                </section>
 
 
-            <section class="about-right">
-                <img class="about-img" src="fotos/nvgm-ingang.JPG" alt="">
-            </section>
+                <section class="about-right">
+                    <img class="about-img" src="fotos/nvgm-ingang.JPG" alt="">
+                </section>
 
-        </article>
+            </article>
+
+        </section>
     </section>
 
 
     <!-- Geschiedenis -->
 
-    <section id="history" class="container">
+    <section id="history">
+        <section class="container">
 
-        <article class="history">
+            <article class="history">
 
-            <section class="hirstory-left">
-                <img class="history-img" src="fotos/nvgm-kamer.jpg" alt="">
-            </section>
-
-
-            <section class="history-right">
-
-                <h2>De geschiedenis van het museum</h2>
-                <p>het is toen en toen opgericht, veel verhuisd, vrijwiligers. <br> dat soort dingen maar dan in n mooi
-                    verhaaltje
-                </p>
-            </section>
-
-        </article>
-
-    </section>
-
-
-
-
-    <section class="container">
-
-        <!-- FOTO SLIDER -->
-
-        <article class="watTeDoen">
-
-            <h2>Wat is er te doen</h2>
-
-            <section class="watTeDoen-content">
-
-                <section class="watTeDoen-slider">
-
-                    <section class="slideshow">
-
-                        <section class="mySlides fade">
-                            <section class="numbertext">1 / 3</section>
-                            <img src="fotos/nvgm-ingang.JPG" style="width:100%">
-                            <section class="text"> Bij de ingang van het museum, vind je meteen arcades die je allemaal
-                                kan
-                                testen!</section>
-                        </section>
-
-                        <section class="mySlides fade">
-                            <section class="numbertext">2 / 3</section>
-                            <img src="fotos/nvgm-info.JPG" style="width:100%">
-                            <section class="text">In het hele museum hangen ook informatie borden, zo valt spelen en
-                                leren
-                                te combineren!</section>
-                        </section>
-
-                        <section class="mySlides fade">
-                            <section class="numbertext">3 / 3</section>
-                            <img src="fotos/nvgm-races.JPG" style="width:100%">
-                            <section class="text">Er valt veel te beleven, van playstation games tot just dance maar ook
-                                bijvoorbeeld races !</section>
-                        </section>
-
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
-
-                    </section>
-                    <br>
-
-                    <section style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </section>
-
+                <section class="hirstory-left">
+                    <img class="history-img" src="fotos/nvgm-kamer.jpg" alt="">
                 </section>
 
-                <section class="watTeDoen-text">
 
-                    <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten klaar staan! <br>
-                        Er zijn wel 327 unieke speelplekken, dit maakt ons het grootste arcade museum van heel Europa!
+                <section class="history-right">
+
+                    <h2>De geschiedenis van het museum</h2>
+                    <p>het is toen en toen opgericht, veel verhuisd, vrijwiligers. <br> dat soort dingen maar dan in n
+                        mooi
+                        verhaaltje.
                     </p>
                 </section>
 
-            </section>
+            </article>
 
+        </section>
+    </section>
 
-        </article>
+    <!-- FOTO SLIDER -->
 
-        <article class="reviews">
+    <section id="watTeDoen">
 
+        <section class="container">
 
-        </article>
+            <article class="watTeDoen">
+
+                <h2>Wat is er te doen</h2>
+
+                <section class="watTeDoen-content">
+
+                    <section class="watTeDoen-slider">
+
+                        <section class="slideshow">
+
+                            <section class="mySlides fade">
+                                <section class="numbertext">1 / 3</section>
+                                <img src="fotos/nvgm-ingang.JPG" style="width:100%">
+                                <section class="text"> Bij de ingang van het museum, vind je meteen arcades die je
+                                    allemaal
+                                    kan
+                                    testen!</section>
+                            </section>
+
+                            <section class="mySlides fade">
+                                <section class="numbertext">2 / 3</section>
+                                <img src="fotos/nvgm-info.JPG" style="width:100%">
+                                <section class="text">In het hele museum hangen ook informatie borden, zo valt spelen en
+                                    leren
+                                    te combineren!</section>
+                            </section>
+
+                            <section class="mySlides fade">
+                                <section class="numbertext">3 / 3</section>
+                                <img src="fotos/nvgm-races.JPG" style="width:100%">
+                                <section class="text">Er valt veel te beleven, van playstation games tot just dance maar
+                                    ook
+                                    bijvoorbeeld races !</section>
+                            </section>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        </section>
+                        <br>
+
+                        <section style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </section>
+
+                    </section>
+
+                    <section class="watTeDoen-text">
+
+                        <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten klaar staan! <br>
+                            Er zijn wel 327 unieke speelplekken, dit maakt ons het grootste arcade museum van heel
+                            Europa!
+                        </p>
+                    </section>
+
+                </section>
+
+            </article>
+
+        </section>
 
     </section>
+
+
+    <!-- REVIEWS  -->
+    <section id="reviews">
+        <section class="container">
+
+            <article class="reviews">
+
+                <h2>Reviews over het NVGM</h2>
+
+                <section class="reviews-content">
+
+                    <section class="review">
+                        <section class="user">
+                            <img src="fotos/user-pic.png" alt="">
+                            <h3>Iona van Neerven</h3>
+                        </section>
+                        <p>Leuke dag gehad, was wel erg druk.</p>
+                        <p class="rev-stars"><span>✩✩✩</span>✩✩</p>
+                    </section>
+
+
+                    <section class="review">
+                        <section class="user">
+                            <img src="fotos/user-pic.png" alt="">
+                            <h3>Tiddo Stempher</h3>
+                        </section>
+                        <p>Leuk om te doen met gezin, veel lol gehad met mn zoontjes.</p>
+                        <p class="rev-stars"><span>✩✩✩✩✩</span></p>
+                    </section>
+
+
+                    <section class="review">
+                        <section class="user">
+                            <img src="fotos/user-pic.png" alt="">
+                            <h3>Franciska de Boom</h3>
+                        </section>
+                        <p>leuk dat er ook arcades zijn van vroeger, en dat gecombineerd met de games van nu.</p>
+                        <p class="rev-stars"><span>✩✩✩✩</span>✩</p>
+                    </section>
+
+                </section>
+
+            </article>
+
+        </section>
+    </section>
+
+
     <!-- FOOTER -->
 
     <footer id="footer">
@@ -286,115 +341,111 @@ require_once "languages/language-" . $lang . '.php';
 
                     <h3>Navigatie</h3>
 
-                    <section class="footer-2_Links">
-                        <ul class="websiteLinks">
-                            <a href="">Home</a>
-                            <a href="">Tickets</a>
-                            <a href="">Geschiedenis</a>
-                            <a href="">Foto's</a>
-                            <a href="">Openingstijden</a>
-                            <a href="">Contact</a>
-                        </ul>
-
-                        <ul class="websiteLinks">
-                            <a href="">item 7</a>
-                            <a href="">item 8</a>
-                            <a href="">item 9</a>
-                        </ul>
-                    </section>
-
-                </section class="footer-3">
-
-                <section class="contactGevens">
-                    <h3>Contact</h3>
-                    <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                    <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
-                        info@nationaalvideogamemuseum.nl</p>
-                    <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>:
-                        Theaterplein
-                        11 <br> 2711 EK Zoetermeer​</p>
-
-
-                    <section class="socials">
-                        <h4>Volg het NVMGM</h4>
-
-                        <section class="social-media">
-
-                            <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
-                                <i class="fa-brands fa-square-instagram"></i>
-                            </a>
-
-                            <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
-                                <i class="fa-brands fa-square-facebook"></i>
-                            </a>
-
-                            <a href="https://twitter.com/NaVGMuseum" target="_blank">
-                                <i class="fa-brands fa-square-twitter"></i>
-                            </a>
-
-                            <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
-                                target="_blank"><i class="fa-brands fa-square-youtube"></i>
-                            </a>
-
-                        </section>
-
-
-                    </section>
-
-
-
+                    <section class=" footer-2_Links">
+                    <ul class="websiteLinks">
+                        <a href="">Home</a>
+                        <a href="">Tickets</a>
+                        <a href="">Geschiedenis</a>
+                        <a href="">Foto's</a>
+                        <a href="">Openingstijden</a>
+                        <a href="">Contact</a>
+                    </ul>
                 </section>
 
-                <section class="footer-4">
-                    <h3>Openingstijden</h3>
+        </section>
 
-                    <section class="openingstijden">
-                        <section class="dagen">
-                            <p>maandag</p>
-                            <p>dinsdag</p>
-                            <p>woensdag</p>
-                            <p>donderdag</p>
-                            <p>vrijdag</p>
-                            <p>zaterdag</p>
-                            <p>zondag</p>
-                        </section>
 
-                        <section class="tijden">
-                            <p>gesloten</p>
-                            <p>gesloten</p>
-                            <p>10:00 - 18:00</p>
-                            <p>10:00 - 18:00</p>
-                            <p>10:00 - 21:00</p>
-                            <p>10:00 - 18:00</p>
-                            <p>12:00 - 18:00</p>
-                        </section>
+        <section class="footer-3">
+            <section class="contactGevens">
+                <h3>Contact</h3>
+                <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
+                <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
+                    info@nationaalvideogamemuseum.nl</p>
+                <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>:
+                    Theaterplein
+                    11 <br> 2711 EK Zoetermeer​</p>
+    
+    
+                <section class="socials">
+                    <h4>Volg het NVMGM</h4>
+    
+                    <section class="social-media">
+    
+                        <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+    
+                        <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+    
+                        <a href="https://twitter.com/NaVGMuseum" target="_blank">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+    
+                        <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
+                            target="_blank"><i class="fa-brands fa-square-youtube"></i>
+                        </a>
+    
                     </section>
-
-                    <a href="" class="tijdsblok-btn">Bekijk Tijdsblokken </a>
-
+    
                 </section>
 
-            </article>
+    
+            </section>
+        </section>
 
-            <article class="footerPolicys">
 
-                <section class="footerPolicys-content">
+        <section class="footer-4">
+            <h3>Openingstijden</h3>
 
-                    <p>Copyright © Nationaal Videogame Museum </p>
-
-                    <section class="policy-links">
-                        <a href="">Algemene voorwaarden</a>
-                        <a href="">Cookie instellingen</a>
-                        <a href="">Privacy verklaring</a>
-                    </section>
-
+            <section class="openingstijden">
+                <section class="dagen">
+                    <p>maandag</p>
+                    <p>dinsdag</p>
+                    <p>woensdag</p>
+                    <p>donderdag</p>
+                    <p>vrijdag</p>
+                    <p>zaterdag</p>
+                    <p>zondag</p>
                 </section>
 
-            </article>
+                <section class="tijden">
+                    <p>gesloten</p>
+                    <p>gesloten</p>
+                    <p>10:00 - 18:00</p>
+                    <p>10:00 - 18:00</p>
+                    <p>10:00 - 21:00</p>
+                    <p>10:00 - 18:00</p>
+                    <p>12:00 - 18:00</p>
+                </section>
+            </section>
 
-            <!-- FOOTER POLICYS -->
+            <a href="" class="tijdsblok-btn">Bekijk Tijdsblokken </a>
 
-            </article>
+        </section>
+
+        </article>
+
+        <article class="footerPolicys">
+
+            <section class="footerPolicys-content">
+
+                <p>Copyright © Nationaal Videogame Museum </p>
+
+                <section class="policy-links">
+                    <a href="">Algemene voorwaarden</a>
+                    <a href="">Cookie instellingen</a>
+                    <a href="">Privacy verklaring</a>
+                </section>
+
+            </section>
+
+        </article>
+
+        <!-- FOOTER POLICYS -->
+
+        </article>
         </section>
     </footer>
 
