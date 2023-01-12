@@ -167,6 +167,13 @@ require_once "languages/language-" . $lang . '.php';
         </section>
     </section>
 
+    <!-- CURVE -->
+
+    <svg class="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f5f5f5" fill-opacity="1"
+            d="M0,128L48,133.3C96,139,192,149,288,165.3C384,181,480,203,576,197.3C672,192,768,160,864,144C960,128,1056,128,1152,133.3C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
 
     <!-- Geschiedenis -->
 
@@ -178,7 +185,6 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="hirstory-left">
                     <img class="history-img" src="fotos/nvgm-kamer.jpg" alt="">
                 </section>
-
 
                 <section class="history-right">
 
@@ -194,12 +200,18 @@ require_once "languages/language-" . $lang . '.php';
         </section>
     </section>
 
+    <!-- CURVE -->
+
+    <svg class="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f5f5f5" fill-opacity="1"
+            d="M0,96L48,112C96,128,192,160,288,176C384,192,480,192,576,181.3C672,171,768,149,864,160C960,171,1056,213,1152,224C1248,235,1344,213,1392,202.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+    </svg>
+
     <!-- FOTO SLIDER -->
 
     <section id="watTeDoen">
-
         <section class="container">
-
             <article class="watTeDoen">
 
                 <h2>Wat is er te doen</h2>
@@ -262,11 +274,18 @@ require_once "languages/language-" . $lang . '.php';
             </article>
 
         </section>
-
     </section>
-
+    
+    <!-- CURVE -->
+    
+    <svg class="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f5f5f5" fill-opacity="1"
+            d="M0,256L48,256C96,256,192,256,288,245.3C384,235,480,213,576,208C672,203,768,213,864,213.3C960,213,1056,203,1152,186.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
 
     <!-- REVIEWS  -->
+
     <section id="reviews">
         <section class="container">
 
@@ -342,110 +361,110 @@ require_once "languages/language-" . $lang . '.php';
                     <h3>Navigatie</h3>
 
                     <section class=" footer-2_Links">
-                    <ul class="websiteLinks">
-                        <a href="">Home</a>
-                        <a href="">Tickets</a>
-                        <a href="">Geschiedenis</a>
-                        <a href="">Foto's</a>
-                        <a href="">Openingstijden</a>
-                        <a href="">Contact</a>
-                    </ul>
-                </section>
-
-        </section>
-
-
-        <section class="footer-3">
-            <section class="contactGevens">
-                <h3>Contact</h3>
-                <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
-                    info@nationaalvideogamemuseum.nl</p>
-                <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>:
-                    Theaterplein
-                    11 <br> 2711 EK Zoetermeer​</p>
-    
-    
-                <section class="socials">
-                    <h4>Volg het NVMGM</h4>
-    
-                    <section class="social-media">
-    
-                        <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </a>
-    
-                        <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
-                            <i class="fa-brands fa-square-facebook"></i>
-                        </a>
-    
-                        <a href="https://twitter.com/NaVGMuseum" target="_blank">
-                            <i class="fa-brands fa-square-twitter"></i>
-                        </a>
-    
-                        <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
-                            target="_blank"><i class="fa-brands fa-square-youtube"></i>
-                        </a>
-    
+                        <ul class="websiteLinks">
+                            <a href="">Home</a>
+                            <a href="">Tickets</a>
+                            <a href="">Geschiedenis</a>
+                            <a href="">Foto's</a>
+                            <a href="">Openingstijden</a>
+                            <a href="">Contact</a>
+                        </ul>
                     </section>
-    
+
                 </section>
 
-    
-            </section>
-        </section>
+
+                <section class="footer-3">
+                    <section class="contactGevens">
+                        <h3>Contact</h3>
+                        <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
+                        <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
+                            info@nationaalvideogamemuseum.nl</p>
+                        <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>:
+                            Theaterplein
+                            11 <br> 2711 EK Zoetermeer​</p>
 
 
-        <section class="footer-4">
-            <h3>Openingstijden</h3>
+                        <section class="socials">
+                            <h4>Volg het NVMGM</h4>
 
-            <section class="openingstijden">
-                <section class="dagen">
-                    <p>maandag</p>
-                    <p>dinsdag</p>
-                    <p>woensdag</p>
-                    <p>donderdag</p>
-                    <p>vrijdag</p>
-                    <p>zaterdag</p>
-                    <p>zondag</p>
+                            <section class="social-media">
+
+                                <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+
+                                <a href="https://www.facebook.com/NationaalGameMuseum/" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+
+                                <a href="https://twitter.com/NaVGMuseum" target="_blank">
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                </a>
+
+                                <a href="https://www.youtube.com/channel/UCnNuMO-7-TVI5ZEZwzU14Ew/featured?view_as=subscriber"
+                                    target="_blank"><i class="fa-brands fa-square-youtube"></i>
+                                </a>
+
+                            </section>
+
+                        </section>
+
+
+                    </section>
                 </section>
 
-                <section class="tijden">
-                    <p>gesloten</p>
-                    <p>gesloten</p>
-                    <p>10:00 - 18:00</p>
-                    <p>10:00 - 18:00</p>
-                    <p>10:00 - 21:00</p>
-                    <p>10:00 - 18:00</p>
-                    <p>12:00 - 18:00</p>
+
+                <section class="footer-4">
+                    <h3>Openingstijden</h3>
+
+                    <section class="openingstijden">
+                        <section class="dagen">
+                            <p>maandag</p>
+                            <p>dinsdag</p>
+                            <p>woensdag</p>
+                            <p>donderdag</p>
+                            <p>vrijdag</p>
+                            <p>zaterdag</p>
+                            <p>zondag</p>
+                        </section>
+
+                        <section class="tijden">
+                            <p>gesloten</p>
+                            <p>gesloten</p>
+                            <p>10:00 - 18:00</p>
+                            <p>10:00 - 18:00</p>
+                            <p>10:00 - 21:00</p>
+                            <p>10:00 - 18:00</p>
+                            <p>12:00 - 18:00</p>
+                        </section>
+                    </section>
+
+                    <a href="" class="tijdsblok-btn">Bekijk Tijdsblokken </a>
+
                 </section>
-            </section>
 
-            <a href="" class="tijdsblok-btn">Bekijk Tijdsblokken </a>
+            </article>
 
-        </section>
+            <article class="footerPolicys">
 
-        </article>
+                <section class="footerPolicys-content">
 
-        <article class="footerPolicys">
+                    <p>Copyright © Nationaal Videogame Museum </p>
 
-            <section class="footerPolicys-content">
+                    <section class="policy-links">
+                        <a href="">Algemene voorwaarden</a>
+                        <a href="">Cookie instellingen</a>
+                        <a href="">Privacy verklaring</a>
+                    </section>
 
-                <p>Copyright © Nationaal Videogame Museum </p>
-
-                <section class="policy-links">
-                    <a href="">Algemene voorwaarden</a>
-                    <a href="">Cookie instellingen</a>
-                    <a href="">Privacy verklaring</a>
                 </section>
 
-            </section>
+            </article>
 
-        </article>
+            <!-- FOOTER POLICYS -->
 
-        <!-- FOOTER POLICYS -->
-
-        </article>
+            </article>
         </section>
     </footer>
 

@@ -219,13 +219,18 @@ p{
     100% { transform: translateY(-20px); }
 }
 
-/* ABOUT PAGE */
+/* CURVES */
 
+.curve{
+    display: block;
+}
+
+/* ABOUT PAGE */
 #over{
+    margin-top: 100px;
 }
 
 .about{
-    margin: 150px 0;
     display: flex;
 }
 
@@ -250,7 +255,6 @@ p{
 
 #history{
     background-color: whitesmoke;
-    padding: 70px 0;
 }
 
 .history{
@@ -276,7 +280,7 @@ p{
 /* FOTO SLIDER */
 
 #watTeDoen{
-    padding: 70px 0;
+    background-color: #28282b;
 }
 
 .watTeDoen-content{
@@ -389,7 +393,6 @@ p{
 
 #reviews{
     background-color: whitesmoke;
-    padding: 70px 0;
 }
 .reviews h2{
     font-size: 36px;
