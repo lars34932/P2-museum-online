@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, #86bbd8, #67a6d0, #4c91c8, #367bbf, #2964b3, #2a57ac, #2f4aa4, #363c9b, #3e3497, #462c93, #4d218e, #541388);
+    background: #28282b;
     color: black
 }
 
@@ -16,7 +16,8 @@ html{
     /* CONTAINER VOOR HELE WEBSITE */
 
 .container{
-    margin: 0 250px;
+    margin: 0 auto;
+    max-width: 1350px;
 }
 
     /* HEADER */
@@ -218,21 +219,24 @@ p{
     100% { transform: translateY(-20px); }
 }
 
-/* CONTENT IN HET ALGEMEEN */
-.about h2, .history h2, .watTeDoen h2{
-    font-size: 36px;
-    margin-bottom: 12px;
+/* CURVES */
+
+.curve{
+    display: block;
 }
 
-.about p, .history p, .watTeDoen p{
-    font-size: 20px;
-    margin-bottom: 12px;
+.footer-curve{
+    display: block;
+    background-color: #f5f5f5;
 }
+
 
 /* ABOUT PAGE */
+#over{
+    margin-top: 100px;
+}
 
 .about{
-    margin: 150px 0;
     display: flex;
 }
 
@@ -242,35 +246,64 @@ p{
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
+.about h2{
+    font-size: 36px;
+    color: white;
+}
+
+.about p{
+    font-size: 20px;
+    color: white;
+}
+
 
 /* GESCHIEDENIS */
 
+#history{
+    background-color: whitesmoke;
+}
+
 .history{
-display: flex;
-margin: 150px 0;
+    display: flex;
 }
 
 .history-img{
-height: 450px;
-width: 100%;
-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    height: 450px;
+    width: 660px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
-.history-left, .history-right{
-width: 50%;
+.history h2{
+    font-size: 36px;
+    color: black;
 }
 
+.history p{
+    font-size: 20px;
+    color: black;
+}
 
 /* FOTO SLIDER */
 
-.watTeDoen h2{
-    text-align: center;
-    margin: 0 0 12px 0;
+#watTeDoen{
+    background-color: #28282b;
 }
 
 .watTeDoen-content{
     display: flex;
     gap: 32px;
+}
+
+.watTeDoen h2{
+    text-align: center;
+    margin: 0 0 12px 0;
+    color: white;
+    font-size: 36px;
+}
+
+.watTeDoen-text p{
+    font-size: 20px;
+    color: white;
 }
 
 .watTeDoen-slider{
@@ -361,6 +394,63 @@ width: 50%;
       .prev, .next,.text {font-size: 11px}
     }
 
+
+    /* REVIEWS */
+
+#reviews{
+    background-color: whitesmoke;
+}
+.reviews h2{
+    font-size: 36px;
+    color: black;
+}
+
+.reviews-content {
+    display: flex;
+  }
+
+.reviews h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.review{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    width: 33%;
+    background-image: url(fotos/review-bg.png);
+    background-color: black;
+    color: white;
+}
+
+.review h3{
+    font-size: 22px;
+}
+
+.review *{
+    margin-bottom: 5px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.rev-stars{
+    font-size: 24px;
+    color: white;
+}
+
+.rev-stars span{
+    color: yellow;
+}
 
     /* FOOTER */
 
