@@ -19,6 +19,12 @@ export class GameLogic
 
     logic()
     {
+        this.nextmole -= 33;
+        if (this.nextmole <= 0) {
+            this.nextmole = this.nextmoletime
+            setTimeout(() => {console.log(this.mol)}, 666);
+            
+        }
 
     }
 
@@ -28,9 +34,6 @@ export class GameLogic
             this.nextmole = this.nextmoletime
             let number = Math.floor(Math.random() * 9) + 1;
             this.mol = number;
-            
         }
     }
-
-
 }
