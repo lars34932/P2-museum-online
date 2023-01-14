@@ -282,9 +282,9 @@ require_once "languages/language-" . $lang . '.php';
 
         </section>
     </section>
-    
+
     <!-- CURVE -->
-    
+
     <svg class="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#f5f5f5" fill-opacity="1"
             d="M0,256L48,256C96,256,192,256,288,245.3C384,235,480,213,576,208C672,203,768,213,864,213.3C960,213,1056,203,1152,186.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -340,7 +340,11 @@ require_once "languages/language-" . $lang . '.php';
 
     <!-- CURVE -->
 
-    <svg class="footer-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0C120C" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,186.7C672,192,768,224,864,218.7C960,213,1056,171,1152,165.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <svg class="footer-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0C120C" fill-opacity="1"
+            d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,186.7C672,192,768,224,864,218.7C960,213,1056,171,1152,165.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
 
     <!-- FOOTER -->
 
@@ -372,12 +376,12 @@ require_once "languages/language-" . $lang . '.php';
 
                     <section class=" footer-2_Links">
                         <ul class="websiteLinks">
-                            <a href="">Home</a>
-                            <a href="">Tickets</a>
-                            <a href="">Geschiedenis</a>
-                            <a href="">Foto's</a>
-                            <a href="">Openingstijden</a>
-                            <a href="">Contact</a>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Tickets</a></li>
+                            <li><a href="">Geschiedenis</a></li>
+                            <li><a href="">Foto's</a></li>
+                            <li><a href="">Openingstijden</a></li>
+                            <li><a href="">Contact</a></li>
                         </ul>
                     </section>
 
@@ -387,13 +391,21 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="footer-3">
                     <section class="contactGevens">
                         <h3>Contact</h3>
-                        <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                        <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
-                            info@nationaalvideogamemuseum.nl</p>
-                        <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>:
-                            Theaterplein
-                            11 <br> 2711 EK Zoetermeer​</p>
+                        <section class="contactGegevens-content">
 
+                            <section class="contactGegevens-icons">
+                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </section>
+                                
+                            <section class="contactGegevens-links">
+                                <a href="tel:06-20662296">079 – 360 27 18</a>
+                                <a href="mailto:bente.kavsek@gmail.com">info@nationaalvideogamemuseum.nl</a>
+                                <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Theaterplein 11, 2711 EK Zoetermeer</a>
+                            </section>
+
+                        </section>
 
                         <section class="socials">
                             <h4>Volg het NVMGM</h4>

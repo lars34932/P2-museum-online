@@ -469,7 +469,7 @@ h2, h3, h4{
 
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-bottom: 1px solid white;
 }
 
@@ -519,12 +519,15 @@ input[type=text] {
 .websiteLinks{
     display: flex;
     flex-direction: column;
-    margin-right: 25px;
 }
 
-.websiteLinks > a{
+.websiteLinks li{
+    list-style-type: none;
+}
+
+.websiteLinks a{
+    line-height: 30px;
     color: #bababa;
-    margin: 4px 0;
 }
 
 .websiteLinks a:hover {
@@ -537,22 +540,29 @@ input[type=text] {
     color: white;
 }
 
-.contactGegevens > p{
-    margin: 50px 0;
+.contactGegevens-content{
+    display: flex;
 }
 
-.contact-items{
-    margin: 5px 0 ;
-}
-
-.contact-items a{
+.contactGegevens-icons{
     color: #0D54B9;
+    line-height: 30px;
 }
+
+.contactGegevens-links a{
+    color: #bababa;
+    line-height: 30px;
+}
+
 
 .socials{
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 16px;
+}
+
+.socials h4{
+    margin-bottom: 4px;
 }
 
 .social-media > a{
@@ -567,14 +577,11 @@ input[type=text] {
 .openingstijden{
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 .openingstijden p{
     margin: 5px 0;
-}
-
-.dagen{
-    margin-right: 20px;
 }
 
 .tijdsblok-btn{
