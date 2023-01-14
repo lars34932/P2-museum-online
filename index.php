@@ -159,7 +159,7 @@ require_once "languages/language-" . $lang . '.php';
 
 
                 <section class="about-right">
-                    <img class="about-img" src="fotos/nvgm-ingang.JPG" alt="">
+                    <img class="about-img" src="fotos/about-img.jpg" alt="">
                 </section>
 
             </article>
@@ -183,7 +183,7 @@ require_once "languages/language-" . $lang . '.php';
             <article class="history">
 
                 <section class="hirstory-left">
-                    <img class="history-img" src="fotos/nvgm-kamer.jpg" alt="">
+                    <img class="history-img" src="fotos/history-img.jpg" alt="">
                 </section>
 
                 <section class="history-right">
@@ -223,28 +223,33 @@ require_once "languages/language-" . $lang . '.php';
                         <section class="slideshow">
 
                             <section class="mySlides fade">
-                                <section class="numbertext">1 / 3</section>
-                                <img src="fotos/nvgm-ingang.JPG" style="width:100%">
-                                <section class="text"> Bij de ingang van het museum, vind je meteen arcades die je
-                                    allemaal
-                                    kan
-                                    testen!</section>
+                                <section class="numbertext">1 / 5</section>
+                                <img src="fotos/slider-1.JPG" style="width:100%">
+                                <section class="text"> ingang van het musem </section>
                             </section>
 
                             <section class="mySlides fade">
-                                <section class="numbertext">2 / 3</section>
-                                <img src="fotos/nvgm-info.JPG" style="width:100%">
-                                <section class="text">In het hele museum hangen ook informatie borden, zo valt spelen en
-                                    leren
-                                    te combineren!</section>
+                                <section class="numbertext">2 / 5</section>
+                                <img src="fotos/slider-2.jpg" style="width:100%">
+                                <section class="text"> mp pacman </section>
                             </section>
 
                             <section class="mySlides fade">
-                                <section class="numbertext">3 / 3</section>
-                                <img src="fotos/nvgm-races.JPG" style="width:100%">
-                                <section class="text">Er valt veel te beleven, van playstation games tot just dance maar
-                                    ook
-                                    bijvoorbeeld races !</section>
+                                <section class="numbertext">3 / 5</section>
+                                <img src="fotos/slider-3.JPG" style="width:100%">
+                                <section class="text"> uitleg enz </section>
+                            </section>
+
+                            <section class="mySlides fade">
+                                <section class="numbertext">4 / 5</section>
+                                <img src="fotos/slider-4.JPG" style="width:100%">
+                                <section class="text"> 1p pacman </section>
+                            </section>
+
+                            <section class="mySlides fade">
+                                <section class="numbertext">5 / 5</section>
+                                <img src="fotos/slider-5.JPG" style="width:100%">
+                                <section class="text"> racess </section>
                             </section>
 
                             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -257,6 +262,8 @@ require_once "languages/language-" . $lang . '.php';
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
                         </section>
 
                     </section>
