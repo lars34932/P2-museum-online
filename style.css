@@ -230,13 +230,13 @@ p{
     background-color: #f5f5f5;
 }
 
-
 /* ABOUT PAGE */
+
 #over{
     margin-top: 100px;
 }
 
-.about{
+.about-content{
     display: flex;
     gap: 20px;
 }
@@ -255,8 +255,9 @@ p{
 .about p{
     font-size: 20px;
     color: white;
+    margin-bottom: 6px;
+    line-height: 26px;
 }
-
 
 /* GESCHIEDENIS */
 
@@ -276,6 +277,8 @@ p{
 
 .history-title h2{
     width: 50%;
+    font-size: 36px;
+    color: black;
 }
 
 .history-img{
@@ -284,17 +287,11 @@ p{
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
-.history h2{
-    font-size: 36px;
-    color: black;
-}
-
 .history p{
     font-size: 18px;
     color: black;
     margin-bottom: 6px;
     line-height: 26px;
-
 }
 
 /* FOTO SLIDER */
