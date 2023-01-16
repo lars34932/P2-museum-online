@@ -264,9 +264,18 @@ p{
     background-color: whitesmoke;
 }
 
-.history{
+.histroy-content{
     display: flex;
     gap: 20px;
+}
+
+.history-title{
+    display: flex;
+    gap: 5px;
+}
+
+.history-title h2{
+    width: 50%;
 }
 
 .history-img{
