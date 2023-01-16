@@ -140,27 +140,32 @@ require_once "languages/language-" . $lang . '.php';
 
     <section id="over">
         <section class="container">
-
             <article class="about">
 
-                <section class="about-left">
-                    <h2>Over het Nationaal videogame museum</h2>
-                    <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven
-                        over
-                        videogames.
-                        Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
-                        Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
-                        delen.
-                    </p>
+                <section class="about-title">
+                    <h2>Over het Nationaal Videogame Museum</h2>
                 </section>
 
+                <section class="about-content">
 
-                <section class="about-right">
-                    <img class="about-img" src="fotos/about-img.jpg" alt="">
+                    <section class="about-left">
+                        <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en
+                            beleven
+                            over
+                            videogames.
+                            Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
+                            Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
+                            delen.
+                        </p>
+                    </section>
+
+                    <section class="about-right">
+                        <img class="about-img" src="fotos/about-img.jpg" alt="">
+                    </section>
+
                 </section>
 
             </article>
-
         </section>
     </section>
 
