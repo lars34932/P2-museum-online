@@ -294,7 +294,7 @@ p{
     line-height: 26px;
 }
 
-/* FOTO SLIDER */
+/* WAT TE DOEN */
 
 #watTeDoen{
     background-color: #28282b;
@@ -305,25 +305,27 @@ p{
     gap: 36px;
 }
 
-.watTeDoen h2{
-    text-align: center;
-    margin: 0 0 12px 0;
+.WatTeDoen-title h2{
+    width: 50%;
     color: white;
     font-size: 36px;
+    margin-left: 820px;
 }
 
-.watTeDoen-text p{
+.watTeDoen-right p{
     font-size: 20px;
     color: white;
 }
 
-.watTeDoen-slider{
+.watTeDoen-left{
     width: 60%;
 }
 
-.watTeDoen-text{
+.watTeDoen-right{
     width: 40%;
 }
+
+/* FOTO SLIDER */
 
 .mySlides{
     display: none
