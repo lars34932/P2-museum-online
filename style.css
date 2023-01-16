@@ -238,6 +238,7 @@ p{
 
 .about{
     display: flex;
+    gap: 20px;
 }
 
 .about-img{
@@ -265,6 +266,7 @@ p{
 
 .history{
     display: flex;
+    gap: 20px;
 }
 
 .history-img{
@@ -279,8 +281,11 @@ p{
 }
 
 .history p{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
+    margin-bottom: 6px;
+    line-height: 26px;
+
 }
 
 /* FOTO SLIDER */
@@ -291,7 +296,7 @@ p{
 
 .watTeDoen-content{
     display: flex;
-    gap: 32px;
+    gap: 36px;
 }
 
 .watTeDoen h2{

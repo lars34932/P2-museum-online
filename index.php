@@ -189,10 +189,29 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="history-right">
 
                     <h2>De geschiedenis van het museum</h2>
-                    <p>het is toen en toen opgericht, veel verhuisd, vrijwiligers. <br> dat soort dingen maar dan in n
-                        mooi
-                        verhaaltje.
+                    <p>Het Nationaal Videogame museum is opgericht in 2008 door 2 vrienden: Hasan Tasdemir en Pascal Rappailles. 
+                        Het begon allemaal in een garage box in Den-Haag. 
+                        Het werd al snel te klein waardoor er een nieuwe plek nodig was, 
+                        dit werd een loods op een industrie terrein.
+                        Door de kou moesten ze daar ook weg en zo zijn ze nog een paar keer verhuisd.
                     </p>
+                    <p>In 2011 werd er een passend pand gevonden in de Cobaltstraat in Zoetermeer. 
+                        De locatie werd door Hasan en vier vrienden gehuurd tot een eigen ontmoetingsplek om 
+                        hun hobby uit te oefenen en lekker te ontspannen met een game.
+                    </p>
+                    <p>In 2014 werd er weer verhuisd, dit keer naar de Bleiswijkseweg, 
+                    er wilden meer mensen mee doen waardoor het niet meer als hobby kon worden voortgezet en het 
+                    een professionele aanpak nodig had.
+                    </p>
+                    <p>In 2015 heeft Hasan het bedrijf ‘Playworks BV’ opgericht. 
+                        Een jaar later kwam hij in contact bij de gemeente en ontstond het idee om er een museum van te maken, 
+                        toen is ook de naam “nationaal videogame museum” ontstaan. 
+                        De gemeente was enthousiast en besloot het museum ook financieel bij te staan. 
+                        Hierdoor kon een verwarmd pand gehuurd worden en kon de gehele collectie tentoon gesteld worden.
+                    </p>
+                    <p>Vanaf mei 2017 werd er door een grote groep vrijwilligers 
+                        en fans keihard gewerkt om het museum ingericht te krijgen zodat het op 1 december 2017 ready to play was!</p>
+
                 </section>
 
             </article>
@@ -355,15 +374,15 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="footer-1">
                     <img class="logo-footer" src="fotos/logo.svg"
                         alt="foto van het logo van het nationaal videogame museum in Zoetermeer">
+
                     <form id="emailForm">
-                        <p class="formText1">Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in
-                            en
-                            rond
-                            het mueseum!</p>
+                        <p class="formText1">
+                            Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in en rond het mueseum!
+                        </p>
                         <input type="text" id="email" name="Email" placeholder="Email">
                         <button class="Inschrijf-btn">Schrijf mij in</button>
-                        <p class="formText2">Door u aan te melden gaat u akkoord met de algemene voorwaarden van het
-                            NVGM.
+                        <p class="formText2">
+                            Door u aan te melden gaat u akkoord met de algemene voorwaarden van het NVGM.
                         </p>
 
                     </form>
