@@ -28,7 +28,6 @@ require_once "languages/language-" . $lang . '.php';
 <body>
     <section class="header-wrapper">
         <header id="header">
-
             <section class="container">
 
                 <section id="navBar" class="nav-bar">
@@ -137,9 +136,7 @@ require_once "languages/language-" . $lang . '.php';
 
     </main>
 
-
     <!-- ABOUT PAGE -->
-
 
     <section id="over">
         <section class="container">
@@ -179,38 +176,49 @@ require_once "languages/language-" . $lang . '.php';
 
     <section id="history">
         <section class="container">
-
             <article class="history">
 
-                <section class="hirstory-left">
-                    <img class="history-img" src="fotos/history-img.jpg" alt="">
+                <section class="history-title">
+                    <h2></h2>
+                    <h2>De geschiedenis van het museum</h2>
                 </section>
 
-                <section class="history-right">
+                <section class="histroy-content">
+                    <section class="hirstory-left">
+                        <img class="history-img" src="fotos/history-img.jpg" alt="">
+                    </section>
 
-                    <h2>De geschiedenis van het museum</h2>
-                    <p>Het Nationaal Videogame museum is opgericht in 2008 door 2 vrienden: Hasan Tasdemir en Pascal Rappailles. 
-                        Het begon allemaal in een garage box in Den-Haag. 
-                        Het werd al snel te klein waardoor er een nieuwe plek nodig was, 
-                        dit werd een loods op een industrie terrein.
-                        Door de kou moesten ze daar ook weg en zo zijn ze nog een paar keer verhuisd.
-                    </p>
-                    <p>In 2011 werd er een passend pand gevonden in de Cobaltstraat in Zoetermeer. 
-                        De locatie werd door Hasan en vier vrienden gehuurd tot een eigen ontmoetingsplek om 
-                        hun hobby uit te oefenen en lekker te ontspannen met een game.
-                    </p>
-                    <p>In 2014 werd er weer verhuisd, dit keer naar de Bleiswijkseweg, 
-                    er wilden meer mensen mee doen waardoor het niet meer als hobby kon worden voortgezet en het 
-                    een professionele aanpak nodig had.
-                    </p>
-                    <p>In 2015 heeft Hasan het bedrijf ‘Playworks BV’ opgericht. 
-                        Een jaar later kwam hij in contact bij de gemeente en ontstond het idee om er een museum van te maken, 
-                        toen is ook de naam “nationaal videogame museum” ontstaan. 
-                        De gemeente was enthousiast en besloot het museum ook financieel bij te staan. 
-                        Hierdoor kon een verwarmd pand gehuurd worden en kon de gehele collectie tentoon gesteld worden.
-                    </p>
-                    <p>Vanaf mei 2017 werd er door een grote groep vrijwilligers 
-                        en fans keihard gewerkt om het museum ingericht te krijgen zodat het op 1 december 2017 ready to play was!</p>
+                    <section class="history-right">
+
+                        <p>Het Nationaal Videogame museum is opgericht in 2008 door 2 vrienden: Hasan Tasdemir en Pascal
+                            Rappailles.
+                            Het begon allemaal in een garage box in Den-Haag.
+                            Het werd al snel te klein waardoor er een nieuwe plek nodig was,
+                            dit werd een loods op een industrie terrein.
+                            Door de kou moesten ze daar ook weg en zo zijn ze nog een paar keer verhuisd.
+                        </p>
+                        <p>In 2011 werd er een passend pand gevonden in de Cobaltstraat in Zoetermeer.
+                            De locatie werd door Hasan en vier vrienden gehuurd tot een eigen ontmoetingsplek om
+                            hun hobby uit te oefenen en lekker te ontspannen met een game.
+                        </p>
+                        <p>In 2014 werd er weer verhuisd, dit keer naar de Bleiswijkseweg,
+                            er wilden meer mensen mee doen waardoor het niet meer als hobby kon worden voortgezet en het
+                            een professionele aanpak nodig had.
+                        </p>
+                        <p>In 2015 heeft Hasan het bedrijf ‘Playworks BV’ opgericht.
+                            Een jaar later kwam hij in contact bij de gemeente en ontstond het idee om er een museum van
+                            te
+                            maken,
+                            toen is ook de naam “nationaal videogame museum” ontstaan.
+                            De gemeente was enthousiast en besloot het museum ook financieel bij te staan.
+                            Hierdoor kon een verwarmd pand gehuurd worden en kon de gehele collectie tentoon gesteld
+                            worden.
+                        </p>
+                        <p>Vanaf mei 2017 werd er door een grote groep vrijwilligers
+                            en fans keihard gewerkt om het museum ingericht te krijgen zodat het op 1 december 2017
+                            ready to
+                            play was!</p>
+                    </section>
 
                 </section>
 
@@ -417,7 +425,7 @@ require_once "languages/language-" . $lang . '.php';
                                 <i class="fas fa-envelope"></i>
                                 <i class="fas fa-map-marker-alt"></i>
                             </section>
-                                
+
                             <section class="contactGegevens-links">
                                 <a href="tel:06-20662296">079 – 360 27 18</a>
                                 <a href="mailto:bente.kavsek@gmail.com">info@nationaalvideogamemuseum.nl</a>
