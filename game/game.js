@@ -13,7 +13,7 @@ class Game
 
     mouseclicktest()
     {
-        let scope = this;
+        let scope = this
         this.renderer.c.addEventListener("mousemove", function(event) {scope.logic.mouseMoved(event); })
         setInterval(function () {scope.doGameFrame() }, 33)
     }
@@ -21,7 +21,8 @@ class Game
     doGameFrame()
     {
         this.logic.logic();
-        this.renderer.render();
+        this.renderer.render()
+        this.logic.mollen();
         this.renderer.levens();
     }
 }

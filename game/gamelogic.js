@@ -1,9 +1,13 @@
 export class GameLogic
+
 {
     constructor(game)
     {
         this.game = game;
         this.levens = 3;
+        this.nextmoletime = 1333
+        this.nextmole = this.nextmoletime;
+        this.mol = 0;
     }
 
     mouseMoved(event)
@@ -15,6 +19,21 @@ export class GameLogic
 
     logic()
     {
+        this.nextmole -= 33;
+        if (this.nextmole <= 0) {
+            this.nextmole = this.nextmoletime
+            setTimeout(() => {console.log(this.mol)}, 666);
+            
+        }
 
+    }
+
+    mollen() {
+        this.nextmole -= 33;
+        if (this.nextmole <= 0) {
+            this.nextmole = this.nextmoletime
+            let number = Math.floor(Math.random() * 9) + 1;
+            this.mol = number;
+        }
     }
 }
