@@ -241,11 +241,13 @@ require_once "languages/language-" . $lang . '.php';
         <section class="container">
             <article class="watTeDoen">
 
+            <section class="WatTeDoen-title">
                 <h2>Wat is er te doen</h2>
+            </section>
 
                 <section class="watTeDoen-content">
 
-                    <section class="watTeDoen-slider">
+                    <section class="watTeDoen-left">
 
                         <section class="slideshow">
 
@@ -295,7 +297,7 @@ require_once "languages/language-" . $lang . '.php';
 
                     </section>
 
-                    <section class="watTeDoen-text">
+                    <section class="watTeDoen-right">
 
                         <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten klaar staan! <br>
                             Er zijn wel 327 unieke speelplekken, dit maakt ons het grootste arcade museum van heel
