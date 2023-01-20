@@ -1,5 +1,6 @@
 import { GameLogic } from "./gamelogic.js";
 import { GameRenderer } from "./gamerenderer.js";
+import { Rect } from "./Rect.js";
 
 class Game
 {
@@ -15,15 +16,15 @@ class Game
     {
         let scope = this
         this.renderer.c.addEventListener("mousemove", function(event) {scope.logic.mouseMoved(event); })
+        this.renderer.c.addEventListener("click", function(event) {scope.logic.mouseClicked(event); })
         setInterval(function () {scope.doGameFrame() }, 33)
     }
 
     doGameFrame()
     {
         this.logic.logic();
-        this.renderer.render()
+        this.renderer.render();
         this.logic.mollen();
-        this.renderer.levens();
     }
 }
 
