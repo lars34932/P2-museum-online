@@ -28,7 +28,6 @@ require_once "languages/language-" . $lang . '.php';
 <body>
     <section class="header-wrapper">
         <header id="header">
-
             <section class="container">
 
                 <section id="navBar" class="nav-bar">
@@ -137,33 +136,36 @@ require_once "languages/language-" . $lang . '.php';
 
     </main>
 
-
     <!-- ABOUT PAGE -->
-
 
     <section id="over">
         <section class="container">
-
             <article class="about">
 
-                <section class="about-left">
-                    <h2>Over het Nationaal videogame museum</h2>
-                    <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven
-                        over
-                        videogames.
-                        Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
-                        Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
-                        delen.
-                    </p>
+                <section class="about-title">
+                    <h2>Over het Nationaal Videogame Museum</h2>
                 </section>
 
+                <section class="about-content">
 
-                <section class="about-right">
-                    <img class="about-img" src="fotos/nvgm-ingang.JPG" alt="">
+                    <section class="about-left">
+                        <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en
+                            beleven
+                            over
+                            videogames.
+                            Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
+                            Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
+                            delen.
+                        </p>
+                    </section>
+
+                    <section class="about-right">
+                        <img class="about-img" src="fotos/about-img.jpg" alt="">
+                    </section>
+
                 </section>
 
             </article>
-
         </section>
     </section>
 
@@ -179,20 +181,50 @@ require_once "languages/language-" . $lang . '.php';
 
     <section id="history">
         <section class="container">
-
             <article class="history">
 
-                <section class="hirstory-left">
-                    <img class="history-img" src="fotos/nvgm-kamer.jpg" alt="">
+                <section class="history-title">
+                    <h2></h2>
+                    <h2>De geschiedenis van het museum</h2>
                 </section>
 
-                <section class="history-right">
+                <section class="histroy-content">
+                    <section class="hirstory-left">
+                        <img class="history-img" src="fotos/history-img.jpg" alt="">
+                    </section>
 
-                    <h2>De geschiedenis van het museum</h2>
-                    <p>het is toen en toen opgericht, veel verhuisd, vrijwiligers. <br> dat soort dingen maar dan in n
-                        mooi
-                        verhaaltje.
-                    </p>
+                    <section class="history-right">
+
+                        <p>Het Nationaal Videogame museum is opgericht in 2008 door 2 vrienden: Hasan Tasdemir en Pascal
+                            Rappailles.
+                            Het begon allemaal in een garage box in Den-Haag.
+                            Het werd al snel te klein waardoor er een nieuwe plek nodig was,
+                            dit werd een loods op een industrie terrein.
+                            Door de kou moesten ze daar ook weg en zo zijn ze nog een paar keer verhuisd.
+                        </p>
+                        <p>In 2011 werd er een passend pand gevonden in de Cobaltstraat in Zoetermeer.
+                            De locatie werd door Hasan en vier vrienden gehuurd tot een eigen ontmoetingsplek om
+                            hun hobby uit te oefenen en lekker te ontspannen met een game.
+                        </p>
+                        <p>In 2014 werd er weer verhuisd, dit keer naar de Bleiswijkseweg,
+                            er wilden meer mensen mee doen waardoor het niet meer als hobby kon worden voortgezet en het
+                            een professionele aanpak nodig had.
+                        </p>
+                        <p>In 2015 heeft Hasan het bedrijf ‘Playworks BV’ opgericht.
+                            Een jaar later kwam hij in contact bij de gemeente en ontstond het idee om er een museum van
+                            te
+                            maken,
+                            toen is ook de naam “nationaal videogame museum” ontstaan.
+                            De gemeente was enthousiast en besloot het museum ook financieel bij te staan.
+                            Hierdoor kon een verwarmd pand gehuurd worden en kon de gehele collectie tentoon gesteld
+                            worden.
+                        </p>
+                        <p>Vanaf mei 2017 werd er door een grote groep vrijwilligers
+                            en fans keihard gewerkt om het museum ingericht te krijgen zodat het op 1 december 2017
+                            ready to
+                            play was!</p>
+                    </section>
+
                 </section>
 
             </article>
@@ -214,37 +246,44 @@ require_once "languages/language-" . $lang . '.php';
         <section class="container">
             <article class="watTeDoen">
 
+            <section class="WatTeDoen-title">
                 <h2>Wat is er te doen</h2>
+            </section>
 
                 <section class="watTeDoen-content">
 
-                    <section class="watTeDoen-slider">
+                    <section class="watTeDoen-left">
 
                         <section class="slideshow">
 
                             <section class="mySlides fade">
-                                <section class="numbertext">1 / 3</section>
-                                <img src="fotos/nvgm-ingang.JPG" style="width:100%">
-                                <section class="text"> Bij de ingang van het museum, vind je meteen arcades die je
-                                    allemaal
-                                    kan
-                                    testen!</section>
+                                <section class="numbertext">1 / 5</section>
+                                <img src="fotos/slider-1.JPG" style="width:100%">
+                                <section class="text"> ingang van het musem </section>
                             </section>
 
                             <section class="mySlides fade">
-                                <section class="numbertext">2 / 3</section>
-                                <img src="fotos/nvgm-info.JPG" style="width:100%">
-                                <section class="text">In het hele museum hangen ook informatie borden, zo valt spelen en
-                                    leren
-                                    te combineren!</section>
+                                <section class="numbertext">2 / 5</section>
+                                <img src="fotos/slider-2.jpg" style="width:100%">
+                                <section class="text"> mp pacman </section>
                             </section>
 
                             <section class="mySlides fade">
-                                <section class="numbertext">3 / 3</section>
-                                <img src="fotos/nvgm-races.JPG" style="width:100%">
-                                <section class="text">Er valt veel te beleven, van playstation games tot just dance maar
-                                    ook
-                                    bijvoorbeeld races !</section>
+                                <section class="numbertext">3 / 5</section>
+                                <img src="fotos/slider-3.JPG" style="width:100%">
+                                <section class="text"> uitleg enz </section>
+                            </section>
+
+                            <section class="mySlides fade">
+                                <section class="numbertext">4 / 5</section>
+                                <img src="fotos/slider-4.JPG" style="width:100%">
+                                <section class="text"> 1p pacman </section>
+                            </section>
+
+                            <section class="mySlides fade">
+                                <section class="numbertext">5 / 5</section>
+                                <img src="fotos/slider-5.JPG" style="width:100%">
+                                <section class="text"> racess </section>
                             </section>
 
                             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -257,11 +296,13 @@ require_once "languages/language-" . $lang . '.php';
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
                         </section>
 
                     </section>
 
-                    <section class="watTeDoen-text">
+                    <section class="watTeDoen-right">
 
                         <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten klaar staan! <br>
                             Er zijn wel 327 unieke speelplekken, dit maakt ons het grootste arcade museum van heel
@@ -275,9 +316,9 @@ require_once "languages/language-" . $lang . '.php';
 
         </section>
     </section>
-    
+
     <!-- CURVE -->
-    
+
     <svg class="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#f5f5f5" fill-opacity="1"
             d="M0,256L48,256C96,256,192,256,288,245.3C384,235,480,213,576,208C672,203,768,213,864,213.3C960,213,1056,203,1152,186.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -333,7 +374,11 @@ require_once "languages/language-" . $lang . '.php';
 
     <!-- CURVE -->
 
-    <svg class="footer-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0C120C" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,186.7C672,192,768,224,864,218.7C960,213,1056,171,1152,165.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <svg class="footer-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0C120C" fill-opacity="1"
+            d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,186.7C672,192,768,224,864,218.7C960,213,1056,171,1152,165.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
 
     <!-- FOOTER -->
 
@@ -344,15 +389,15 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="footer-1">
                     <img class="logo-footer" src="fotos/logo.svg"
                         alt="foto van het logo van het nationaal videogame museum in Zoetermeer">
+
                     <form id="emailForm">
-                        <p class="formText1">Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in
-                            en
-                            rond
-                            het mueseum!</p>
+                        <p class="formText1">
+                            Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in en rond het mueseum!
+                        </p>
                         <input type="text" id="email" name="Email" placeholder="Email">
                         <button class="Inschrijf-btn">Schrijf mij in</button>
-                        <p class="formText2">Door u aan te melden gaat u akkoord met de algemene voorwaarden van het
-                            NVGM.
+                        <p class="formText2">
+                            Door u aan te melden gaat u akkoord met de algemene voorwaarden van het NVGM.
                         </p>
 
                     </form>
@@ -365,12 +410,12 @@ require_once "languages/language-" . $lang . '.php';
 
                     <section class=" footer-2_Links">
                         <ul class="websiteLinks">
-                            <a href="">Home</a>
-                            <a href="">Tickets</a>
-                            <a href="">Geschiedenis</a>
-                            <a href="">Foto's</a>
-                            <a href="">Openingstijden</a>
-                            <a href="">Contact</a>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Tickets</a></li>
+                            <li><a href="">Geschiedenis</a></li>
+                            <li><a href="">Foto's</a></li>
+                            <li><a href="">Openingstijden</a></li>
+                            <li><a href="">Contact</a></li>
                         </ul>
                     </section>
 
@@ -380,13 +425,21 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="footer-3">
                     <section class="contactGevens">
                         <h3>Contact</h3>
-                        <p class="contact-items"><a href="tel:06-20662296">Bellen </a>: 079 – 360 27 18 </p>
-                        <p class="contact-items"><a href="mailto:bente.kavsek@gmail.com">Mailen </a>:
-                            info@nationaalvideogamemuseum.nl</p>
-                        <p class="contact-items"> <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Adres</a>:
-                            Theaterplein
-                            11 <br> 2711 EK Zoetermeer​</p>
+                        <section class="contactGegevens-content">
 
+                            <section class="contactGegevens-icons">
+                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </section>
+
+                            <section class="contactGegevens-links">
+                                <a href="tel:06-20662296">079 – 360 27 18</a>
+                                <a href="mailto:bente.kavsek@gmail.com">info@nationaalvideogamemuseum.nl</a>
+                                <a href="https://goo.gl/maps/u4hqWnHc5FYFSg4s8">Theaterplein 11, 2711 EK Zoetermeer</a>
+                            </section>
+
+                        </section>
 
                         <section class="socials">
                             <h4>Volg het NVMGM</h4>

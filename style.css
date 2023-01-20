@@ -230,14 +230,15 @@ p{
     background-color: #f5f5f5;
 }
 
-
 /* ABOUT PAGE */
+
 #over{
     margin-top: 100px;
 }
 
-.about{
+.about-content{
     display: flex;
+    gap: 20px;
 }
 
 .about-img{
@@ -254,8 +255,9 @@ p{
 .about p{
     font-size: 20px;
     color: white;
+    margin-bottom: 6px;
+    line-height: 26px;
 }
-
 
 /* GESCHIEDENIS */
 
@@ -263,8 +265,20 @@ p{
     background-color: whitesmoke;
 }
 
-.history{
+.histroy-content{
     display: flex;
+    gap: 20px;
+}
+
+.history-title{
+    display: flex;
+    gap: 5px;
+}
+
+.history-title h2{
+    width: 50%;
+    font-size: 36px;
+    color: black;
 }
 
 .history-img{
@@ -273,17 +287,14 @@ p{
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
-.history h2{
-    font-size: 36px;
-    color: black;
-}
-
 .history p{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
+    margin-bottom: 6px;
+    line-height: 26px;
 }
 
-/* FOTO SLIDER */
+/* WAT TE DOEN */
 
 #watTeDoen{
     background-color: #28282b;
@@ -291,28 +302,30 @@ p{
 
 .watTeDoen-content{
     display: flex;
-    gap: 32px;
+    gap: 36px;
 }
 
-.watTeDoen h2{
-    text-align: center;
-    margin: 0 0 12px 0;
+.WatTeDoen-title h2{
+    width: 50%;
     color: white;
     font-size: 36px;
+    margin-left: 820px;
 }
 
-.watTeDoen-text p{
+.watTeDoen-right p{
     font-size: 20px;
     color: white;
 }
 
-.watTeDoen-slider{
+.watTeDoen-left{
     width: 60%;
 }
 
-.watTeDoen-text{
+.watTeDoen-right{
     width: 40%;
 }
+
+/* FOTO SLIDER */
 
 .mySlides{
     display: none
@@ -469,7 +482,7 @@ h2, h3, h4{
 
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-bottom: 1px solid white;
 }
 
@@ -519,12 +532,15 @@ input[type=text] {
 .websiteLinks{
     display: flex;
     flex-direction: column;
-    margin-right: 25px;
 }
 
-.websiteLinks > a{
+.websiteLinks li{
+    list-style-type: none;
+}
+
+.websiteLinks a{
+    line-height: 30px;
     color: #bababa;
-    margin: 4px 0;
 }
 
 .websiteLinks a:hover {
@@ -537,22 +553,29 @@ input[type=text] {
     color: white;
 }
 
-.contactGegevens > p{
-    margin: 50px 0;
+.contactGegevens-content{
+    display: flex;
 }
 
-.contact-items{
-    margin: 5px 0 ;
-}
-
-.contact-items a{
+.contactGegevens-icons{
     color: #0D54B9;
+    line-height: 30px;
 }
+
+.contactGegevens-links a{
+    color: #bababa;
+    line-height: 30px;
+}
+
 
 .socials{
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 16px;
+}
+
+.socials h4{
+    margin-bottom: 4px;
 }
 
 .social-media > a{
@@ -567,14 +590,11 @@ input[type=text] {
 .openingstijden{
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 .openingstijden p{
     margin: 5px 0;
-}
-
-.dagen{
-    margin-right: 20px;
 }
 
 .tijdsblok-btn{
