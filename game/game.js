@@ -21,6 +21,7 @@ export class Game {
         this.renderer.render();
 
         if (this.logic.tijd <= 0) {
+            console.log("tijd om")
         }
     }
 }

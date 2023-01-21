@@ -3,7 +3,7 @@ import { Rect } from "./Rect.js";
 export class GameLogic {
     constructor(game) {
         this.game = game;
-        this.nextmoletime = 1333
+        this.nextmoletime = 1000
         this.nextmole = this.nextmoletime;
         this.mol = 0;
         this.score = 0;
