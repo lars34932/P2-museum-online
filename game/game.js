@@ -17,11 +17,17 @@ export class Game {
     }
 
     doGameFrame() {
-        this.logic.logic();
-        this.renderer.render();
+        if (!(this.logic.tijd <= 0)) {
+            this.logic.logic();
+            this.renderer.render();
+        }
 
         if (this.logic.tijd <= 0) {
-            console.log("tijd om")
+            let score = this.logic.score
+            let jsonData = JSON.stringify(score);
+            localStorage.setItem('score', jsonData);
+            import("./eindscherm.js").then(() => {
+            })
         }
     }
 }

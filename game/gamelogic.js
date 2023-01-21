@@ -7,7 +7,7 @@ export class GameLogic {
         this.nextmole = this.nextmoletime;
         this.mol = 0;
         this.score = 0;
-        this.tijd = 60000;
+        this.tijd = 6000;
         this.mol1 = new Rect(43, 133, 101, 95);
         this.mol2 = new Rect(243, 133, 101, 95);
         this.mol3 = new Rect(443, 133, 101, 95);
