@@ -7,6 +7,7 @@ export class GameLogic {
         this.nextmole = this.nextmoletime;
         this.mol = 0;
         this.score = 0;
+        this.tijd = 60000;
         this.mol1 = new Rect(43, 133, 101, 95);
         this.mol2 = new Rect(243, 133, 101, 95);
         this.mol3 = new Rect(443, 133, 101, 95);
@@ -86,21 +87,14 @@ export class GameLogic {
 
     logic() {
         this.nextmole -= 33;
+        this.tijd -= 33;
         if (this.nextmole <= 0) {
             this.nextmole = this.nextmoletime
             setTimeout(() => { console.log(this.mol) }, 666);
-
-        }
-
-    }
-
-    mollen() {
-        this.nextmole -= 33;
-        if (this.nextmole <= 0) {
-            this.nextmole = this.nextmoletime
             let number = Math.floor(Math.random() * 9) + 1;
             this.mol = number;
         }
+
     }
 
     click() {

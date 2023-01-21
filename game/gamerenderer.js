@@ -56,13 +56,17 @@ export class GameRenderer {
         ctx.fillStyle = "black";
         ctx.font = "30px Arial";
         ctx.fillText("whack-a-mole", 200, 50);
-        ctx.fillRect(this.game.x, this.game.y, 10, 10);
-        ctx.fillStyle = "#leca07";
         ctx.fill();
 
+        //render hammer
+        ctx.fillRect(this.game.x, this.game.y, 10, 10);
+        //moet hamer nog maken
+
+        //render tijd
+        ctx.fillText("tijd: ", 500, 50);
+        ctx.fillText(Math.round(this.logic.tijd / 1000), 550, 50);
+
         //render score
-        ctx.fillStyle = "black";
-        ctx.font = "30px Arial";
         ctx.fillText("score: ", 250, 100);
         ctx.fillText(this.logic.score, 335, 102)
         ctx.fill();
