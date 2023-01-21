@@ -1,8 +1,7 @@
 import { GameLogic } from "./gamelogic.js";
 import { GameRenderer } from "./gamerenderer.js";
-import { Rect } from "./Rect.js";
 
-class Game
+export class Game
 {
     constructor()
     {
@@ -31,5 +30,6 @@ class Game
 let game = new Game;
 
 /*start de game*/
+
 game.doGameFrame();
 game.mouseclicktest();

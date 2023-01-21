@@ -1,5 +1,6 @@
 import { GameLogic } from "./gamelogic.js";
 
+
 export class GameRenderer {
     constructor(game) {
         this.logic = game.logic;
@@ -55,7 +56,7 @@ export class GameRenderer {
         ctx.fillStyle = "black";
         ctx.font = "30px Arial";
         ctx.fillText("whack-a-mole", 200, 50);
-        this.ctx.fillRect(this.game.x, this.game.y, 10, 10);
+        ctx.fillRect(this.game.x, this.game.y, 10, 10);
         ctx.fillStyle = "#leca07";
         ctx.fill();
 
