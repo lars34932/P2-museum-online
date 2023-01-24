@@ -19,7 +19,7 @@ require_once "languages/language-" . $lang . '.php'; ?>
     <link rel="stylesheet" href="https://use.typekit.net/ynx2yjc.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="fotos/web-icon.svg" />
+    <link rel="icon" href="fotos/site-icon.png" />
 </head>
 
 <!-- NAV BAR -->
@@ -249,6 +249,7 @@ require_once "languages/language-" . $lang . '.php'; ?>
                     <h2><?= $translate['galerij_title']; ?></h2>
                 </section>
 
+
                 <section class="watTeDoen-content">
 
 
@@ -257,33 +258,39 @@ require_once "languages/language-" . $lang . '.php'; ?>
                         <section class="slideshow">
 
                             <section class="mySlides fade">
-                                <section class="numbertext">1 / 5</section>
+                                <section class="numbertext">1 / 6</section>
                                 <img src="fotos/slider-1.JPG" style="width:100%">
                                 <section class="text"> ingang van het musem </section>
                             </section>
 
                             <section class="mySlides fade">
-                                <section class="numbertext">2 / 5</section>
+                                <section class="numbertext">2 / 6</section>
                                 <img src="fotos/slider-2.jpg" style="width:100%">
                                 <section class="text"> mp pacman </section>
                             </section>
 
                             <section class="mySlides fade">
-                                <section class="numbertext">3 / 5</section>
+                                <section class="numbertext">3 / 6</section>
                                 <img src="fotos/slider-3.JPG" style="width:100%">
                                 <section class="text"> uitleg enz </section>
                             </section>
 
                             <section class="mySlides fade">
-                                <section class="numbertext">4 / 5</section>
+                                <section class="numbertext">4 / 6</section>
                                 <img src="fotos/slider-4.JPG" style="width:100%">
                                 <section class="text"> 1p pacman </section>
                             </section>
 
                             <section class="mySlides fade">
-                                <section class="numbertext">5 / 5</section>
+                                <section class="numbertext">5 / 6</section>
                                 <img src="fotos/slider-5.JPG" style="width:100%">
                                 <section class="text"> racess </section>
+                            </section>
+
+                            <section class="mySlides fade">
+                                <section class="numbertext">6 / 6</section>
+                                <img src="fotos/slider-6.jpg" style="width:100%">
+                                <section class="text"> mp icehockey </section>
                             </section>
 
                             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -296,6 +303,7 @@ require_once "languages/language-" . $lang . '.php'; ?>
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
                             <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
                         </section>
 
                     </section>
