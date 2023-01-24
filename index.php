@@ -107,7 +107,9 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="tickets-btn">
 
                     <section class="tickets-btn-left">
-                        <a href="" class="tickets-link"> <?= $translate['blue_btn_1']; ?> </a>
+                        <a href="" class="tickets-link">
+                            <?= $translate['blue_btn_1']; ?>
+                        </a>
                         <p class="tickets-caption">
                             <?= $translate['blue_btn_2']; ?>
                         </p>
@@ -147,16 +149,21 @@ require_once "languages/language-" . $lang . '.php';
             <article class="about">
 
                 <section class="about-left">
-                    <h2>Over het Nationaal videogame museum</h2>
-                    <p>Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten en beleven
-                        over
-                        videogames.
-                        Het museum laat bezoekers de games van nu én van vroeger ervaren. <br>
-                        Gamers van jong tot oud zijn welkom om te spelen, ontdekken, leren en ervaringen online te
-                        delen.
-                    </p>
-                </section>
+                    <h2>
+                        <?= $translate['over_title']; ?>
+                    </h2>
 
+                    <p>
+                        <?= $translate['over_text_1']; ?>
+                    </p>
+                    <p>
+                        <?= $translate['over_text_2']; ?>
+                    </p>
+                    <p>
+                        <?= $translate['over_text_3']; ?>
+                    </p>
+
+                </section>
 
                 <section class="about-right">
                     <img class="about-img" src="fotos/about-img.jpg" alt="">
@@ -188,29 +195,24 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="history-right">
 
-                    <h2>De geschiedenis van het museum</h2>
-                    <p>Het Nationaal Videogame museum is opgericht in 2008 door 2 vrienden: Hasan Tasdemir en Pascal Rappailles. 
-                        Het begon allemaal in een garage box in Den-Haag. 
-                        Het werd al snel te klein waardoor er een nieuwe plek nodig was, 
-                        dit werd een loods op een industrie terrein.
-                        Door de kou moesten ze daar ook weg en zo zijn ze nog een paar keer verhuisd.
+                    <h2>
+                        <?= $translate['geschiedenis_title']; ?>
+                    </h2>
+                    <p>
+                        <?= $translate['geschiedenis_text_1']; ?>
                     </p>
-                    <p>In 2011 werd er een passend pand gevonden in de Cobaltstraat in Zoetermeer. 
-                        De locatie werd door Hasan en vier vrienden gehuurd tot een eigen ontmoetingsplek om 
-                        hun hobby uit te oefenen en lekker te ontspannen met een game.
+                    <p>
+                        <?= $translate['geschiedenis_text_2']; ?>
                     </p>
-                    <p>In 2014 werd er weer verhuisd, dit keer naar de Bleiswijkseweg, 
-                    er wilden meer mensen mee doen waardoor het niet meer als hobby kon worden voortgezet en het 
-                    een professionele aanpak nodig had.
+                    <p>
+                        <?= $translate['geschiedenis_text_3']; ?>
                     </p>
-                    <p>In 2015 heeft Hasan het bedrijf ‘Playworks BV’ opgericht. 
-                        Een jaar later kwam hij in contact bij de gemeente en ontstond het idee om er een museum van te maken, 
-                        toen is ook de naam “nationaal videogame museum” ontstaan. 
-                        De gemeente was enthousiast en besloot het museum ook financieel bij te staan. 
-                        Hierdoor kon een verwarmd pand gehuurd worden en kon de gehele collectie tentoon gesteld worden.
+                    <p>
+                        <?= $translate['geschiedenis_text_4']; ?>
                     </p>
-                    <p>Vanaf mei 2017 werd er door een grote groep vrijwilligers 
-                        en fans keihard gewerkt om het museum ingericht te krijgen zodat het op 1 december 2017 ready to play was!</p>
+                    <p>
+                        <?= $translate['geschiedenis_text_5']; ?>
+                    </p>
 
                 </section>
 
@@ -233,7 +235,9 @@ require_once "languages/language-" . $lang . '.php';
         <section class="container">
             <article class="watTeDoen">
 
-                <h2>Wat is er te doen</h2>
+                <h2>
+                    <?= $translate['galerij_title']; ?>
+                </h2>
 
                 <section class="watTeDoen-content">
 
@@ -244,31 +248,41 @@ require_once "languages/language-" . $lang . '.php';
                             <section class="mySlides fade">
                                 <section class="numbertext">1 / 5</section>
                                 <img src="fotos/slider-1.JPG" style="width:100%">
-                                <section class="text"> ingang van het musem </section>
+                                <section class="text">
+                                    <?= $translate['slider_1_text']; ?>
+                                </section>
                             </section>
 
                             <section class="mySlides fade">
                                 <section class="numbertext">2 / 5</section>
                                 <img src="fotos/slider-2.jpg" style="width:100%">
-                                <section class="text"> mp pacman </section>
+                                <section class="text">
+                                    <?= $translate['slider_2_text']; ?>
+                                </section>
                             </section>
 
                             <section class="mySlides fade">
                                 <section class="numbertext">3 / 5</section>
                                 <img src="fotos/slider-3.JPG" style="width:100%">
-                                <section class="text"> uitleg enz </section>
+                                <section class="text">
+                                    <?= $translate['slider_3_text']; ?>
+                                </section>
                             </section>
 
                             <section class="mySlides fade">
                                 <section class="numbertext">4 / 5</section>
                                 <img src="fotos/slider-4.JPG" style="width:100%">
-                                <section class="text"> 1p pacman </section>
+                                <section class="text">
+                                    <?= $translate['slider_4_text']; ?>
+                                </section>
                             </section>
 
                             <section class="mySlides fade">
                                 <section class="numbertext">5 / 5</section>
                                 <img src="fotos/slider-5.JPG" style="width:100%">
-                                <section class="text"> racess </section>
+                                <section class="text">
+                                    <?= $translate['slider_5_text']; ?>
+                                </section>
                             </section>
 
                             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -289,9 +303,8 @@ require_once "languages/language-" . $lang . '.php';
 
                     <section class="watTeDoen-text">
 
-                        <p>Het museum heeft rond de 230 spelcomputers, homecomputers en arcadekasten klaar staan! <br>
-                            Er zijn wel 327 unieke speelplekken, dit maakt ons het grootste arcade museum van heel
-                            Europa!
+                        <p>
+                        <?= $translate['galerij_text']; ?>
                         </p>
                     </section>
 
@@ -317,7 +330,9 @@ require_once "languages/language-" . $lang . '.php';
 
             <article class="reviews">
 
-                <h2>Reviews over het NVGM</h2>
+                <h2>
+                    <?= $translate['reviews_title']; ?>
+                </h2>
 
                 <section class="reviews-content">
 
@@ -326,7 +341,9 @@ require_once "languages/language-" . $lang . '.php';
                             <img src="fotos/user-pic.png" alt="">
                             <h3>Iona van Neerven</h3>
                         </section>
-                        <p>Leuke dag gehad, was wel erg druk.</p>
+                        <p>
+                            <?= $translate['review_1_text']; ?>
+                        </p>
                         <p class="rev-stars"><span>✩✩✩</span>✩✩</p>
                     </section>
 
@@ -336,7 +353,9 @@ require_once "languages/language-" . $lang . '.php';
                             <img src="fotos/user-pic.png" alt="">
                             <h3>Tiddo Stempher</h3>
                         </section>
-                        <p>Leuk om te doen met gezin, veel lol gehad met mn zoontjes.</p>
+                        <p>
+                            <?= $translate['review_2_text']; ?>
+                        </p>
                         <p class="rev-stars"><span>✩✩✩✩✩</span></p>
                     </section>
 
@@ -346,7 +365,9 @@ require_once "languages/language-" . $lang . '.php';
                             <img src="fotos/user-pic.png" alt="">
                             <h3>Franciska de Boom</h3>
                         </section>
-                        <p>leuk dat er ook arcades zijn van vroeger, en dat gecombineerd met de games van nu.</p>
+                        <p>
+                            <?= $translate['review_3_text']; ?>
+                        </p>
                         <p class="rev-stars"><span>✩✩✩✩</span>✩</p>
                     </section>
 
@@ -377,12 +398,14 @@ require_once "languages/language-" . $lang . '.php';
 
                     <form id="emailForm">
                         <p class="formText1">
-                            Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in en rond het mueseum!
+                            <?= $translate['footer_1_text_1']; ?>
                         </p>
                         <input type="text" id="email" name="Email" placeholder="Email">
-                        <button class="Inschrijf-btn">Schrijf mij in</button>
+                        <button class="Inschrijf-btn">
+                            <?= $translate['footer_1_btn']; ?>
+                        </button>
                         <p class="formText2">
-                            Door u aan te melden gaat u akkoord met de algemene voorwaarden van het NVGM.
+                            <?= $translate['footer_1_text_2']; ?>
                         </p>
 
                     </form>
@@ -391,16 +414,30 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="footer-2">
 
-                    <h3>Navigatie</h3>
+                    <h3>
+                        <?= $translate['footer_2_title']; ?>
+                    </h3>
 
                     <section class=" footer-2_Links">
                         <ul class="websiteLinks">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Tickets</a></li>
-                            <li><a href="">Geschiedenis</a></li>
-                            <li><a href="">Foto's</a></li>
-                            <li><a href="">Openingstijden</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="">
+                                    <?= $translate['menu_1']; ?>
+                                </a></li>
+                            <li><a href="">
+                                    <?= $translate['menu_2']; ?>
+                                </a></li>
+                            <li><a href="">
+                                    <?= $translate['menu_3']; ?>
+                                </a></li>
+                            <li><a href="">
+                                    <?= $translate['menu_4']; ?>
+                                </a></li>
+                            <li><a href="">
+                                    <?= $translate['menu_5']; ?>
+                                </a></li>
+                            <li><a href="">
+                                    <?= $translate['menu_6']; ?>
+                                </a></li>
                         </ul>
                     </section>
 
@@ -409,7 +446,9 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="footer-3">
                     <section class="contactGevens">
-                        <h3>Contact</h3>
+                        <h3>
+                            <?= $translate['footer_3_title_1']; ?>
+                        </h3>
                         <section class="contactGegevens-content">
 
                             <section class="contactGegevens-icons">
@@ -417,7 +456,7 @@ require_once "languages/language-" . $lang . '.php';
                                 <i class="fas fa-envelope"></i>
                                 <i class="fas fa-map-marker-alt"></i>
                             </section>
-                                
+
                             <section class="contactGegevens-links">
                                 <a href="tel:06-20662296">079 – 360 27 18</a>
                                 <a href="mailto:bente.kavsek@gmail.com">info@nationaalvideogamemuseum.nl</a>
@@ -427,7 +466,9 @@ require_once "languages/language-" . $lang . '.php';
                         </section>
 
                         <section class="socials">
-                            <h4>Volg het NVMGM</h4>
+                            <h4>
+                                <?= $translate['footer_3_title_2']; ?>
+                            </h4>
 
                             <section class="social-media">
 
@@ -457,22 +498,42 @@ require_once "languages/language-" . $lang . '.php';
 
 
                 <section class="footer-4">
-                    <h3>Openingstijden</h3>
+                    <h3>
+                        <?= $translate['footer_4_title']; ?>
+                    </h3>
 
                     <section class="openingstijden">
                         <section class="dagen">
-                            <p>maandag</p>
-                            <p>dinsdag</p>
-                            <p>woensdag</p>
-                            <p>donderdag</p>
-                            <p>vrijdag</p>
-                            <p>zaterdag</p>
-                            <p>zondag</p>
+                            <p>
+                                <?= $translate['footer_4_dag_1']; ?>
+                            </p>
+                            <p>
+                                <?= $translate['footer_4_dag_2']; ?>
+                            </p>
+                            <p>
+                                <?= $translate['footer_4_dag_3']; ?>
+                            </p>
+                            <p>
+                                <?= $translate['footer_4_dag_4']; ?>
+                            </p>
+                            <p>
+                                <?= $translate['footer_4_dag_5']; ?>
+                            </p>
+                            <p>
+                                <?= $translate['footer_4_dag_6']; ?>
+                            </p>
+                            <p>
+                                <?= $translate['footer_4_dag_7']; ?>
+                            </p>
                         </section>
 
                         <section class="tijden">
-                            <p>gesloten</p>
-                            <p>gesloten</p>
+                            <p>
+                                <?= $translate['footer_4_dicht']; ?>
+                            </p>
+                            <p>
+                                <?= $translate['footer_4_dicht']; ?>
+                            </p>
                             <p>10:00 - 18:00</p>
                             <p>10:00 - 18:00</p>
                             <p>10:00 - 21:00</p>
@@ -481,7 +542,9 @@ require_once "languages/language-" . $lang . '.php';
                         </section>
                     </section>
 
-                    <a href="" class="tijdsblok-btn">Bekijk Tijdsblokken </a>
+                    <a href="" class="tijdsblok-btn">
+                        <?= $translate['footer_4_tijdBtn']; ?>
+                    </a>
 
                 </section>
 
@@ -491,12 +554,20 @@ require_once "languages/language-" . $lang . '.php';
 
                 <section class="footerPolicys-content">
 
-                    <p>Copyright © Nationaal Videogame Museum </p>
+                    <p>
+                        <?= $translate['footer_copyright']; ?>
+                    </p>
 
                     <section class="policy-links">
-                        <a href="">Algemene voorwaarden</a>
-                        <a href="">Cookie instellingen</a>
-                        <a href="">Privacy verklaring</a>
+                        <a href="">
+                            <?= $translate['footer_algemeneVoorwaarden']; ?>
+                        </a>
+                        <a href="">Coo
+                            <?= $translate['footer_cookieInstellingen']; ?>kie instellingen
+                        </a>
+                        <a href="">
+                            <?= $translate['footer_privacyVerklaring']; ?>
+                        </a>
                     </section>
 
                 </section>
