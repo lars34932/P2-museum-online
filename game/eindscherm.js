@@ -1,4 +1,5 @@
 import { Game } from "./game.js";
+import { Rect } from "./Rect.js";
 
 class eindScherm
 {
@@ -15,9 +16,9 @@ class eindScherm
         
         ctx.fillStyle = "black"
         ctx.font = "30px Arial";
-        ctx.fillText("score: ", 255, 110)
+        ctx.fillText("score: ", 245, 110)
         let score = JSON.parse(localStorage.getItem('score'));
-        ctx.fillText(score, 345, 110)
+        ctx.fillText(score, 335, 110)
     }
 }
 
