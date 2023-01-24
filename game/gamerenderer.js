@@ -1,18 +1,20 @@
 import { GameLogic } from "./gamelogic.js";
 
+
 export class GameRenderer {
     constructor(game) {
         this.logic = game.logic;
         this.game = game;
         this.c = document.getElementById("myCanvas");
         this.ctx = this.c.getContext("2d");
-        this.head = document.getElementById("molehead");
     }
 
     render() {
         //define ctx, hill, number
         let ctx = this.ctx
         let hill = document.getElementById("molehill")
+        let head = document.getElementById("molehead");
+        let hammer = document.getElementById("hammer");
         let number = this.logic.mol
 
         //render background
@@ -32,53 +34,42 @@ export class GameRenderer {
         
         //render mollen
         if (number == 1) {
-            this.ctx.drawImage(this.head, 43, 133);
+            ctx.drawImage(head, 43, 133);
         } else if (number == 2) {
-            this.ctx.drawImage(this.head, 243, 133);
+            ctx.drawImage(head, 243, 133);
         } else if (number == 3) {
-            this.ctx.drawImage(this.head, 443, 133);
+            ctx.drawImage(head, 443, 133);
         } else if (number == 4) {
-            this.ctx.drawImage(this.head, 43, 333);
+            ctx.drawImage(head, 43, 333);
         } else if (number == 5) {
-            this.ctx.drawImage(this.head, 243, 333);
+            ctx.drawImage(head, 243, 333);
         } else if (number == 6) {
-            this.ctx.drawImage(this.head, 443, 333);
+            ctx.drawImage(head, 443, 333);
         } else if (number == 7) {
-            this.ctx.drawImage(this.head, 43, 533);
+            ctx.drawImage(head, 43, 533);
         } else if (number == 8) {
-            this.ctx.drawImage(this.head, 243, 533);
+            ctx.drawImage(head, 243, 533);
         } else if (number == 9) {
-            this.ctx.drawImage(this.head, 443, 533);
+            ctx.drawImage(head, 443, 533);
         }
 
         //render text
         ctx.fillStyle = "black";
         ctx.font = "30px Arial";
         ctx.fillText("whack-a-mole", 200, 50);
-        ctx.fillText("score: ", 250, 100);
-        this.ctx.fillRect(this.game.x, this.game.y, 10, 10);
-        ctx.fillStyle = "#leca07";
         ctx.fill();
-    }
 
-    renderer() {
-        this.ctx.fillRect(this.game.x, this.game.y, 10, 10);
-        this.ctx.fill();
-    }
+        //render hammer
+        ctx.drawImage(hammer, this.game.x-40, this.game.y-60);
+        //moet hamer nog maken
 
-    levens() {
-        let ctx = this.ctx
-        if (this.logic.levens == 3) {
-            ctx.fillText("❤️", 550, 50);
-            ctx.fillText("❤️", 500, 50);
-            ctx.fillText("❤️", 450, 50);
-        }
-        else if (this.logic.levens == 2) {
-            ctx.fillText("❤️", 550, 50);
-            ctx.fillText("❤️", 500, 50);
-        }
-        else if (this.logic.levens == 1) {
-            ctx.fillText("❤️", 550, 50);
-        }
+        //render tijd
+        ctx.fillText("tijd: ", 490, 50);
+        ctx.fillText(Math.round(this.logic.tijd / 1000), 540, 50);
+
+        //render score
+        ctx.fillText("score: ", 250, 100);
+        ctx.fillText(this.logic.score, 335, 102)
+        ctx.fill();
     }
 }

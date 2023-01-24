@@ -142,7 +142,7 @@ require_once "languages/language-" . $lang . '.php';
     <section id="over">
         <section class="container">
             <article class="about">
-                
+
                 <section class="about-left">
                     <h2>
                         <?= $translate['over_title']; ?>
