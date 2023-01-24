@@ -7,7 +7,7 @@ export class GameLogic {
         this.nextmole = this.nextmoletime;
         this.mol = 0;
         this.score = 0;
-        this.tijd = 6000;
+        this.tijd = 60000;
         this.mol1 = new Rect(43, 133, 101, 95);
         this.mol2 = new Rect(243, 133, 101, 95);
         this.mol3 = new Rect(443, 133, 101, 95);
@@ -32,7 +32,7 @@ export class GameLogic {
         if (this.mol1.Contains(x,y)) {
             if (this.mol == 1) {
                 this.score += 1
-                this.mol = 0
+                this.mol = 0  
             }
         }
         else if ( this.mol2.Contains(x,y)) {
