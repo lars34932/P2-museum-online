@@ -28,7 +28,6 @@ require_once "languages/language-" . $lang . '.php';
 <body>
     <section class="header-wrapper">
         <header id="header">
-
             <section class="container">
 
                 <section id="navBar" class="nav-bar">
@@ -58,7 +57,6 @@ require_once "languages/language-" . $lang . '.php';
                         <a href="#contact">
                             <?= $translate['menu_6']; ?>
                         </a>
-
 
                         <form action="" method="GET">
                             <label class="lang-selector" for="lang">Choose Language<br>
@@ -139,14 +137,12 @@ require_once "languages/language-" . $lang . '.php';
 
     </main>
 
-
     <!-- ABOUT PAGE -->
-
 
     <section id="over">
         <section class="container">
-
             <article class="about">
+
 
                 <section class="about-left">
                     <h2>
@@ -165,12 +161,10 @@ require_once "languages/language-" . $lang . '.php';
 
                 </section>
 
-                <section class="about-right">
-                    <img class="about-img" src="fotos/about-img.jpg" alt="">
+
                 </section>
 
             </article>
-
         </section>
     </section>
 
@@ -186,14 +180,18 @@ require_once "languages/language-" . $lang . '.php';
 
     <section id="history">
         <section class="container">
-
             <article class="history">
 
-                <section class="hirstory-left">
-                    <img class="history-img" src="fotos/history-img.jpg" alt="">
+                <section class="history-title">
+                    <h2></h2>
+                    <h2>De geschiedenis van het museum</h2>
                 </section>
 
-                <section class="history-right">
+                <section class="histroy-content">
+                    <section class="hirstory-left">
+                        <img class="history-img" src="fotos/history-img.jpg" alt="">
+                    </section>
+
 
                     <h2>
                         <?= $translate['geschiedenis_title']; ?>
@@ -239,9 +237,10 @@ require_once "languages/language-" . $lang . '.php';
                     <?= $translate['galerij_title']; ?>
                 </h2>
 
+
                 <section class="watTeDoen-content">
 
-                    <section class="watTeDoen-slider">
+                    <section class="watTeDoen-left">
 
                         <section class="slideshow">
 
@@ -301,7 +300,7 @@ require_once "languages/language-" . $lang . '.php';
 
                     </section>
 
-                    <section class="watTeDoen-text">
+                    <section class="watTeDoen-right">
 
                         <p>
                         <?= $translate['galerij_text']; ?>
