@@ -44,8 +44,6 @@ $translate = [
                             om het museum ingericht te krijgen zodat het op 1 december 2017 ready to play was!",
 
     "galerij_title" => "Wat is er te doen",
-    "galerij_text" => "In ons museum is van alles te beleven, we hebben rond de 230 spelcomputers! 
-    Hier naast is een klein deel te zien. Voor de hele ervaring zien we u graag langskomen!",
     "galerij_text" => "In our museum is a lot to experience! About 230 arcades are waiting for you! here on our website we've shown a bit.
                         But for the whole experience we'd love to see you soon!",
 
