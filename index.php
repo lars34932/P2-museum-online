@@ -4,7 +4,8 @@
 $lang = $_GET['lang'] ?? 'nl-NL';
 
 // laad het goede bestand met text met hulp van variable
-require_once "languages/language-" . $lang . '.php'; ?>
+require_once "languages/language-" . $lang . '.php';
+?>
 
 <!DOCTYPE html>
 <html lang="<?= $lang; ?>">
@@ -191,7 +192,7 @@ require_once "languages/language-" . $lang . '.php'; ?>
                 <section class="history-title">
                     <h2></h2>
                     <h2>
-                        <?= $translate['Geschiedenis_title']; ?>
+                        <?= $translate['geschiedenis_title']; ?>
                     </h2>
                 </section>
 

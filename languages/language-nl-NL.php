@@ -1,7 +1,7 @@
 <?php
 
 $translate = [
-    // "hellooo" => "this is text",
+
     "menu_1" => "Home",
     "menu_2" => "Tickets",
     "menu_3" => "Geschiedenis",
