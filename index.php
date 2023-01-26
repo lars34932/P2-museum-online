@@ -17,9 +17,9 @@ require_once "languages/language-" . $lang . '.php'; ?>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ynx2yjc.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="fotos/site-icon.png" />
+    <link rel="icon" href="fotos/site-icon.png">
 </head>
 
 <!-- NAV BAR -->
