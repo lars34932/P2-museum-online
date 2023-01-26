@@ -21,6 +21,7 @@ require_once "languages/language-" . $lang . '.php';
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="fotos/site-icon.png">
+    <script defer type="module" src="game/beginscherm.js"></script>
 </head>
 
 <!-- NAV BAR -->
@@ -88,7 +89,11 @@ require_once "languages/language-" . $lang . '.php';
                     </p>
                 </section>
 
-                <canvas id="game"> </canvas>
+                <canvas width="600" height="700" id="myCanvas">
+                    <img class="hidethis" id="hammer" src="game/fotos/hammer.png" alt="whack a mole hamer">
+                    <img class="hidethis" id="molehead" src="game/fotos/head.png" alt="whack a mole head">
+                    <img class="hidethis" id="molehill" src="game/fotos/hill.png" alt="whack a mole hill">
+                </canvas>
 
             </section>
 
