@@ -261,37 +261,37 @@ require_once "languages/language-" . $lang . '.php';
                             <section class="mySlides fade">
                                 <section class="numbertext">1 / 6</section>
                                 <img src="fotos/slider-1.JPG" style="width:100%">
-                                <section class="text"> ingang van het musem </section>
+                                <section class="text"> <?= $translate['slider_1_text']; ?> </section>
                             </section>
 
                             <section class="mySlides fade">
                                 <section class="numbertext">2 / 6</section>
                                 <img src="fotos/slider-2.jpg" style="width:100%">
-                                <section class="text"> mp pacman </section>
+                                <section class="text"> <?= $translate['slider_2_text']; ?> </section>
                             </section>
 
                             <section class="mySlides fade">
                                 <section class="numbertext">3 / 6</section>
                                 <img src="fotos/slider-3.JPG" style="width:100%">
-                                <section class="text"> uitleg enz </section>
+                                <section class="text"> <?= $translate['slider_3_text']; ?> </section>
                             </section>
 
                             <section class="mySlides fade">
                                 <section class="numbertext">4 / 6</section>
                                 <img src="fotos/slider-4.JPG" style="width:100%">
-                                <section class="text"> 1p pacman </section>
+                                <section class="text"> <?= $translate['slider_4_text']; ?> </section>
                             </section>
 
                             <section class="mySlides fade">
                                 <section class="numbertext">5 / 6</section>
                                 <img src="fotos/slider-5.JPG" style="width:100%">
-                                <section class="text"> racess </section>
+                                <section class="text"> <?= $translate['slider_5_text']; ?> </section>
                             </section>
 
                             <section class="mySlides fade">
                                 <section class="numbertext">6 / 6</section>
                                 <img src="fotos/slider-6.jpg" style="width:100%">
-                                <section class="text"> mp icehockey </section>
+                                <section class="text"> <?= $translate['slider_5_text']; ?> </section>
                             </section>
 
                             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -335,7 +335,7 @@ require_once "languages/language-" . $lang . '.php';
 
             <article class="reviews">
 
-                <h2>Reviews over het NVGM</h2>
+                <h2><?= $translate['reviews_title']; ?></h2>
 
                 <section class="reviews-content">
 
@@ -344,7 +344,7 @@ require_once "languages/language-" . $lang . '.php';
                             <img src="fotos/user-pic.png" alt="">
                             <h3>Iona van Neerven</h3>
                         </section>
-                        <p>Leuke dag gehad, was wel erg druk.</p>
+                        <p><?= $translate['review_1_text']; ?></p>
                         <p class="rev-stars"><span>✩✩✩</span>✩✩</p>
                     </section>
 
@@ -353,7 +353,7 @@ require_once "languages/language-" . $lang . '.php';
                             <img src="fotos/user-pic.png" alt="">
                             <h3>Tiddo Stempher</h3>
                         </section>
-                        <p>Leuk om te doen met gezin, veel lol gehad met mn zoontjes.</p>
+                        <p><?= $translate['review_2_text']; ?></p>
                         <p class="rev-stars"><span>✩✩✩✩✩</span></p>
                     </section>
 
@@ -362,7 +362,7 @@ require_once "languages/language-" . $lang . '.php';
                             <img src="fotos/user-pic.png" alt="">
                             <h3>Franciska de Boom</h3>
                         </section>
-                        <p>leuk dat er ook arcades zijn van vroeger, en dat gecombineerd met de games van nu.</p>
+                        <p><?= $translate['review_3_text']; ?></p>
                         <p class="rev-stars"><span>✩✩✩✩</span>✩</p>
                     </section>
 
@@ -395,14 +395,14 @@ require_once "languages/language-" . $lang . '.php';
 
                     <form id="emailForm">
                         <p class="formText1">
-                            Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van alles in en rond het mueseum!
+                        <?= $translate['footer_1_text_1']; ?>
                         </p>
 
                         <input type="text" id="email" name="Email" placeholder="Email">
-                        <button class="Inschrijf-btn">Schrijf mij in</button>
+                        <button class="Inschrijf-btn"><?= $translate['footer_1_btn']; ?></button>
 
                         <p class="formText2">
-                            Door u aan te melden gaat u akkoord met de algemene voorwaarden van het NVGM.
+                        <?= $translate['footer_1_text_2']; ?>
                         </p>
 
                     </form>
@@ -414,12 +414,12 @@ require_once "languages/language-" . $lang . '.php';
                     <section class=" footer-2_Links">
 
                         <ul class="websiteLinks">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Tickets</a></li>
-                            <li><a href="">Geschiedenis</a></li>
-                            <li><a href="">Foto's</a></li>
-                            <li><a href="">Openingstijden</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href=""><?= $translate['menu_1']; ?></a></li>
+                            <li><a href=""><?= $translate['menu_2']; ?></a></li>
+                            <li><a href=""><?= $translate['menu_3']; ?></a></li>
+                            <li><a href=""><?= $translate['menu_4']; ?></a></li>
+                            <li><a href=""><?= $translate['menu_5']; ?></a></li>
+                            <li><a href=""><?= $translate['menu_6']; ?></a></li>
                         </ul>
 
                     </section>
@@ -429,7 +429,7 @@ require_once "languages/language-" . $lang . '.php';
                 <section class="footer-3">
 
                     <section class="contactGevens">
-                        <h3>Contact</h3>
+                        <h3><?= $translate['footer_3_title_1']; ?></h3>
 
                         <section class="contactGegevens-content">
 
@@ -448,7 +448,7 @@ require_once "languages/language-" . $lang . '.php';
                         </section>
 
                         <section class="socials">
-                            <h4>Volg het NVMGM</h4>
+                            <h4><?= $translate['footer_3_title_2']; ?></h4>
 
                             <section class="social-media">
                                 <a href="https://www.instagram.com/NVGMuseum/" target="_blank">
@@ -472,23 +472,24 @@ require_once "languages/language-" . $lang . '.php';
                 </section>
 
                 <section class="footer-4">
-                    <h3>Openingstijden</h3>
+                    <h3><?= $translate['footer_4_title']; ?></h3>
 
                     <section class="openingstijden">
 
                         <section class="dagen">
-                            <p>maandag</p>
-                            <p>dinsdag</p>
-                            <p>woensdag</p>
-                            <p>donderdag</p>
-                            <p>vrijdag</p>
-                            <p>zaterdag</p>
-                            <p>zondag</p>
+                            <p><?= $translate['footer_4_dag_1']; ?></p>
+                            <p><?= $translate['footer_4_dag_2']; ?></p>
+                            <p><?= $translate['footer_4_dag_3']; ?></p>
+                            <p><?= $translate['footer_4_dag_4']; ?></p>
+                            <p><?= $translate['footer_4_dag_5']; ?></p>
+                            <p><?= $translate['footer_4_dag_6']; ?></p>
+                            <p><?= $translate['footer_4_dag_7']; ?></p>
+
                         </section>
 
                         <section class="tijden">
-                            <p>gesloten</p>
-                            <p>gesloten</p>
+                        <p><?= $translate['footer_4_dicht']; ?></p>
+                        <p><?= $translate['footer_4_dicht']; ?></p>
                             <p>10:00 - 18:00</p>
                             <p>10:00 - 18:00</p>
                             <p>10:00 - 21:00</p>
@@ -498,7 +499,7 @@ require_once "languages/language-" . $lang . '.php';
 
                     </section>
 
-                    <a href="" class="tijdsblok-btn">Bekijk Tijdsblokken </a>
+                    <a href="" class="tijdsblok-btn"><?= $translate['footer_4_tijdBtn']; ?></a>
 
                 </section>
 
@@ -509,12 +510,12 @@ require_once "languages/language-" . $lang . '.php';
             <article class="footerPolicys">
 
                 <section class="footerPolicys-content">
-                    <p>Copyright © Nationaal Videogame Museum </p>
+                <p><?= $translate['footer_copyright']; ?></p>
 
                     <section class="policy-links">
-                        <a href="">Algemene voorwaarden</a>
-                        <a href="">Cookie instellingen</a>
-                        <a href="">Privacy verklaring</a>
+                        <a href=""><?= $translate['footer_algemeneVoorwaarden']; ?></a>
+                        <a href=""><?= $translate['footer_cookieInstellingen']; ?></a>
+                        <a href=""><?= $translate['footer_privacyVerklaring']; ?></a>
                     </section>
 
                 </section>
@@ -525,6 +526,7 @@ require_once "languages/language-" . $lang . '.php';
     </footer>
     <script src="https://kit.fontawesome.com/dc84d7a956.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src defer="game/beginscherm.js"> </script>
 </body>
 
 </html>
